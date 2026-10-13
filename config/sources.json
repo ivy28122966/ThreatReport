@@ -1,0 +1,46 @@
+{
+  "lookback_hours": 30,
+  "max_items_per_source": 5,
+  "sources": [
+    {
+      "id": "mozilla_security",
+      "name": "Mozilla Security Advisories",
+      "org": "Mozilla",
+      "type": "rss",
+      "url": "https://www.mozilla.org/en-US/security/advisories/feed/",
+      "category": "瀏覽器安全"
+    },
+    {
+      "id": "talos_blog",
+      "name": "Cisco Talos Intelligence Blog",
+      "org": "Cisco Talos IR",
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/feedburner/Talos",
+      "category": "威脅獵捕"
+    },
+    {
+      "id": "cisa_kev",
+      "name": "CISA Known Exploited Vulnerabilities Catalog",
+      "org": "CISA",
+      "type": "cisa_kev",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "category": "漏洞與修補"
+    },
+    {
+      "id": "msrc",
+      "name": "Microsoft Security Response Center",
+      "org": "Microsoft",
+      "type": "rss",
+      "url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "category": "漏洞與修補"
+    },
+    {
+      "id": "thehackernews",
+      "name": "The Hacker News",
+      "org": "The Hacker News",
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "category": "其他"
+    }
+  ]
+}
