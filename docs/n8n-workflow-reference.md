@@ -98,12 +98,20 @@ function hashId(str) {
   return (h1 >>> 0).toString(16).padStart(8, '0') + (h2 >>> 0).toString(16).padStart(8, '0');
 }
 
-const source = $('Expand Sources').item.json;
-const cutoff = Date.now() - source.lookbackHours * 3600 * 1000;
 const items = $input.all();
-
+const counts = {};
 const results = [];
-for (const item of items.slice(0, source.maxPerSource)) {
+
+for (let i = 0; i < items.length; i++) {
+  const item = items[i];
+  // 用 itemMatching 正確配對「這一筆是從哪個來源展開來的」
+  // 因為多個 rss 來源會同時通過這個節點，用 .item（單數）會抓到錯的來源設定
+  const source = $('Expand Sources').itemMatching(i).json;
+  const cutoff = Date.now() - source.lookbackHours * 3600 * 1000;
+
+  counts[source.id] = counts[source.id] || 0;
+  if (counts[source.id] >= source.maxPerSource) continue;
+
   const d = item.json;
   const published = d.isoDate ? new Date(d.isoDate).getTime() : Date.now();
   if (published < cutoff) continue;
@@ -119,6 +127,7 @@ for (const item of items.slice(0, source.maxPerSource)) {
       raw_summary: (d.contentSnippet || d.content || '').slice(0, 3000),
     }
   });
+  counts[source.id]++;
 }
 return results;
 ```
@@ -137,7 +146,7 @@ function hashId(str) {
   return (h1 >>> 0).toString(16).padStart(8, '0') + (h2 >>> 0).toString(16).padStart(8, '0');
 }
 
-const source = $('Expand Sources').item.json;
+const source = $('Expand Sources').itemMatching(0).json;
 const cutoff = Date.now() - source.lookbackHours * 3600 * 1000;
 const data = $input.first().json;
 
@@ -175,6 +184,17 @@ return results;
 （KEV 來源的項目額外多一個 `cve_id`）。
 
 第一次執行因為 `data/seen.json` 是空的 `[]`，所有抓到的項目都應該視為「新」。
+
+## 實測驗證紀錄
+
+2026-10-13 完整跑通節點 1~12，`Merge New Items` 正確輸出多筆情資，
+欄位齊全（`id/source_id/source_name/org/category_hint/title/url/published/raw_summary`）。
+過程中修正了三個 bug：
+1. `seen.json` 要用 `{"ids": []}` 物件包陣列，不能是裸陣列（見節點5的地雷說明）
+2. Route By Type 的 Rule 比對值欄位必須真的填入 `rss`/`cisa_kev`，不能留空 placeholder
+3. Normalize RSS/KEV 原本用 `.item`（單數）只抓到一組來源設定，多來源混合時配對錯誤，
+   改用 `itemMatching(i)` 依每筆資料實際來源正確配對（已更新上方程式碼）
+4. Mozilla 官方 Security Advisories RSS feed 已下線（404），改用 Mozilla Security Blog 官方 RSS
 
 ## 待補（尚未定案）
 
