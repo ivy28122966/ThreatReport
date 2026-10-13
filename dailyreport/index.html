@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報目錄</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { padding-left: 0; }
+  .index-wrap { max-width: 1200px; margin: 0 auto; padding: 28px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="index-wrap">
+<aside class="tree-sidebar" style="position:static; width:100%; height:auto; border-right:0; border-bottom:1px solid var(--border); box-shadow:none; margin-bottom:24px;">
+  <div class="tree-header">
+    <span>📑 日報索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-month-node is-open">
+      <a class="tree-month-header">2026 年 10 月</a>
+      <ul class="tree-day-list">
+        
+        <li><a class="tree-day-link" href="2026-10-14.html">2026-10-14</a></li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</aside>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tree-month-header').forEach(header => {
+    header.addEventListener('click', (e) => {
+      e.preventDefault();
+      header.closest('.tree-month-node').classList.toggle('is-open');
+    });
+  });
+});
+</script>
+
+</body>
+</html>

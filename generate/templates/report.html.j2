@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜{{ date }}</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ {{ date }}</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · {{ date }}</div>
+      <h1 class="hero-heading">{{ date }} 日報</h1>
+      <p class="hero-desc">
+        本次彙整 {{ stats.total }} 則情資，其中 {{ stats.high_risk }} 則屬高風險等級，
+        共涉及 {{ stats.cve_count }} 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">{{ stats.total }}</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">{{ stats.high_risk }}</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">{{ stats.cve_count }}</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical {{ 'is-active' if threat_level == 'critical' }}">🔴 CRITICAL</div>
+    <div class="tl tl-high {{ 'is-active' if threat_level == 'high' }}">🟠 HIGH</div>
+    <div class="tl tl-medium {{ 'is-active' if threat_level == 'medium' }}">🟡 MEDIUM</div>
+    <div class="tl tl-low {{ 'is-active' if threat_level == 'low' }}">🟢 LOW</div>
+    <div class="tl tl-info {{ 'is-active' if threat_level == 'info' }}">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+{% for section in sections %}
+<section class="report-section" id="{{ section.id }}">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">{{ section.icon }}</div>
+    <h2 class="section-title">{{ section.title }}</h2>
+    <span class="section-count">{{ section.cards|length }} 則</span>
+  </div>
+
+  <div class="card-grid">
+  {% for card in section.cards %}
+    <article id="{{ card.anchor }}" class="card severity-{{ card.severity }}">
+      <div class="card-tags">
+        <span class="tag tag-{{ card.severity }}">{{ card.severity_label }}</span>
+        {% for tag in card.tags %}<span class="tag tag-info">{{ tag }}</span>{% endfor %}
+      </div>
+
+      <h3 class="card-title">
+        <a href="{{ card.url }}" target="_blank" rel="noopener noreferrer">{{ card.title }}</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 {{ card.source_name }}</span>
+        <span class="separator">·</span>
+        <span>{{ card.org }}</span>
+        <span class="separator">·</span>
+        <span>{{ card.published }}</span>
+      </div>
+
+      <div class="card-body">
+        {% for p in card.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      </div>
+
+      <div class="advisory-box advisory-{{ card.severity }}">
+        <div class="advisory-title">{{ card.advisory_title }}</div>
+        <ul>
+          {% for action in card.advisory_actions %}<li>{{ action }}</li>{% endfor %}
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="{{ card.url }}" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  {% endfor %}
+  </div>
+
+  {% set cve_cards = section.cards|selectattr('cve_ids')|list %}
+  {% if cve_cards %}
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        {% for card in cve_cards %}
+          {% for cve in card.cve_ids %}
+          <tr>
+            <td><span class="cve-id">{{ cve }}</span></td>
+            <td>{{ card.org }}</td>
+            <td><span class="cvss-badge">{{ card.cvss }}</span></td>
+            <td>{{ card.kev_status }}</td>
+            <td><a href="{{ card.url }}" target="_blank" rel="noopener noreferrer">{{ card.source_name }}</a></td>
+          </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</section>
+{% endfor %}
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief {{ date }}</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>{{ analyst_note.highlight }}</p>
+  <p><strong>防禦盲點：</strong>{{ analyst_note.blind_spot }}</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>{{ analyst_note.ioc_note }}</p>
+
+  {% if analyst_note.actions %}
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    {% for action in analyst_note.actions %}<li>{{ action }}</li>{% endfor %}
+  </ol>
+  {% endif %}
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    {% for section in sections %}
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#{{ section.id }}">{{ section.icon }} {{ section.title }}</a>
+      <ul class="tree-card-list">
+        {% for card in section.cards %}
+        <li><a class="tree-card-link" href="#{{ card.anchor }}">{{ card.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>

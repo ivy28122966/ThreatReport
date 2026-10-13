@@ -1,0 +1,51 @@
+name: Render Daily Report
+
+# 當 n8n 把新的 data/*.json commit 進 repo 時自動觸發
+# 這個 workflow 只做「純渲染」，不呼叫任何 LLM，不需要任何 API Key secret
+on:
+  push:
+    paths:
+      - "data/*.json"
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Render all pending report JSON files
+        run: |
+          set -e
+          for f in data/*.json; do
+            case "$f" in
+              data/seen.json|data/_example*) continue ;;
+            esac
+            echo "渲染: $f"
+            python3 generate/build_report.py "$f"
+          done
+
+      - name: Commit generated HTML
+        run: |
+          git config user.name "threatreport-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add dailyreport/
+          if git diff --cached --quiet; then
+            echo "沒有變更，不需要 commit"
+          else
+            git commit -m "chore: 自動渲染日報 [skip ci]"
+            git push
+          fi

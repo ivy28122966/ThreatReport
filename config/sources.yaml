@@ -1,0 +1,48 @@
+# 情資來源設定檔
+# 新增來源只需在這裡加一筆，不需要改程式碼（可擴展性設計）
+#
+# type: rss      -> 標準 RSS/Atom feed，用 feedparser 解析
+# type: cisa_kev -> CISA Known Exploited Vulnerabilities JSON feed（特殊結構）
+# type: nvd      -> NVD CVE API（依最近更新時間查詢）
+
+sources:
+  - id: mozilla_security
+    name: Mozilla Security Advisories
+    org: Mozilla
+    type: rss
+    url: https://www.mozilla.org/en-US/security/advisories/feed/
+    category: browser
+
+  - id: talos_blog
+    name: Cisco Talos Intelligence Blog
+    org: Cisco Talos IR
+    type: rss
+    url: https://feeds.feedburner.com/feedburner/Talos
+    category: hunting
+
+  - id: cisa_kev
+    name: CISA Known Exploited Vulnerabilities Catalog
+    org: CISA
+    type: cisa_kev
+    url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+    category: vuln
+
+  - id: msrc
+    name: Microsoft Security Response Center
+    org: Microsoft
+    type: rss
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    category: vuln
+
+  - id: thehackernews
+    name: The Hacker News
+    org: The Hacker News
+    type: rss
+    url: https://feeds.feedburner.com/TheHackersNews
+    category: news
+
+# 每次抓取只取「發布時間在過去 N 小時內」的項目，避免抓到舊資料
+lookback_hours: 30
+
+# 每個來源最多取幾篇，避免單一來源洗版
+max_items_per_source: 5
