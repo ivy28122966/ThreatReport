@@ -51,10 +51,14 @@
 - Mode: Combine
 - Combine By: Position（不是 Matching Fields，因為兩邊資料結構不同、只是要湊成一筆）
 
+⚠️ **地雷**：`data/seen.json` 的最外層絕對不能是裸陣列 `[]`，必須是 `{"ids": []}`。
+n8n 的 HTTP Request 節點遇到回應最外層是陣列時，會把每個陣列元素拆成獨立 item，
+空陣列會變成 0 個 item，導致 `Merge Config` 配不到資料、完全沒有輸出。
+
 ### 6. Expand Sources（Code / JavaScript）
 ```js
 const sources = $input.first().json.sources;
-const seenIds = $input.last().json;
+const seenIds = $input.last().json.ids;
 const maxPerSource = $input.first().json.max_items_per_source || 5;
 const lookbackHours = $input.first().json.lookback_hours || 30;
 
