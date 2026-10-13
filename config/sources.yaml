@@ -7,10 +7,10 @@
 
 sources:
   - id: mozilla_security
-    name: Mozilla Security Advisories
+    name: Mozilla Security Blog
     org: Mozilla
     type: rss
-    url: https://www.mozilla.org/en-US/security/advisories/feed/
+    url: https://blog.mozilla.org/security/feed/
     category: browser
 
   - id: talos_blog
