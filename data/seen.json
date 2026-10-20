@@ -1,11 +1,1 @@
-{
-  "ids": [
-    "df554f859e9ccc53",
-    "ed79e0aff326f1a1",
-    "da5bb193f50719a2",
-    "ac2d2393cf63d8d2",
-    "663bbe6420fa39ae",
-    "77329e1a77672852",
-    "61ff87d3e499dfa9"
-  ]
-}
+JSON.stringify({ids: $json.ids}, null, 2)
