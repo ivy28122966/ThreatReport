@@ -7,8 +7,11 @@
 
 1. 在 n8n 執行 `ThreatReport Daily`，確認 `Merge New Items` 有輸出。
 2. 在該次 execution 開啟 `Merge New Items` 的 Output，使用右上角的下載/複製 JSON 功能，取得全部 items。不要只複製第一筆。
-3. 在 Claude Pro 新對話貼上本文件「可重用提示詞」，把 `{{REPORT_DATE}}` 換成台灣當地日報日期，並把 `{{N8N_ITEMS_JSON}}` 換成完整的 node output JSON。
-4. Claude 必須只回傳符合 `docs/report-schema.md` 的 JSON。檢查它使用的是來源清單實際提供的標題、網址、日期和摘要；不確定的 CVSS/KEV/IOC 必須標成未知，不得猜測。
+3. 開啟 Claude Pro 的新對話，回到本文件下方「可重用提示詞」程式碼區塊，整段複製並貼到 Claude。貼上前只替換兩個佔位文字：
+   - 把 `{{REPORT_DATE}}` 換成這份日報的台灣日期，例如 `2026-10-20`。
+   - 把 `{{N8N_ITEMS_JSON}}` 整段刪掉，貼上第 2 步複製的完整 JSON（從 `[` 到 `]`）。不要只貼一筆，也不要把 JSON 放在提示詞外面。
+   - 然後送出。Claude 回覆後，複製它輸出的 JSON 物件（從 `{` 到最後的 `}`），不要複製 Markdown 的 ``` 標記。
+4. Claude 必須只回傳符合 `docs/report-schema.md` 的 JSON。檢查來源標題、網址、日期、摘要；不確定的 CVSS/KEV/IOC 必須標成未知，不得猜測。
 5. 將 Claude 回覆的純 JSON 存成 `data/YYYY-MM-DD.json`，日期必須與 JSON 的 `date` 相同。
 6. 在 repo 根目錄本機測試：
    ```bash
