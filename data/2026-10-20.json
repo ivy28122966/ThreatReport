@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-20",
+  "stats": {"total": 7, "high_risk": 3, "cve_count": 2},
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": ["漏洞與修補", "權限提升", "公告更新"],
+          "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-19",
+          "paragraphs": [
+            "Microsoft 更新了 Microsoft Identity Web 權限提升漏洞 CVE-2026-80092 的公告，把 v3 與 v4 分開列在安全更新表中，並釐清受影響的版本範圍。對應的安全更新版本分別為 3.16.0 與 4.16.1。",
+            "Microsoft 表示這次更新只是資訊性變更，修補內容本身沒有改變。來源資料沒有提供 CVSS 分數、利用狀態或受影響版本的具體區間，因此無法據此判斷嚴重程度；此處標為 info，代表資料不足，並不表示這是低風險漏洞。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點使用 Microsoft Identity Web 的應用程式，確認目前使用的是 v3 還是 v4 套件。",
+            "確認 v3 已升級到 3.16.0 以上、v4 已升級到 4.16.1 以上。",
+            "到 MSRC 公告頁查看更新後的受影響版本範圍與嚴重性評級。"
+          ],
+          "cve_ids": ["CVE-2026-80092"],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": ["漏洞與修補", "遠端程式碼執行", "尚無修補"],
+          "title": "CVE-2026-70197 .NET Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-19",
+          "paragraphs": [
+            "Microsoft 表示已經知道 .NET 遠端程式碼執行漏洞 CVE-2026-70197 尚未修補，目前正在準備和測試完整的緩解措施，之後會再更新公告。",
+            "來源資料沒有提供 CVSS 分數、受影響版本、利用條件或在野利用狀態。此處評為 high，依據是漏洞類型為遠端程式碼執行而且目前沒有修補，並不是依據官方評分。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "訂閱或定期追蹤這份 MSRC 公告，修補或緩解措施一發布就排入緊急變更流程。",
+            "先盤點對外提供服務的 .NET 應用程式與執行環境，等受影響版本公布後可以快速比對。",
+            "受影響範圍未明之前，檢視對外 .NET 服務的網路暴露面與監控覆蓋率。"
+          ],
+          "cve_ids": ["CVE-2026-70197"],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": ["內部威脅", "商業機密", "法律案件"],
+          "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
+          "url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "美國法院批准羈押一名前 OpenAI 工程師。他被控在公司舊金山辦公室的高階主管會議室放置錄音裝置，涉嫌竊取敏感機密。檢方在新的法庭文件中披露，這名 35 歲的沙烏地籍嫌疑人經常透過 WhatsApp 與他人聯繫。",
+            "來源摘要在此處截斷，聯繫對象與後續細節無法從提供的資料確認。這起事件屬於內部威脅與實體竊聽案例，不涉及技術漏洞。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "定期對高階主管會議室等敏感空間做實體安全與反竊聽檢查。",
+            "檢視敏感區域的門禁與存取紀錄，確認只有授權人員可以進入。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": ["ClickFix", "惡意程式散布", "社交工程"],
+          "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
+          "url": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "Forescout Research - Vedere Labs 揭露一個名為 ROMULUS 的 ClickFix 投遞平台，正被用來散布 Legion Loader 等惡意程式。這個平台的運作方式類似惡意程式投遞服務：在偽造的登陸頁面上使用 ClickFix 式誘餌，誘騙使用者自己執行惡意指令而遭到感染。",
+            "來源摘要已截斷，沒有提供 IOC、受害範圍或具體指令樣式，相關偵測細節需要查閱原文或研究報告。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "向使用者宣導：網頁要求複製並貼上指令到「執行」對話框或終端機時，一律視為可疑。",
+            "在 EDR 中監控瀏覽器程序之後由使用者觸發的 PowerShell、mshta、cmd 等異常執行鏈。",
+            "從 Forescout 原始報告取得 ROMULUS 與 Legion Loader 的 IOC，經查核後匯入偵測規則。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": ["在野利用", "漏洞鏈", "挖礦程式", "Linux 後門"],
+          "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+          "url": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-19",
+          "paragraphs": [
+            "攻擊者已經開始利用 Plex Media Server 的一組漏洞鏈，部署加密貨幣挖礦程式與反向代理軟體。這波利用在概念驗證（PoC）公開後一天就出現。",
+            "根據化名 boredhackerblog 的研究人員，這波攻擊串聯了四個不同的漏洞，合稱 Plex2Shell。來源摘要已截斷，沒有列出個別 CVE ID、受影響版本或修補版本，需要查閱原文確認。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即盤點環境中的 Plex Media Server，特別是暴露在網際網路上的實例，並確認 Plex 官方的修補狀態後盡快更新。",
+            "在修補前限制 Plex 服務的對外暴露，例如改用 VPN 存取或用防火牆限制來源。",
+            "檢查 Plex 主機有沒有異常的高 CPU 使用率、不明程序或代理軟體，以及異常的對外連線。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": ["供應鏈攻擊", "WordPress", "後門"],
+          "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+          "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-19",
+          "paragraphs": [
+            "Rank Math 在 10 月 16 日發布安全公告：10 月 15 日 20:02 UTC 至 10 月 16 日 07:12 UTC 之間，從 rankmath.com 下載或透過更新取得的 Rank Math PRO（WordPress SEO 外掛付費版）含有惡意程式。依標題所述，惡意程式是一種會自我還原的後門。",
+            "Rank Math 表示，任何安裝並啟用這些版本的網站都應視為已遭入侵。來源摘要已截斷，沒有提供 IOC 或完整的清除步驟，相關資訊需要參考 Rank Math 官方公告。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "清查所有使用 Rank Math PRO 的 WordPress 網站，確認在上述時間窗口內有沒有下載或自動更新外掛。",
+            "受影響的網站依官方說法視為已遭入侵：隔離網站、更換所有管理員與資料庫憑證，並依 Rank Math 官方指引處置。",
+            "因為後門具有自我還原能力，建議從入侵前的乾淨備份重建，不要只移除外掛。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": ["每週彙整"],
+          "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+          "url": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-19",
+          "paragraphs": [
+            "The Hacker News 的每週資安彙整。從標題看，本週主題包括 98 個零時差漏洞、失控的 AI 代理、1 億美元的加密貨幣竊案，以及 700 家超市受到影響等事件。",
+            "提供的摘要只有導言，概述了可信任的連線變成攻擊管道、硬體不如預期安全、舊漏洞出現新受害者等趨勢，沒有個別事件的細節，因此無法據此評估具體風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀原文，挑出與自身環境相關的零時差漏洞與事件，再個別追蹤原始公告。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日重點有三項。第一，Rank Math PRO 遭供應鏈劫持，在約 11 小時的窗口內散布可自我還原的後門，受影響網站應視為已遭入侵。第二，Plex2Shell 漏洞鏈在 PoC 公開後一天就出現在野利用，被用來部署挖礦程式與 Linux 代理後門。第三，Microsoft 證實 .NET 遠端程式碼執行漏洞 CVE-2026-70197 目前尚未修補。",
+    "blind_spot": "Plex Media Server 常部署在非正式管理的主機或個人設備上，可能不在資產清冊與漏洞掃描範圍內。WordPress 外掛的自動更新也可能讓供應鏈惡意程式在沒有變更審查的情況下進入環境。此外，多數來源摘要已截斷，缺少 CVE、版本與 IOC 細節，本日評估受到資料完整度限制。",
+    "ioc_note": "輸入資料沒有提供任何 IOC，本報告也沒有進行任何外部 IOC 查核，沒有足夠資料驗證。ROMULUS、Plex2Shell 與 Rank Math PRO 事件的 IOC 需要從原始研究報告或廠商公告取得，查核後才能使用。",
+    "actions": [
+      "[P0] 24 小時內：清查 Rank Math PRO 在 10/15 20:02 至 10/16 07:12 UTC 期間的安裝與更新紀錄，受影響網站立即隔離、更換憑證並規劃重建。",
+      "[P0] 24 小時內：盤點對外暴露的 Plex Media Server，限制對外存取，並檢查挖礦或代理程式的跡象。",
+      "[P1] 72 小時內：盤點 .NET 對外服務，持續追蹤 CVE-2026-70197 的緩解措施發布；同時確認 Microsoft Identity Web 已升級到 3.16.0 或 4.16.1 以上。",
+      "[P1] 1 週內：針對 ClickFix 手法加強使用者宣導，並在 EDR 中建立瀏覽器觸發指令執行的偵測規則。"
+    ]
+  }
+}
