@@ -1,0 +1,377 @@
+{
+  "date": "2026-10-21",
+  "stats": {
+    "total": 12,
+    "high_risk": 5,
+    "cve_count": 7
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-browser",
+      "title": "瀏覽器安全",
+      "icon": "🌐",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "瀏覽器安全",
+            "憑證授權單位",
+            "Firefox"
+          ],
+          "title": "Protecting Firefox users following the compromise of eMudhra intermediate certificates",
+          "url": "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+          "source_name": "Mozilla Security Blog",
+          "org": "Mozilla",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "Mozilla 表示，於 10 月 17 日 20:06 UTC 收到通報，指與 eMudhra 八張中繼憑證相關的私鑰已遭外洩。提供的摘要內容被截斷，僅說明這些金鑰可能讓攻擊者簽發憑證。",
+            "來源摘要未載明 Mozilla 的具體處置細節與實際濫用情形，完整措施請參閱原文。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀 Mozilla 原文並確認 Firefox 的處置方式，及早更新至包含對應措施的版本。",
+            "盤點內部是否使用 eMudhra 簽發的憑證或信任鏈，評估是否需要更換。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔍",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "漏洞趨勢",
+            "Patch Tuesday"
+          ],
+          "title": "There's only so much code: the rise in vulnerability numbers",
+          "url": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "Talos 指出，9 月 Microsoft Patch Tuesday 含 975 項漏洞公告，本月則有 1,415 項，而 6 月前平均每月約 100 項，增幅顯著。",
+            "文章探討這些漏洞的來源及未來走勢；提供的摘要未包含具體結論。此為趨勢分析，非單一漏洞通報。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視修補流程的容量，評估漏洞數量大增時的風險分級與優先順序機制。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "權限提升"
+          ],
+          "title": "CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "MSRC 更新了致謝名單，並說明此為資訊性變更。來源未提供 CVSS、利用狀態或 KEV 資訊，故風險無法由提供資料判定。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認嚴重性與受影響版本，並確認對應更新已部署。"
+          ],
+          "cve_ids": [
+            "CVE-2026-96913"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "資訊洩露"
+          ],
+          "title": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "MSRC 更新了致謝名單，並說明此為資訊性變更。來源未提供 CVSS、利用狀態或 KEV 資訊，故風險無法由提供資料判定。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認嚴重性，並檢查 Windows DNS 伺服器是否已套用對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-70074"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Hyper-V",
+            "權限提升"
+          ],
+          "title": "CVE-2026-83839 Windows Hyper-V Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "MSRC 更新了致謝名單，並說明此為資訊性變更。來源未提供 CVSS、利用狀態或 KEV 資訊，故風險無法由提供資料判定。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Hyper-V 主機已納入修補範圍，並至 MSRC 頁面核對嚴重性。"
+          ],
+          "cve_ids": [
+            "CVE-2026-83839"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows Shell",
+            "遠端程式碼執行"
+          ],
+          "title": "CVE-2026-83782 Windows Shell Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "MSRC 更新了致謝名單，並說明此為資訊性變更。標題顯示為遠端程式碼執行類漏洞，但來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判定風險等級。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認嚴重性與受影響版本，並確認對應更新已部署。"
+          ],
+          "cve_ids": [
+            "CVE-2026-83782"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "WSL",
+            "權限提升"
+          ],
+          "title": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "MSRC 更新此 CVE，說明該漏洞屬於 Windows Subsystem for Linux 產品，並建議使用該產品的客戶安裝最新版本以獲得保護。來源未提供 CVSS、利用狀態或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點使用 WSL 的主機，並依 MSRC 建議更新至最新版本。"
+          ],
+          "cve_ids": [
+            "CVE-2026-102204"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-7",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "PHP",
+            "遠端程式碼執行",
+            "未修補"
+          ],
+          "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+          "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-21",
+          "paragraphs": [
+            "PHP 將於 10 月 21 日 14:00 UTC 發布計畫外安全版本，修補兩個 PHP 團隊以 CVSS v4.0 評為 9.2 的嚴重漏洞，但官方尚未說明細節。",
+            "watchTowr 研究人員表示這兩個漏洞可導致遠端程式碼執行。僅 8.2 至 8.5 四個受支援分支會收到修補，目前未有利用活動的報告。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 PHP 版本，並準備在修補版本發布後優先更新 8.2–8.5 分支的對外服務。",
+            "使用已不受支援 PHP 版本的系統，評估升級或隔離計畫。"
+          ],
+          "cve_ids": [],
+          "cvss": "9.2",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "憑證授權單位",
+            "eMudhra",
+            "瀏覽器"
+          ],
+          "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+          "url": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "Mozilla 與 Google Chrome Root Program 於 10 月 20 日確認，八張 eMudhra 中繼 CA 憑證的私鑰已遭外洩。中繼 CA 負責簽發網站憑證，持有金鑰者可簽發瀏覽器會接受的任意網站憑證。",
+            "摘要被截斷，未載明研究人員通報細節與實際濫用情形。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "追蹤瀏覽器與軟體廠商的緊急更新，並及早部署。",
+            "檢查環境內是否信任或使用 eMudhra 簽發的憑證鏈。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "Fortinet",
+            "FortiSIEM",
+            "公開 PoC"
+          ],
+          "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+          "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "研究人員公開了近期已修補的 Fortinet FortiSIEM 嚴重漏洞 CVE-2026-106173（CVSS 9.4）的概念驗證利用程式。這是路徑遍歷漏洞，未經驗證的攻擊者可能藉由特製請求執行未授權的程式碼或指令。",
+            "來源未提及 KEV 狀態，也未說明是否已有實際攻擊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 FortiSIEM 是否已套用 Fortinet 的修補版本，尚未更新者列為最優先。",
+            "限制 FortiSIEM 管理與服務介面的網路暴露面。"
+          ],
+          "cve_ids": [
+            "CVE-2026-106173"
+          ],
+          "cvss": "9.4",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "Palo Alto Networks",
+            "勒索軟體",
+            "驗證繞過"
+          ],
+          "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+          "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "Palo Alto Networks 表示持續觀察到勒索軟體行為者利用已修補的 PAN-OS 與 Prisma Access 漏洞 CVE-2026-0257（CVSS 7.8）。這是驗證繞過漏洞，可被用來建立未授權的 VPN 連線，已於 2026 年 5 月修補。",
+            "標題指出涉及 Qilin 與 INC 勒索軟體組織；摘要被截斷，未提供 KEV 狀態或 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 PAN-OS 與 Prisma Access 已更新至包含 CVE-2026-0257 修補的版本。",
+            "檢視 VPN 登入紀錄，找出異常或未授權的連線。"
+          ],
+          "cve_ids": [
+            "CVE-2026-0257"
+          ],
+          "cvss": "7.8",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-11",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "AI 代理",
+            "網站入侵",
+            "犯罪活動"
+          ],
+          "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+          "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-20",
+          "paragraphs": [
+            "報導指出，一名華語犯罪者讓自主 AI 代理幾乎無需人力協助地入侵公司網站，研究人員因對方的控制面板暴露在網際網路上而得以觀察。",
+            "代理嘗試超過 1,200 個網站，並觸及逾 100 家公司的網站，包括 Deere 等。摘要被截斷，未提供入侵手法、CVE 或 IOC，故風險等級僅標示為 info（資料不足，並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視對外網站的日誌，留意異常的大量自動化探測或登入嘗試。",
+            "閱讀原文以取得手法細節後，再調整偵測規則。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日重點為：FortiSIEM CVE-2026-106173（CVSS 9.4）已有公開 PoC；PHP 將於 10 月 21 日 14:00 UTC 發布計畫外修補，修補兩個 CVSS 9.2 的 RCE 漏洞；Palo Alto CVE-2026-0257 據報被勒索軟體組織利用；eMudhra 八張中繼 CA 憑證私鑰外洩，Mozilla 與 Chrome 已確認。",
+    "blind_spot": "六則 MSRC 與 Talos 資料僅有標題或摘要，無 CVSS、利用狀態或 KEV，因此列為 info，並不代表低風險。所有 KEV 狀態皆未在來源中提及，沒有足夠資料驗證。多則來源摘要被截斷，細節請以原文為準。",
+    "ioc_note": "來源資料未提供任何 IOC（IP、網域、雜湊等），故未進行也無法宣稱已完成 IOC 查核。",
+    "actions": [
+      "[P0] 24 小時內：確認 FortiSIEM 與 PAN-OS／Prisma Access 已更新至修補版本，並檢視 VPN 登入紀錄。",
+      "[P0] 24 小時內：PHP 修補版本發布後，優先更新 8.2–8.5 分支的對外服務。",
+      "[P1] 3 天內：追蹤瀏覽器與軟體廠商對 eMudhra 憑證外洩的更新，並盤點是否使用相關憑證鏈。",
+      "[P1] 7 天內：核對六則 MSRC 公告的嚴重性與受影響版本，確認已部署對應更新。"
+    ]
+  }
+}
