@@ -6,8 +6,10 @@ on:
   push:
     paths:
       - "data/*.json"
+      - "generate/templates/**"
     branches:
       - main
+  workflow_dispatch: {}
 
 permissions:
   contents: write
