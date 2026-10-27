@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-27",
+  "stats": {
+    "total": 10,
+    "high_risk": 4,
+    "cve_count": 7
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "MSRC"
+          ],
+          "title": "CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "MSRC 更新了此 PowerShell 安全功能繞過漏洞條目，內容僅為致謝更新，來源註明屬於資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認受影響版本、嚴重度與對應更新，並核對內部資產是否適用。"
+          ],
+          "cve_ids": [
+            "CVE-2026-70338"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "MSRC"
+          ],
+          "title": "CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "MSRC 更新了此 Windows Error Reporting 遠端程式碼執行漏洞條目，內容僅為致謝更新，屬資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認受影響版本與修補狀態，並確認相關更新是否已部署。"
+          ],
+          "cve_ids": [
+            "CVE-2026-83519"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "MSRC"
+          ],
+          "title": "CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "MSRC 更新了此 Windows NetBIOS 權限提升漏洞條目，內容僅為致謝更新，屬資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。"
+          ],
+          "cve_ids": [
+            "CVE-2026-70054"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "MSRC"
+          ],
+          "title": "CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "MSRC 更新了此 Windows AI 權限提升漏洞條目，內容僅為致謝更新，屬資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。"
+          ],
+          "cve_ids": [
+            "CVE-2026-69923"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "MSRC"
+          ],
+          "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "MSRC 更新了此 Windows Network List Service 竄改漏洞條目，內容僅為致謝更新，屬資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。"
+          ],
+          "cve_ids": [
+            "CVE-2026-96311"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-5",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "IoT",
+            "監控設備"
+          ],
+          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-27",
+          "paragraphs": [
+            "烏克蘭 CERT-UA 發布警示，指出大華（Dahua）監控系統遭未授權遠端存取。依 SSSCIP 說法，已記錄到 IP 攝影機與 DVR 遭入侵，攻擊者可存取影像串流、變更設備設定並建立第三方帳號。",
+            "標題提到攻擊涉及 P2P 存取與驗證弱點，但所提供摘要被截斷，未列出 CVE、CVSS 或具體利用細節。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點對外可達的 Dahua 攝影機與 DVR，並檢視是否啟用 P2P 功能。",
+            "檢查設備是否有未知帳號或被變更的設定，並重設憑證。",
+            "參照 CERT-UA 警示與廠商公告進行韌體更新與網路隔離。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "KEV",
+            "遠端程式碼執行",
+            "PHP"
+          ],
+          "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+          "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-27",
+          "paragraphs": [
+            "CISA 於週一將近期已修補的 PHP2Shell 漏洞加入 KEV 目錄，確認遭到實際利用。兩個漏洞 CVSS 皆為 9.2，可在受影響部署上造成未經驗證的遠端程式碼執行。",
+            "來源摘要僅明確列出 CVE-2026-109618（記憶體不足相關），第二個 CVE 編號因摘要被截斷而無法確認，故不列入 CVE 清單。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即盤點 PHP 部署並套用 PHP 官方已發布的修補版本。",
+            "修補前先檢查對外 PHP 服務的異常請求與 Web Shell 跡象。",
+            "依 KEV 規範追蹤此漏洞的修補期限。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109618"
+          ],
+          "cvss": "9.2",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "Magento",
+            "供應鏈／電商",
+            "Magecart"
+          ],
+          "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+          "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "荷蘭電商安全公司 Sansec 指出，一個身分不明的攻擊者自 2025 年 7 月起持續活動，已感染 953 個線上商店，多數使用 Magento。",
+            "攻擊在商店頁面植入小段程式碼，經由 Magento CMS 區塊載入惡意 JavaScript loader，並具備規避掃描器的設計。摘要未提供 IOC 或 CVE。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查 Magento CMS 區塊與頁面範本中是否有未知的 JavaScript 或內嵌載入程式碼。",
+            "限制後台帳號權限並啟用 MFA，審視近期後台變更紀錄。",
+            "參考 Sansec 報告核對 IOC，並盤點結帳頁面的第三方腳本。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "PHP",
+            "Windows",
+            "Brotli"
+          ],
+          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "PHP 重新建置 PHP 8.2 至 8.5 的官方 Windows 套件，以修復內含 Brotli 壓縮函式庫的 CVE-2026-111497，該漏洞可能造成記憶體損毀並有機會執行程式碼。",
+            "PHP 表示當 cURL 擴充功能自動解壓縮 HTTP 回應時可觸及此漏洞；cURL 預設關閉該功能。來源未提供 CVSS 與 KEV 資訊，故依利用條件限制暫列 medium。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "更新至重建後的 PHP Windows 套件（8.2–8.5）。",
+            "檢查應用程式是否啟用 cURL 自動解壓縮 HTTP 回應，並評估是否關閉。"
+          ],
+          "cve_ids": [
+            "CVE-2026-111497"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "社交工程",
+            "Microsoft Teams",
+            "勒索軟體"
+          ],
+          "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
+          "url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-26",
+          "paragraphs": [
+            "研究人員指出，在數百起案件中出現「反覆出現的社交工程模式」：攻擊者利用 Microsoft Teams 外部聊天建立功能，假冒 IT 支援以進行詐騙或投遞惡意程式。",
+            "摘要提到攻擊者重複使用拋棄式租戶與相同的 IT 支援話術；標題指涉惡意程式與勒索軟體，但所提供內容被截斷，未含 IOC 或 CVE。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視並限制 Teams 外部租戶的聊天與訊息權限，僅允許已核准的網域。",
+            "提醒員工：IT 支援不會透過外部 Teams 聊天要求遠端控制或安裝軟體，並提供查證管道。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "CISA 已將 PHP2Shell 兩個 CVSS 9.2 的未經驗證遠端程式碼執行漏洞列入 KEV，為當日最高風險；另有 Dahua 攝影機遭入侵、953 家 Magento 商店被植入惡意 JavaScript，以及 Teams 假冒 IT 支援詐騙等高風險情資。",
+    "blind_spot": "五筆 MSRC 條目僅為致謝更新，未提供 CVSS 與利用狀態，沒有足夠資料驗證其實際風險，不應視為低風險。多篇 The Hacker News 摘要被截斷（如 PHP2Shell 第二個 CVE、Dahua 具體漏洞），可能遺漏關鍵細節。",
+    "ioc_note": "來源資料未提供任何 IOC（IP、網域、雜湊），因此沒有進行 IOC 查核，也不代表這些活動與貴環境無關。",
+    "actions": [
+      "[P0] 24 小時內：盤點並修補 PHP 部署以因應 PHP2Shell（KEV），並檢查對外 PHP 服務是否有異常。",
+      "[P1] 3 天內：檢查 Magento 商店 CMS 區塊是否有未知 JavaScript，並盤點對外的 Dahua 設備與 P2P 設定。",
+      "[P1] 3 天內：限制 Teams 外部租戶聊天並向員工宣導假冒 IT 支援詐騙；更新 Windows 版 PHP 至重建套件。",
+      "[P2] 一週內：查閱 MSRC 各 CVE 頁面確認受影響產品與修補狀態。"
+    ]
+  }
+}
