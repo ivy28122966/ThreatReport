@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-10-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-10-27</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-10-27</div>
+      <h1 class="hero-heading">2026-10-27 日報</h1>
+      <p class="hero-desc">
+        本次彙整 10 則情資，其中 4 則屬高風險等級，
+        共涉及 7 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">10</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">4</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">7</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">MSRC</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338" target="_blank" rel="noopener noreferrer">CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 PowerShell 安全功能繞過漏洞條目，內容僅為致謝更新，來源註明屬於資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認受影響版本、嚴重度與對應更新，並核對內部資產是否適用。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">MSRC</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519" target="_blank" rel="noopener noreferrer">CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 Windows Error Reporting 遠端程式碼執行漏洞條目，內容僅為致謝更新，屬資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認受影響版本與修補狀態，並確認相關更新是否已部署。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">MSRC</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054" target="_blank" rel="noopener noreferrer">CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 Windows NetBIOS 權限提升漏洞條目，內容僅為致謝更新，屬資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">MSRC</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923" target="_blank" rel="noopener noreferrer">CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 Windows AI 權限提升漏洞條目，內容僅為致謝更新，屬資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">MSRC</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311" target="_blank" rel="noopener noreferrer">CVE-2026-96311 Windows Network List Service Tampering Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 Windows Network List Service 竄改漏洞條目，內容僅為致謝更新，屬資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認受影響版本與修補狀態，並核對內部資產是否適用。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-70338</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-83519</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-70054</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-69923</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-96311</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-5" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">IoT</span><span class="tag tag-info">監控設備</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html" target="_blank" rel="noopener noreferrer">Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-27</span>
+      </div>
+
+      <div class="card-body">
+        <p>烏克蘭 CERT-UA 發布警示，指出大華（Dahua）監控系統遭未授權遠端存取。依 SSSCIP 說法，已記錄到 IP 攝影機與 DVR 遭入侵，攻擊者可存取影像串流、變更設備設定並建立第三方帳號。</p><p>標題提到攻擊涉及 P2P 存取與驗證弱點，但所提供摘要被截斷，未列出 CVE、CVSS 或具體利用細節。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點對外可達的 Dahua 攝影機與 DVR，並檢視是否啟用 P2P 功能。</li><li>檢查設備是否有未知帳號或被變更的設定，並重設憑證。</li><li>參照 CERT-UA 警示與廠商公告進行韌體更新與網路隔離。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">KEV</span><span class="tag tag-info">遠端程式碼執行</span><span class="tag tag-info">PHP</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html" target="_blank" rel="noopener noreferrer">CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-27</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA 於週一將近期已修補的 PHP2Shell 漏洞加入 KEV 目錄，確認遭到實際利用。兩個漏洞 CVSS 皆為 9.2，可在受影響部署上造成未經驗證的遠端程式碼執行。</p><p>來源摘要僅明確列出 CVE-2026-109618（記憶體不足相關），第二個 CVE 編號因摘要被截斷而無法確認，故不列入 CVE 清單。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>立即盤點 PHP 部署並套用 PHP 官方已發布的修補版本。</li><li>修補前先檢查對外 PHP 服務的異常請求與 Web Shell 跡象。</li><li>依 KEV 規範追蹤此漏洞的修補期限。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Magento</span><span class="tag tag-info">供應鏈／電商</span><span class="tag tag-info">Magecart</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html" target="_blank" rel="noopener noreferrer">Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>荷蘭電商安全公司 Sansec 指出，一個身分不明的攻擊者自 2025 年 7 月起持續活動，已感染 953 個線上商店，多數使用 Magento。</p><p>攻擊在商店頁面植入小段程式碼，經由 Magento CMS 區塊載入惡意 JavaScript loader，並具備規避掃描器的設計。摘要未提供 IOC 或 CVE。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢查 Magento CMS 區塊與頁面範本中是否有未知的 JavaScript 或內嵌載入程式碼。</li><li>限制後台帳號權限並啟用 MFA，審視近期後台變更紀錄。</li><li>參考 Sansec 報告核對 IOC，並盤點結帳頁面的第三方腳本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">PHP</span><span class="tag tag-info">Windows</span><span class="tag tag-info">Brotli</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/php-issues-second-windows-security.html" target="_blank" rel="noopener noreferrer">PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>PHP 重新建置 PHP 8.2 至 8.5 的官方 Windows 套件，以修復內含 Brotli 壓縮函式庫的 CVE-2026-111497，該漏洞可能造成記憶體損毀並有機會執行程式碼。</p><p>PHP 表示當 cURL 擴充功能自動解壓縮 HTTP 回應時可觸及此漏洞；cURL 預設關閉該功能。來源未提供 CVSS 與 KEV 資訊，故依利用條件限制暫列 medium。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>更新至重建後的 PHP Windows 套件（8.2–8.5）。</li><li>檢查應用程式是否啟用 cURL 自動解壓縮 HTTP 回應，並評估是否關閉。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/php-issues-second-windows-security.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">社交工程</span><span class="tag tag-info">Microsoft Teams</span><span class="tag tag-info">勒索軟體</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html" target="_blank" rel="noopener noreferrer">Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-26</span>
+      </div>
+
+      <div class="card-body">
+        <p>研究人員指出，在數百起案件中出現「反覆出現的社交工程模式」：攻擊者利用 Microsoft Teams 外部聊天建立功能，假冒 IT 支援以進行詐騙或投遞惡意程式。</p><p>摘要提到攻擊者重複使用拋棄式租戶與相同的 IT 支援話術；標題指涉惡意程式與勒索軟體，但所提供內容被截斷，未含 IOC 或 CVE。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視並限制 Teams 外部租戶的聊天與訊息權限，僅允許已核准的網域。</li><li>提醒員工：IT 支援不會透過外部 Teams 聊天要求遠端控制或安裝軟體，並提供查證管道。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-109618</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.2</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-111497</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/10/php-issues-second-windows-security.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-10-27</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>CISA 已將 PHP2Shell 兩個 CVSS 9.2 的未經驗證遠端程式碼執行漏洞列入 KEV，為當日最高風險；另有 Dahua 攝影機遭入侵、953 家 Magento 商店被植入惡意 JavaScript，以及 Teams 假冒 IT 支援詐騙等高風險情資。</p>
+  <p><strong>防禦盲點：</strong>五筆 MSRC 條目僅為致謝更新，未提供 CVSS 與利用狀態，沒有足夠資料驗證其實際風險，不應視為低風險。多篇 The Hacker News 摘要被截斷（如 PHP2Shell 第二個 CVE、Dahua 具體漏洞），可能遺漏關鍵細節。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC（IP、網域、雜湊），因此沒有進行 IOC 查核，也不代表這些活動與貴環境無關。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：盤點並修補 PHP 部署以因應 PHP2Shell（KEV），並檢查對外 PHP 服務是否有異常。</li><li>[P1] 3 天內：檢查 Magento 商店 CMS 區塊是否有未知 JavaScript，並盤點對外的 Dahua 設備與 P2P 設定。</li><li>[P1] 3 天內：限制 Teams 外部租戶聊天並向員工宣導假冒 IT 支援詐騙；更新 Windows 版 PHP 至重建套件。</li><li>[P2] 一週內：查閱 MSRC 各 CVE 頁面確認受影響產品與修補狀態。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2026-96311 Windows Network List Service Tampering Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-5">Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
