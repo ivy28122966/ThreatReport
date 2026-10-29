@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-10-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-10-29</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-10-29</div>
+      <h1 class="hero-heading">2026-10-29 日報</h1>
+      <p class="hero-desc">
+        本次彙整 11 則情資，其中 4 則屬高風險等級，
+        共涉及 7 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">11</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">4</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">7</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🔍</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">1 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">Cisco SD-WAN</span><span class="tag tag-info">APT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/uat-11473-keydrift/" target="_blank" rel="noopener noreferrer">Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 指出 UAT-11473 為高度成熟的 APT 組織，利用 Cisco SD-WAN Catalyst Controller 的驗證繞過漏洞 CVE-2026-20127 取得未授權存取，並部署 KeyDrift。</p><p>來源摘要未提供 CVSS、KEV 狀態與 IOC 細節，無法在此進一步驗證。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Cisco Catalyst SD-WAN Controller 是否已套用 CVE-2026-20127 的修補。</li><li>依 Talos 報告檢視 SD-WAN 控制器是否有異常存取或未知檔案。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/uat-11473-keydrift/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-20127</span></td>
+            <td>Cisco Talos IR</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://blog.talosintelligence.com/uat-11473-keydrift/" target="_blank" rel="noopener noreferrer">Cisco Talos Intelligence Blog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">Windows</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740" target="_blank" rel="noopener noreferrer">CVE-2026-62740 Windows Imaging Component Information Disclosure Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新已將受影響的 Microsoft Office 版本加入 Security Updates 表，並建議使用這些版本的客戶安裝最新安全更新。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，風險等級因資料不足標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認所用 Office 版本是否列於 MSRC 受影響清單，並安裝最新安全更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">Windows</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877" target="_blank" rel="noopener noreferrer">CVE-2026-62877 Windows Win32k Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新已將受影響的 Microsoft Office 版本加入 Security Updates 表，並建議客戶安裝最新安全更新。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，風險等級因資料不足標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認受影響版本並安裝最新安全更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Payments</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175" target="_blank" rel="noopener noreferrer">CVE-2026-19175 Use after free in Payments</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-29</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 發布 Payments 元件的 use-after-free 漏洞條目，來源僅註明「Information published」，無其他細節。</p><p>缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>查閱 MSRC 條目確認受影響產品，並待修補資訊明確後安排更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-78891 Buffer overflow in WebRTC</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 收錄 Chromium WebRTC 的緩衝區溢位漏洞，來源僅註明「Information published」。</p><p>缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認組織內 Chromium 系瀏覽器（含 Edge）版本，並更新至含修補的版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-78892 Incorrect authorization in Chromoting</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 收錄 Chromium Chromoting 的授權不當漏洞，來源僅註明「Information published」。</p><p>缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Chromium 系瀏覽器版本，並依廠商公告更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-62740</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-62877</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-19175</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-78891</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-78892</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-6" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Cisco SD-WAN</span><span class="tag tag-info">惡意程式</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html" target="_blank" rel="noopener noreferrer">Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-29</span>
+      </div>
+
+      <div class="card-body">
+        <p>報導指攻擊者利用 Cisco Catalyst SD-WAN 的嚴重漏洞（已於二月修補），在控制 SD-WAN 網路的系統中植入自製惡意程式 KeyDrift，用於複製站點間流量的加密金鑰並儲存以供日後使用。</p><p>Talos 於 10 月 28 日公布，並稱攻擊屬歷史活動，但未說明發生時間。摘要未提供 CVSS 與 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 SD-WAN 控制器已套用二月的修補。</li><li>評估是否需要輪換 SD-WAN 加密金鑰並檢視控制器是否遭入侵。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">VMware ESX</span><span class="tag tag-info">KEV</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html" target="_blank" rel="noopener noreferrer">China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-29</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA 已將 Broadcom VMware ESX 漏洞 CVE-2026-41709 加入 KEV 目錄；CrowdStrike 揭露中國關聯組織 Warp Panda 利用該漏洞攻擊美國法律產業。</p><p>來源摘要在 CVSS 數值前被截斷，無法驗證分數。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 VMware ESX 主機並依 Broadcom 公告修補 CVE-2026-41709。</li><li>檢視 ESX 主機日誌是否有異常或遭縮減的稽核紀錄。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Palo Alto Networks</span><span class="tag tag-info">遭利用</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html" target="_blank" rel="noopener noreferrer">Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-29</span>
+      </div>
+
+      <div class="card-body">
+        <p>Palo Alto Networks 週三更新公告，指已觀察到攻擊者針對暴露於網際網路的管理介面，利用近期修補的 PHP2Shell 漏洞。</p><p>來源摘要被截斷，未列出明確 CVE 編號、CVSS 或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認管理介面未暴露於網際網路，限制僅內部或管理網段存取。</li><li>套用 Palo Alto Networks 針對 PHP2Shell 的修補並檢視管理介面存取紀錄。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Volt Typhoon</span><span class="tag tag-info">基礎設施</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html" target="_blank" rel="noopener noreferrer">Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>Lumen Black Lotus Labs 將已遭瓦解的隱匿存取網路 Silent Train 歸因於 Volt Typhoon，該網路以遭入侵的 SOHO、IoT 與企業設備輪替串接，用於零時差利用與策略性存取。</p><p>來源摘要未提供具體漏洞、IOC、CVSS 或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視邊界與 SOHO/IoT 設備的更新與異常連線，待完整報告取得 IOC 後比對。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Android</span><span class="tag tag-info">政策</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html" target="_blank" rel="noopener noreferrer">Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-28</span>
+      </div>
+
+      <div class="card-body">
+        <p>第三方 Android 應用商店可申請讓使用者一鍵安裝並於背景更新，須通過身分審查並向 Google 提供完整目錄與每個新 App 及更新以供持續惡意程式掃描。</p><p>獲准商店自 12 月 1 日起可使用，屬政策變更，無漏洞或利用資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>若組織管理 Android 裝置，評估此政策對 MDM 側載與應用來源管控的影響。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-41709</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV（依來源報導）</td>
+            <td><a href="https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-10-29</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>Cisco SD-WAN 的 CVE-2026-20127 遭 UAT-11473 利用並部署 KeyDrift；另有 VMware ESX CVE-2026-41709 列入 CISA KEV，以及 Palo Alto Networks 管理介面 PHP2Shell 遭利用。</p>
+  <p><strong>防禦盲點：</strong>多數 MSRC 條目僅有「Information published」，缺乏 CVSS 與利用資訊，故標為 info 而非低風險；THN 摘要有截斷，PHP2Shell 的 CVE 編號與 VMware 的 CVSS 沒有足夠資料驗證。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何明確 IOC，且未進行外部查核，無法給出 IOC 比對結論；請自行閱讀 Talos 與 Lumen 原始報告取得指標。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：確認 Cisco SD-WAN 控制器已修補 CVE-2026-20127，並評估是否需輪換加密金鑰</li><li>[P0] 24 小時內：將 Palo Alto Networks 管理介面自網際網路移除，並套用 PHP2Shell 修補</li><li>[P1] 72 小時內：盤點並修補 VMware ESX 的 CVE-2026-41709</li><li>[P2] 一週內：更新 Chromium 系瀏覽器與 Office，並追蹤 MSRC 條目的後續資訊</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🔍 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-62740 Windows Imaging Component Information Disclosure Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-62877 Windows Win32k Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-19175 Use after free in Payments</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">Chromium: CVE-2026-78891 Buffer overflow in WebRTC</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">Chromium: CVE-2026-78892 Incorrect authorization in Chromoting</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-6">Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
