@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-29",
+  "stats": {
+    "total": 11,
+    "high_risk": 4,
+    "cve_count": 7
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔍",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "威脅獵捕",
+            "Cisco SD-WAN",
+            "APT"
+          ],
+          "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
+          "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "Talos 指出 UAT-11473 為高度成熟的 APT 組織，利用 Cisco SD-WAN Catalyst Controller 的驗證繞過漏洞 CVE-2026-20127 取得未授權存取，並部署 KeyDrift。",
+            "來源摘要未提供 CVSS、KEV 狀態與 IOC 細節，無法在此進一步驗證。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Cisco Catalyst SD-WAN Controller 是否已套用 CVE-2026-20127 的修補。",
+            "依 Talos 報告檢視 SD-WAN 控制器是否有異常存取或未知檔案。"
+          ],
+          "cve_ids": [
+            "CVE-2026-20127"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "Windows"
+          ],
+          "title": "CVE-2026-62740 Windows Imaging Component Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "MSRC 更新已將受影響的 Microsoft Office 版本加入 Security Updates 表，並建議使用這些版本的客戶安裝最新安全更新。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，風險等級因資料不足標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認所用 Office 版本是否列於 MSRC 受影響清單，並安裝最新安全更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-62740"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "Windows"
+          ],
+          "title": "CVE-2026-62877 Windows Win32k Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "MSRC 更新已將受影響的 Microsoft Office 版本加入 Security Updates 表，並建議客戶安裝最新安全更新。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，風險等級因資料不足標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認受影響版本並安裝最新安全更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-62877"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Payments"
+          ],
+          "title": "CVE-2026-19175 Use after free in Payments",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19175",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-29",
+          "paragraphs": [
+            "MSRC 發布 Payments 元件的 use-after-free 漏洞條目，來源僅註明「Information published」，無其他細節。",
+            "缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 MSRC 條目確認受影響產品，並待修補資訊明確後安排更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-19175"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium"
+          ],
+          "title": "Chromium: CVE-2026-78891 Buffer overflow in WebRTC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "MSRC 收錄 Chromium WebRTC 的緩衝區溢位漏洞，來源僅註明「Information published」。",
+            "缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認組織內 Chromium 系瀏覽器（含 Edge）版本，並更新至含修補的版本。"
+          ],
+          "cve_ids": [
+            "CVE-2026-78891"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium"
+          ],
+          "title": "Chromium: CVE-2026-78892 Incorrect authorization in Chromoting",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "MSRC 收錄 Chromium Chromoting 的授權不當漏洞，來源僅註明「Information published」。",
+            "缺少 CVSS、利用狀態等資訊，風險等級標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Chromium 系瀏覽器版本，並依廠商公告更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-78892"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-6",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Cisco SD-WAN",
+            "惡意程式"
+          ],
+          "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+          "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-29",
+          "paragraphs": [
+            "報導指攻擊者利用 Cisco Catalyst SD-WAN 的嚴重漏洞（已於二月修補），在控制 SD-WAN 網路的系統中植入自製惡意程式 KeyDrift，用於複製站點間流量的加密金鑰並儲存以供日後使用。",
+            "Talos 於 10 月 28 日公布，並稱攻擊屬歷史活動，但未說明發生時間。摘要未提供 CVSS 與 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 SD-WAN 控制器已套用二月的修補。",
+            "評估是否需要輪換 SD-WAN 加密金鑰並檢視控制器是否遭入侵。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "VMware ESX",
+            "KEV"
+          ],
+          "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-29",
+          "paragraphs": [
+            "CISA 已將 Broadcom VMware ESX 漏洞 CVE-2026-41709 加入 KEV 目錄；CrowdStrike 揭露中國關聯組織 Warp Panda 利用該漏洞攻擊美國法律產業。",
+            "來源摘要在 CVSS 數值前被截斷，無法驗證分數。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 VMware ESX 主機並依 Broadcom 公告修補 CVE-2026-41709。",
+            "檢視 ESX 主機日誌是否有異常或遭縮減的稽核紀錄。"
+          ],
+          "cve_ids": [
+            "CVE-2026-41709"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV（依來源報導）"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "Palo Alto Networks",
+            "遭利用"
+          ],
+          "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+          "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-29",
+          "paragraphs": [
+            "Palo Alto Networks 週三更新公告，指已觀察到攻擊者針對暴露於網際網路的管理介面，利用近期修補的 PHP2Shell 漏洞。",
+            "來源摘要被截斷，未列出明確 CVE 編號、CVSS 或 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認管理介面未暴露於網際網路，限制僅內部或管理網段存取。",
+            "套用 Palo Alto Networks 針對 PHP2Shell 的修補並檢視管理介面存取紀錄。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "Volt Typhoon",
+            "基礎設施"
+          ],
+          "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+          "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "Lumen Black Lotus Labs 將已遭瓦解的隱匿存取網路 Silent Train 歸因於 Volt Typhoon，該網路以遭入侵的 SOHO、IoT 與企業設備輪替串接，用於零時差利用與策略性存取。",
+            "來源摘要未提供具體漏洞、IOC、CVSS 或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視邊界與 SOHO/IoT 設備的更新與異常連線，待完整報告取得 IOC 後比對。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "Android",
+            "政策"
+          ],
+          "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+          "url": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-10-28",
+          "paragraphs": [
+            "第三方 Android 應用商店可申請讓使用者一鍵安裝並於背景更新，須通過身分審查並向 Google 提供完整目錄與每個新 App 及更新以供持續惡意程式掃描。",
+            "獲准商店自 12 月 1 日起可使用，屬政策變更，無漏洞或利用資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "若組織管理 Android 裝置，評估此政策對 MDM 側載與應用來源管控的影響。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "Cisco SD-WAN 的 CVE-2026-20127 遭 UAT-11473 利用並部署 KeyDrift；另有 VMware ESX CVE-2026-41709 列入 CISA KEV，以及 Palo Alto Networks 管理介面 PHP2Shell 遭利用。",
+    "blind_spot": "多數 MSRC 條目僅有「Information published」，缺乏 CVSS 與利用資訊，故標為 info 而非低風險；THN 摘要有截斷，PHP2Shell 的 CVE 編號與 VMware 的 CVSS 沒有足夠資料驗證。",
+    "ioc_note": "來源資料未提供任何明確 IOC，且未進行外部查核，無法給出 IOC 比對結論；請自行閱讀 Talos 與 Lumen 原始報告取得指標。",
+    "actions": [
+      "[P0] 24 小時內：確認 Cisco SD-WAN 控制器已修補 CVE-2026-20127，並評估是否需輪換加密金鑰",
+      "[P0] 24 小時內：將 Palo Alto Networks 管理介面自網際網路移除，並套用 PHP2Shell 修補",
+      "[P1] 72 小時內：盤點並修補 VMware ESX 的 CVE-2026-41709",
+      "[P2] 一週內：更新 Chromium 系瀏覽器與 Office，並追蹤 MSRC 條目的後續資訊"
+    ]
+  }
+}
