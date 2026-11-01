@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-01</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-01</div>
+      <h1 class="hero-heading">2026-11-01 日報</h1>
+      <p class="hero-desc">
+        本次彙整 10 則情資，其中 1 則屬高風險等級，
+        共涉及 6 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">10</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">1</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">6</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high is-active">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🔎</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">1 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">Infostealer</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/" target="_blank" rel="noopener noreferrer">Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>Cisco Talos 指出,VOLTA 是一款會自我刪除的資訊竊取程式,目標包含憑證、工作階段與加密貨幣錢包。</p><p>據來源描述,該程式會利用大型語言模型(LLM)對受害者建立輪廓,並對其最有價值的資產排序。來源摘要未提供 IOC、CVE 或感染途徑等細節。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視端點防護是否能偵測憑證與瀏覽器工作階段竊取行為,並對高價值使用者加強監控。</li><li>閱讀 Talos 原文,取得 IOC 與偵測規則後再匯入防禦設備。</li><li>對錢包與雲端服務的長效工作階段,規劃失效與重新驗證機制。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛠️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Brotli</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497" target="_blank" rel="noopener noreferrer">CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 發布了 Brotli 解碼器緩衝區溢位漏洞 CVE-2026-111497 的條目,但來源僅註明「Information published」,未提供嚴重度、CVSS、影響產品或利用情形。</p><p>因資料不足,無法判斷實際風險,等級暫列 info(並非代表低風險)。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>查閱 MSRC 條目,確認受影響產品與修補版本。</li><li>盤點環境中使用 Brotli 解碼器的元件,待廠商資訊明確後排程更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118304 Improper input validation in SVG</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>此 CVE 由 Chrome 指派,涉及 SVG 輸入驗證不當。MSRC 說明 Microsoft Edge(Chromium-based)會納入 Chromium 的修正。</p><p>來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。</li><li>參考 Google Chrome Releases 公告確認修補細節。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118313 Use after free in Video</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>此 CVE 由 Chrome 指派,涉及 Video 元件的 use after free。Edge(Chromium-based)會納入 Chromium 的修正。</p><p>來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。</li><li>參考 Google Chrome Releases 公告確認修補細節。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118311 Memory corruption in Media</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>此 CVE 由 Chrome 指派,涉及 Media 元件的記憶體損毀。Edge(Chromium-based)會納入 Chromium 的修正。</p><p>來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。</li><li>參考 Google Chrome Releases 公告確認修補細節。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118317 Memory corruption in HTML</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>此 CVE 由 Chrome 指派,涉及 HTML 元件的記憶體損毀。Edge(Chromium-based)會納入 Chromium 的修正。</p><p>來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。</li><li>參考 Google Chrome Releases 公告確認修補細節。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-111497</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-118304</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-118313</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-118311</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-118317</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">4 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-6" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">資料外洩</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html" target="_blank" rel="noopener noreferrer">Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>區塊鏈分析公司 Chainalysis 表示曾遭外部行為者入侵,對方存取了其所稱的非敏感客戶資料。</p><p>公司指出此事件未造成調查內容、驗證憑證或工作階段權杖遭未授權存取。來源摘要提到偵測到外部行為者使用「offensive agentic」手法,但內容被截斷,細節不明。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>若為 Chainalysis 客戶,留意官方通知並確認自身資料是否受影響。</li><li>檢視與第三方供應商共享的客戶身分資料範圍,落實最小化原則。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Ivanti</span><span class="tag tag-info">KEV</span><span class="tag tag-info">VPN</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html" target="_blank" rel="noopener noreferrer">Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA 於週五將兩個影響 Ivanti Connect Secure(ICS)的漏洞加入 KEV 目錄,依來源所述已有實際遭利用情形。標題指出攻擊者串連三個漏洞以取得未經驗證的 root 存取。</p><p>來源明確列出 CVE-2026-111357(CVSS 8.8),為關鍵功能缺少驗證的漏洞;其餘 CVE 因摘要被截斷而未能確認,故未列入 CVE 清單。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>立即盤點對外的 Ivanti Connect Secure 設備,依 Ivanti 公告套用修補或緩解措施。</li><li>針對 ICS 設備檢查異常登入、設定變更與完整性,必要時依廠商指引進行檢測與重置。</li><li>取得完整原文與廠商公告,確認其餘受影響 CVE。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">AI 安全</span><span class="tag tag-info">ChatGPT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html" target="_blank" rel="noopener noreferrer">A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>Parameter 的研究人員指出,惡意 ChatGPT 分享連結可在開啟者已登入的工作階段中執行攻擊者程式碼,進而讀取其私人對話。</p><p>研究人員於 10 月 18 日透過 OpenAI 漏洞賞金計畫通報,OpenAI 在八天後修復並列為 P1。來源未提及 CVE 或實際遭利用情形。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>提醒使用者不要開啟來路不明的 AI 對話分享連結。</li><li>將 AI 服務納入 SaaS 安全政策,檢視對話內容的敏感資料管控。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">DDoS</span><span class="tag tag-info">趨勢</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html" target="_blank" rel="noopener noreferrer">Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-10-31</span>
+      </div>
+
+      <div class="card-body">
+        <p>Cloudflare 表示 2026 年第三季自動緩解了 1,820 萬次網路層(L3)DDoS 攻擊與 14.4 兆次 HTTP DDoS 請求,平均每小時約 8,226 次網路層攻擊,標題指出較前期成長 38%。</p><p>此為趨勢統計,不涉及特定漏洞或 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視對外服務的 DDoS 防護與流量清洗容量是否足夠。</li><li>確認 DDoS 應變流程與聯絡窗口保持更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-111357</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">8.8</span></td>
+            <td>來源稱 CISA 已將兩個 ICS 漏洞加入 KEV(CVE-2026-111357 列於其中)</td>
+            <td><a href="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-01</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>本日最需優先處理的是 Ivanti Connect Secure:來源稱 CISA 已將兩個漏洞加入 KEV 且遭實際利用,標題並指出攻擊者可串連漏洞取得未經驗證 root 存取。其餘包含 Talos 的 VOLTA 資訊竊取程式分析、Chainalysis 事件、ChatGPT 分享連結漏洞(已修復)、Cloudflare DDoS 趨勢,以及數則 MSRC 的 Brotli/Chromium CVE 條目。</p>
+  <p><strong>防禦盲點：</strong>MSRC 的五則 CVE 條目均未提供 CVSS、嚴重度或利用情形,因此沒有足夠資料驗證,僅能列為 info,不代表低風險。Ivanti 文章摘要被截斷,另外兩個 CVE 與完整影響版本未能確認;Chainalysis 事件的入侵手法細節亦不完整。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>本日來源資料未提供任何明確 IOC(IP、網域、雜湊等),VOLTA 也未列出指標;沒有進行外部查核,無法就 IOC 下結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並依 Ivanti 公告修補或緩解所有對外 Ivanti Connect Secure 設備,並檢查是否有入侵跡象。</li><li>[P1] 72 小時內:確認 Edge 與 Chromium 系瀏覽器已更新,並查閱 MSRC/Chrome Releases 以補足各 CVE 的嚴重度資訊。</li><li>[P1] 72 小時內:取得 Talos VOLTA 原文,擷取 IOC 與偵測建議後評估匯入現有偵測。</li><li>[P2] 本週內:檢視 DDoS 防護容量,以及對第三方供應商與 AI 服務的資料共享政策。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🔎 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛠️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">Chromium: CVE-2026-118304 Improper input validation in SVG</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">Chromium: CVE-2026-118313 Use after free in Video</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">Chromium: CVE-2026-118311 Memory corruption in Media</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">Chromium: CVE-2026-118317 Memory corruption in HTML</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-6">Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
