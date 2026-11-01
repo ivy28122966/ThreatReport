@@ -34,13 +34,13 @@
       <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-01</div>
       <h1 class="hero-heading">2026-11-01 日報</h1>
       <p class="hero-desc">
-        本次彙整 8 則情資，其中 2 則屬高風險等級，
+        本次彙整 5 則情資，其中 0 則屬高風險等級，
         共涉及 5 項 CVE。
       </p>
     </div>
     <div class="hero-stats">
-      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">8</div><div class="stat-label">重點情資</div></div>
-      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">2</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">5</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">0</div><div class="stat-label">高風險事件</div></div>
       <div class="stat-box"><div class="stat-num" style="color:var(--red)">5</div><div class="stat-label">CVE</div></div>
     </div>
   </div>
@@ -50,10 +50,10 @@
   <span class="threat-label">今日威脅等級</span>
   <div class="threat-levels">
     <div class="tl tl-critical ">🔴 CRITICAL</div>
-    <div class="tl tl-high is-active">🟠 HIGH</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
     <div class="tl tl-medium ">🟡 MEDIUM</div>
     <div class="tl tl-low ">🟢 LOW</div>
-    <div class="tl tl-info ">🔵 INFO</div>
+    <div class="tl tl-info is-active">🔵 INFO</div>
   </div>
 </div>
 
@@ -73,11 +73,11 @@
     <article id="card-0" class="card severity-info">
       <div class="card-tags">
         <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Microsoft Edge</span>
       </div>
 
       <h3 class="card-title">
-        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118315 Improper input validation in SVG</a>
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118310 Improper input validation in Views</a>
       </h3>
 
       <div class="card-meta">
@@ -89,29 +89,29 @@
       </div>
 
       <div class="card-body">
-        <p>MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。</p><p>來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。詳細資訊請參閱來源所指的 Google Chrome Releases。</p>
+        <p>MSRC 公告 CVE-2026-118310(Views 元件輸入驗證不當),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。</p><p>來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。</p>
       </div>
 
       <div class="advisory-box advisory-info">
         <div class="advisory-title">🔔 建議行動</div>
         <ul>
-          <li>確認組織內 Microsoft Edge 已更新至納入此修補的版本。</li><li>參考 Google Chrome Releases 公告確認受影響與修補版本。</li>
+          <li>確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。</li><li>參考 Google Chrome Releases 取得詳細資訊。</li>
         </ul>
       </div>
 
       <div class="card-footer">
-        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
       </div>
     </article>
   
     <article id="card-1" class="card severity-info">
       <div class="card-tags">
         <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Microsoft Edge</span>
       </div>
 
       <h3 class="card-title">
-        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118312 Memory corruption in Paint</a>
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118305 Memory corruption in Turbolev</a>
       </h3>
 
       <div class="card-meta">
@@ -123,29 +123,29 @@
       </div>
 
       <div class="card-body">
-        <p>MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 Paint 元件的記憶體損毀。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。</p><p>來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。</p>
+        <p>MSRC 公告 CVE-2026-118305(Turbolev 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。</p><p>來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。</p>
       </div>
 
       <div class="advisory-box advisory-info">
         <div class="advisory-title">🔔 建議行動</div>
         <ul>
-          <li>確認組織內 Microsoft Edge 已更新至納入此修補的版本。</li><li>參考 Google Chrome Releases 公告確認受影響與修補版本。</li>
+          <li>確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。</li><li>參考 Google Chrome Releases 取得詳細資訊。</li>
         </ul>
       </div>
 
       <div class="card-footer">
-        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
       </div>
     </article>
   
     <article id="card-2" class="card severity-info">
       <div class="card-tags">
         <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">V8</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Microsoft Edge</span>
       </div>
 
       <h3 class="card-title">
-        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118316 Improper input validation in V8</a>
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118307 Use after free in Paint</a>
       </h3>
 
       <div class="card-meta">
@@ -157,29 +157,29 @@
       </div>
 
       <div class="card-body">
-        <p>MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。</p><p>來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。</p>
+        <p>MSRC 公告 CVE-2026-118307(Paint 元件 use after free),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。</p><p>來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。</p>
       </div>
 
       <div class="advisory-box advisory-info">
         <div class="advisory-title">🔔 建議行動</div>
         <ul>
-          <li>確認組織內 Microsoft Edge 已更新至納入此修補的版本。</li><li>參考 Google Chrome Releases 公告確認受影響與修補版本。</li>
+          <li>確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。</li><li>參考 Google Chrome Releases 取得詳細資訊。</li>
         </ul>
       </div>
 
       <div class="card-footer">
-        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
       </div>
     </article>
   
     <article id="card-3" class="card severity-info">
       <div class="card-tags">
         <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">V8</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Microsoft Edge</span>
       </div>
 
       <h3 class="card-title">
-        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118318 Improper access control in V8</a>
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118306 Memory corruption in FileSystem</a>
       </h3>
 
       <div class="card-meta">
@@ -191,29 +191,29 @@
       </div>
 
       <div class="card-body">
-        <p>MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的存取控制不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。</p><p>來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。</p>
+        <p>MSRC 公告 CVE-2026-118306(FileSystem 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。</p><p>來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。</p>
       </div>
 
       <div class="advisory-box advisory-info">
         <div class="advisory-title">🔔 建議行動</div>
         <ul>
-          <li>確認組織內 Microsoft Edge 已更新至納入此修補的版本。</li><li>參考 Google Chrome Releases 公告確認受影響與修補版本。</li>
+          <li>確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。</li><li>參考 Google Chrome Releases 取得詳細資訊。</li>
         </ul>
       </div>
 
       <div class="card-footer">
-        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
       </div>
     </article>
   
     <article id="card-4" class="card severity-info">
       <div class="card-tags">
         <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Edge</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Chromium</span><span class="tag tag-info">Microsoft Edge</span>
       </div>
 
       <h3 class="card-title">
-        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118308 Use after free in SVG</a>
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319" target="_blank" rel="noopener noreferrer">Chromium: CVE-2026-118319 Memory corruption in Skia</a>
       </h3>
 
       <div class="card-meta">
@@ -225,18 +225,18 @@
       </div>
 
       <div class="card-body">
-        <p>MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的 use after free。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。</p><p>來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。</p>
+        <p>MSRC 公告 CVE-2026-118319(Skia 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。</p><p>來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。</p>
       </div>
 
       <div class="advisory-box advisory-info">
         <div class="advisory-title">🔔 建議行動</div>
         <ul>
-          <li>確認組織內 Microsoft Edge 已更新至納入此修補的版本。</li><li>參考 Google Chrome Releases 公告確認受影響與修補版本。</li>
+          <li>確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。</li><li>參考 Google Chrome Releases 取得詳細資訊。</li>
         </ul>
       </div>
 
       <div class="card-footer">
-        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
       </div>
     </article>
   
@@ -253,174 +253,57 @@
         
           
           <tr>
-            <td><span class="cve-id">CVE-2026-118315</span></td>
+            <td><span class="cve-id">CVE-2026-118310</span></td>
             <td>Microsoft</td>
             <td><span class="cvss-badge">N/A</span></td>
             <td>未提及</td>
-            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
           </tr>
           
         
           
           <tr>
-            <td><span class="cve-id">CVE-2026-118312</span></td>
+            <td><span class="cve-id">CVE-2026-118305</span></td>
             <td>Microsoft</td>
             <td><span class="cvss-badge">N/A</span></td>
             <td>未提及</td>
-            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
           </tr>
           
         
           
           <tr>
-            <td><span class="cve-id">CVE-2026-118316</span></td>
+            <td><span class="cve-id">CVE-2026-118307</span></td>
             <td>Microsoft</td>
             <td><span class="cvss-badge">N/A</span></td>
             <td>未提及</td>
-            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
           </tr>
           
         
           
           <tr>
-            <td><span class="cve-id">CVE-2026-118318</span></td>
+            <td><span class="cve-id">CVE-2026-118306</span></td>
             <td>Microsoft</td>
             <td><span class="cvss-badge">N/A</span></td>
             <td>未提及</td>
-            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
           </tr>
           
         
           
           <tr>
-            <td><span class="cve-id">CVE-2026-118308</span></td>
+            <td><span class="cve-id">CVE-2026-118319</span></td>
             <td>Microsoft</td>
             <td><span class="cvss-badge">N/A</span></td>
             <td>未提及</td>
-            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
           </tr>
           
         
       </tbody>
     </table>
   </div>
-  
-</section>
-
-<section class="report-section" id="section-other">
-  <div class="section-header">
-    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
-    <h2 class="section-title">其他</h2>
-    <span class="section-count">3 則</span>
-  </div>
-
-  <div class="card-grid">
-  
-    <article id="card-5" class="card severity-high">
-      <div class="card-tags">
-        <span class="tag tag-high">HIGH</span>
-        <span class="tag tag-info">其他</span><span class="tag tag-info">供應鏈</span><span class="tag tag-info">加密貨幣</span>
-      </div>
-
-      <h3 class="card-title">
-        <a href="https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html" target="_blank" rel="noopener noreferrer">Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script</a>
-      </h3>
-
-      <div class="card-meta">
-        <span>📰 The Hacker News</span>
-        <span class="separator">·</span>
-        <span>The Hacker News</span>
-        <span class="separator">·</span>
-        <span>2026-11-01</span>
-      </div>
-
-      <div class="card-body">
-        <p>報導指出，10 月 29 日 Polymarket 網站上的惡意程式碼取代了該站從外部公司載入的頁面速度（page-speed）腳本，導致部分已登入交易者的部位被出售，資金被轉給攻擊者。</p><p>Polymarket 表示將對 726 個受影響錢包退款約 270 萬美元；區塊鏈紀錄顯示約 264 萬美元加密資產流向攻擊者（來源摘要在此處截斷，其餘細節未提供）。</p>
-      </div>
-
-      <div class="advisory-box advisory-high">
-        <div class="advisory-title">🔔 建議行動</div>
-        <ul>
-          <li>盤點網站載入的第三方腳本，並評估啟用 Subresource Integrity 與嚴格的 CSP。</li><li>對第三方腳本的變更建立監控與告警機制。</li><li>使用 Polymarket 的使用者請檢查錢包交易紀錄與授權。</li>
-        </ul>
-      </div>
-
-      <div class="card-footer">
-        <a class="read-more" href="https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
-      </div>
-    </article>
-  
-    <article id="card-6" class="card severity-high">
-      <div class="card-tags">
-        <span class="tag tag-high">HIGH</span>
-        <span class="tag tag-info">其他</span><span class="tag tag-info">惡意程式</span><span class="tag tag-info">政府機關</span>
-      </div>
-
-      <h3 class="card-title">
-        <a href="https://thehackernews.com/2026/11/netamloader-malware-targets-government.html" target="_blank" rel="noopener noreferrer">NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</a>
-      </h3>
-
-      <div class="card-meta">
-        <span>📰 The Hacker News</span>
-        <span class="separator">·</span>
-        <span>The Hacker News</span>
-        <span class="separator">·</span>
-        <span>2026-11-01</span>
-      </div>
-
-      <div class="card-body">
-        <p>Kaspersky 本週揭露一條被形容為「高度精密」的感染鏈，目標為亞洲政府機關專用的客製化 Windows 10 版本，並涉及一個先前未被記載、以 .NET 組件載入為核心的框架（代號 NetamLoader）。</p><p>來源摘要在此截斷，未提供感染途徑、攻擊者歸屬、CVE 或 IOC 等細節。</p>
-      </div>
-
-      <div class="advisory-box advisory-high">
-        <div class="advisory-title">🔔 建議行動</div>
-        <ul>
-          <li>政府或關鍵基礎設施單位請參閱 Kaspersky 原始報告，取得 IOC 與偵測規則。</li><li>針對 .NET 組件載入與記憶體內注入行為檢視 EDR 偵測覆蓋。</li>
-        </ul>
-      </div>
-
-      <div class="card-footer">
-        <a class="read-more" href="https://thehackernews.com/2026/11/netamloader-malware-targets-government.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
-      </div>
-    </article>
-  
-    <article id="card-7" class="card severity-info">
-      <div class="card-tags">
-        <span class="tag tag-info">INFO</span>
-        <span class="tag tag-info">其他</span><span class="tag tag-info">威脅歸因</span><span class="tag tag-info">北韓</span>
-      </div>
-
-      <h3 class="card-title">
-        <a href="https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html" target="_blank" rel="noopener noreferrer">FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist</a>
-      </h3>
-
-      <div class="card-meta">
-        <span>📰 The Hacker News</span>
-        <span class="separator">·</span>
-        <span>The Hacker News</span>
-        <span class="separator">·</span>
-        <span>2026-11-01</span>
-      </div>
-
-      <div class="card-body">
-        <p>FBI 正式將逾 60 億美元虛擬資產的竊案歸因於北韓關聯的 TraderTraitor 組織（亦被追蹤為 Jade Sleet、Pressure Chollima、PUKCHONG、Slow Pisces、UNC4899）。FBI 並與美國特勤局及 IRS-CI 共同發布相關說明。</p><p>來源摘要在此截斷，未提供技術細節、CVE 或 IOC。本則屬歸因情資，列 info。</p>
-      </div>
-
-      <div class="advisory-box advisory-info">
-        <div class="advisory-title">🔔 建議行動</div>
-        <ul>
-          <li>加密貨幣相關組織請參考 FBI 原始公告，對照自身威脅模型。</li><li>針對社交工程與開發者環境入侵情境檢視防護與演練。</li>
-        </ul>
-      </div>
-
-      <div class="card-footer">
-        <a class="read-more" href="https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
-      </div>
-    </article>
-  
-  </div>
-
-  
   
 </section>
 
@@ -434,14 +317,14 @@
     </div>
   </div>
 
-  <p><strong>當日重點：</strong>本日共 8 則：5 則為 Microsoft Edge 納入的 Chromium CVE 公告，3 則為新聞報導，包含 Polymarket 第三方腳本遭劫持造成約 270 萬美元損失，以及針對亞洲政府機關的 NetamLoader 感染鏈。</p>
-  <p><strong>防禦盲點：</strong>5 則 Chromium CVE 皆無 CVSS 與 KEV 資訊，沒有足夠資料驗證其嚴重度，故列 info（不等於低風險）。三則新聞的來源摘要皆被截斷，技術細節不完整。</p>
-  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC，也未執行外部查核，沒有足夠資料驗證。</p>
+  <p><strong>當日重點：</strong>今日共 5 筆 MSRC 公告,均為 Chrome 指派、由 Microsoft Edge(Chromium)納入修補的 Chromium 漏洞(Views、Turbolev、Paint、FileSystem、Skia),涉及輸入驗證不當、記憶體損毀與 use after free。</p>
+  <p><strong>防禦盲點：</strong>來源皆未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料驗證嚴重度,故全部以 info 標示(不代表低風險)。Edge 受影響與已修補的具體版本號亦未在資料中說明。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC,未進行也無法宣稱已完成外部查核。</p>
 
   
   <p><strong>優先行動清單：</strong></p>
   <ol class="action-list">
-    <li>[P0] 24 小時內：確認 Microsoft Edge 與 Chrome 已更新至含上述修補的版本。</li><li>[P1] 3 天內：盤點網站第三方腳本並評估 SRI 與 CSP。</li><li>[P1] 3 天內：政府與關鍵單位閱讀 Kaspersky 的 NetamLoader 原始報告並取得 IOC。</li>
+    <li>[P1] 3 日內:確認並推動全體端點的 Microsoft Edge 更新至已納入 Chromium 修補的版本。</li><li>[P1] 3 日內:查閱 Google Chrome Releases 以取得各 CVE 的嚴重度與版本細節,必要時重新評級。</li><li>[P2] 7 日內:確認同樣使用 Chromium 的其他瀏覽器或內嵌元件(如 Chrome、Electron 應用)也已更新。</li>
   </ol>
   
 </section>
@@ -459,28 +342,15 @@
       <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
       <ul class="tree-card-list">
         
-        <li><a class="tree-card-link" href="#card-0">Chromium: CVE-2026-118315 Improper input validation in SVG</a></li>
+        <li><a class="tree-card-link" href="#card-0">Chromium: CVE-2026-118310 Improper input validation in Views</a></li>
         
-        <li><a class="tree-card-link" href="#card-1">Chromium: CVE-2026-118312 Memory corruption in Paint</a></li>
+        <li><a class="tree-card-link" href="#card-1">Chromium: CVE-2026-118305 Memory corruption in Turbolev</a></li>
         
-        <li><a class="tree-card-link" href="#card-2">Chromium: CVE-2026-118316 Improper input validation in V8</a></li>
+        <li><a class="tree-card-link" href="#card-2">Chromium: CVE-2026-118307 Use after free in Paint</a></li>
         
-        <li><a class="tree-card-link" href="#card-3">Chromium: CVE-2026-118318 Improper access control in V8</a></li>
+        <li><a class="tree-card-link" href="#card-3">Chromium: CVE-2026-118306 Memory corruption in FileSystem</a></li>
         
-        <li><a class="tree-card-link" href="#card-4">Chromium: CVE-2026-118308 Use after free in SVG</a></li>
-        
-      </ul>
-    </li>
-    
-    <li class="tree-section-node is-open">
-      <a class="tree-section-link" href="#section-other">📰 其他</a>
-      <ul class="tree-card-list">
-        
-        <li><a class="tree-card-link" href="#card-5">Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script</a></li>
-        
-        <li><a class="tree-card-link" href="#card-6">NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</a></li>
-        
-        <li><a class="tree-card-link" href="#card-7">FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist</a></li>
+        <li><a class="tree-card-link" href="#card-4">Chromium: CVE-2026-118319 Memory corruption in Skia</a></li>
         
       </ul>
     </li>
