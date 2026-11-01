@@ -1,75 +1,71 @@
 {
   "date": "2026-11-01",
   "stats": {
-    "total": 10,
-    "high_risk": 1,
-    "cve_count": 6
+    "total": 8,
+    "high_risk": 2,
+    "cve_count": 5
   },
   "threat_level": "high",
   "sections": [
     {
-      "id": "section-hunting",
-      "title": "威脅獵捕",
-      "icon": "🔎",
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
       "cards": [
         {
           "anchor": "card-0",
-          "severity": "medium",
-          "severity_label": "MEDIUM",
+          "severity": "info",
+          "severity_label": "INFO",
           "tags": [
-            "威脅獵捕",
-            "Infostealer"
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
           ],
-          "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
-          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
-          "source_name": "Cisco Talos Intelligence Blog",
-          "org": "Cisco Talos IR",
+          "title": "Chromium: CVE-2026-118315 Improper input validation in SVG",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "Cisco Talos 指出,VOLTA 是一款會自我刪除的資訊竊取程式,目標包含憑證、工作階段與加密貨幣錢包。",
-            "據來源描述,該程式會利用大型語言模型(LLM)對受害者建立輪廓,並對其最有價值的資產排序。來源摘要未提供 IOC、CVE 或感染途徑等細節。"
+            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
+            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。詳細資訊請參閱來源所指的 Google Chrome Releases。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "檢視端點防護是否能偵測憑證與瀏覽器工作階段竊取行為,並對高價值使用者加強監控。",
-            "閱讀 Talos 原文,取得 IOC 與偵測規則後再匯入防禦設備。",
-            "對錢包與雲端服務的長效工作階段,規劃失效與重新驗證機制。"
+            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
+            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
           ],
-          "cve_ids": [],
+          "cve_ids": [
+            "CVE-2026-118315"
+          ],
           "cvss": "N/A",
           "kev_status": "未提及"
-        }
-      ]
-    },
-    {
-      "id": "section-vulnerability",
-      "title": "漏洞與修補",
-      "icon": "🛠️",
-      "cards": [
+        },
         {
           "anchor": "card-1",
           "severity": "info",
           "severity_label": "INFO",
           "tags": [
             "漏洞與修補",
-            "Brotli"
+            "Chromium",
+            "Edge"
           ],
-          "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+          "title": "Chromium: CVE-2026-118312 Memory corruption in Paint",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 發布了 Brotli 解碼器緩衝區溢位漏洞 CVE-2026-111497 的條目,但來源僅註明「Information published」,未提供嚴重度、CVSS、影響產品或利用情形。",
-            "因資料不足,無法判斷實際風險,等級暫列 info(並非代表低風險)。"
+            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 Paint 元件的記憶體損毀。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
+            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "查閱 MSRC 條目,確認受影響產品與修補版本。",
-            "盤點環境中使用 Brotli 解碼器的元件,待廠商資訊明確後排程更新。"
+            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
+            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
           ],
           "cve_ids": [
-            "CVE-2026-111497"
+            "CVE-2026-118312"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -81,24 +77,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "Edge"
+            "V8"
           ],
-          "title": "Chromium: CVE-2026-118304 Improper input validation in SVG",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304",
+          "title": "Chromium: CVE-2026-118316 Improper input validation in V8",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "此 CVE 由 Chrome 指派,涉及 SVG 輸入驗證不當。MSRC 說明 Microsoft Edge(Chromium-based)會納入 Chromium 的修正。",
-            "來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。"
+            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
+            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。",
-            "參考 Google Chrome Releases 公告確認修補細節。"
+            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
+            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118304"
+            "CVE-2026-118316"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -110,24 +106,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "Edge"
+            "V8"
           ],
-          "title": "Chromium: CVE-2026-118313 Use after free in Video",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313",
+          "title": "Chromium: CVE-2026-118318 Improper access control in V8",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "此 CVE 由 Chrome 指派,涉及 Video 元件的 use after free。Edge(Chromium-based)會納入 Chromium 的修正。",
-            "來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。"
+            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的存取控制不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
+            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。",
-            "參考 Google Chrome Releases 公告確認修補細節。"
+            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
+            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118313"
+            "CVE-2026-118318"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -141,51 +137,22 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium: CVE-2026-118311 Memory corruption in Media",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311",
+          "title": "Chromium: CVE-2026-118308 Use after free in SVG",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "此 CVE 由 Chrome 指派,涉及 Media 元件的記憶體損毀。Edge(Chromium-based)會納入 Chromium 的修正。",
-            "來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。"
+            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的 use after free。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
+            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。",
-            "參考 Google Chrome Releases 公告確認修補細節。"
+            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
+            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118311"
-          ],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-5",
-          "severity": "info",
-          "severity_label": "INFO",
-          "tags": [
-            "漏洞與修補",
-            "Chromium",
-            "Edge"
-          ],
-          "title": "Chromium: CVE-2026-118317 Memory corruption in HTML",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317",
-          "source_name": "Microsoft Security Response Center",
-          "org": "Microsoft",
-          "published": "2026-10-31",
-          "paragraphs": [
-            "此 CVE 由 Chrome 指派,涉及 HTML 元件的記憶體損毀。Edge(Chromium-based)會納入 Chromium 的修正。",
-            "來源未提供 CVSS、嚴重度或利用情形,風險等級暫列 info。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "確認 Edge 與其他 Chromium 系瀏覽器已更新至包含修正的版本。",
-            "參考 Google Chrome Releases 公告確認修補細節。"
-          ],
-          "cve_ids": [
-            "CVE-2026-118317"
+            "CVE-2026-118308"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -198,26 +165,55 @@
       "icon": "📰",
       "cards": [
         {
-          "anchor": "card-6",
-          "severity": "medium",
-          "severity_label": "MEDIUM",
+          "anchor": "card-5",
+          "severity": "high",
+          "severity_label": "HIGH",
           "tags": [
             "其他",
-            "資料外洩"
+            "供應鏈",
+            "加密貨幣"
           ],
-          "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
-          "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+          "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+          "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
-          "published": "2026-10-31",
+          "published": "2026-11-01",
           "paragraphs": [
-            "區塊鏈分析公司 Chainalysis 表示曾遭外部行為者入侵,對方存取了其所稱的非敏感客戶資料。",
-            "公司指出此事件未造成調查內容、驗證憑證或工作階段權杖遭未授權存取。來源摘要提到偵測到外部行為者使用「offensive agentic」手法,但內容被截斷,細節不明。"
+            "報導指出，10 月 29 日 Polymarket 網站上的惡意程式碼取代了該站從外部公司載入的頁面速度（page-speed）腳本，導致部分已登入交易者的部位被出售，資金被轉給攻擊者。",
+            "Polymarket 表示將對 726 個受影響錢包退款約 270 萬美元；區塊鏈紀錄顯示約 264 萬美元加密資產流向攻擊者（來源摘要在此處截斷，其餘細節未提供）。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "若為 Chainalysis 客戶,留意官方通知並確認自身資料是否受影響。",
-            "檢視與第三方供應商共享的客戶身分資料範圍,落實最小化原則。"
+            "盤點網站載入的第三方腳本，並評估啟用 Subresource Integrity 與嚴格的 CSP。",
+            "對第三方腳本的變更建立監控與告警機制。",
+            "使用 Polymarket 的使用者請檢查錢包交易紀錄與授權。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "惡意程式",
+            "政府機關"
+          ],
+          "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+          "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-01",
+          "paragraphs": [
+            "Kaspersky 本週揭露一條被形容為「高度精密」的感染鏈，目標為亞洲政府機關專用的客製化 Windows 10 版本，並涉及一個先前未被記載、以 .NET 組件載入為核心的框架（代號 NetamLoader）。",
+            "來源摘要在此截斷，未提供感染途徑、攻擊者歸屬、CVE 或 IOC 等細節。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "政府或關鍵基礎設施單位請參閱 Kaspersky 原始報告，取得 IOC 與偵測規則。",
+            "針對 .NET 組件載入與記憶體內注入行為檢視 EDR 偵測覆蓋。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -225,84 +221,26 @@
         },
         {
           "anchor": "card-7",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "其他",
-            "Ivanti",
-            "KEV",
-            "VPN"
-          ],
-          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-10-31",
-          "paragraphs": [
-            "CISA 於週五將兩個影響 Ivanti Connect Secure(ICS)的漏洞加入 KEV 目錄,依來源所述已有實際遭利用情形。標題指出攻擊者串連三個漏洞以取得未經驗證的 root 存取。",
-            "來源明確列出 CVE-2026-111357(CVSS 8.8),為關鍵功能缺少驗證的漏洞;其餘 CVE 因摘要被截斷而未能確認,故未列入 CVE 清單。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "立即盤點對外的 Ivanti Connect Secure 設備,依 Ivanti 公告套用修補或緩解措施。",
-            "針對 ICS 設備檢查異常登入、設定變更與完整性,必要時依廠商指引進行檢測與重置。",
-            "取得完整原文與廠商公告,確認其餘受影響 CVE。"
-          ],
-          "cve_ids": [
-            "CVE-2026-111357"
-          ],
-          "cvss": "8.8",
-          "kev_status": "來源稱 CISA 已將兩個 ICS 漏洞加入 KEV(CVE-2026-111357 列於其中)"
-        },
-        {
-          "anchor": "card-8",
-          "severity": "medium",
-          "severity_label": "MEDIUM",
-          "tags": [
-            "其他",
-            "AI 安全",
-            "ChatGPT"
-          ],
-          "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
-          "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-10-31",
-          "paragraphs": [
-            "Parameter 的研究人員指出,惡意 ChatGPT 分享連結可在開啟者已登入的工作階段中執行攻擊者程式碼,進而讀取其私人對話。",
-            "研究人員於 10 月 18 日透過 OpenAI 漏洞賞金計畫通報,OpenAI 在八天後修復並列為 P1。來源未提及 CVE 或實際遭利用情形。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "提醒使用者不要開啟來路不明的 AI 對話分享連結。",
-            "將 AI 服務納入 SaaS 安全政策,檢視對話內容的敏感資料管控。"
-          ],
-          "cve_ids": [],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-9",
           "severity": "info",
           "severity_label": "INFO",
           "tags": [
             "其他",
-            "DDoS",
-            "趨勢"
+            "威脅歸因",
+            "北韓"
           ],
-          "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
-          "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+          "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+          "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
-          "published": "2026-10-31",
+          "published": "2026-11-01",
           "paragraphs": [
-            "Cloudflare 表示 2026 年第三季自動緩解了 1,820 萬次網路層(L3)DDoS 攻擊與 14.4 兆次 HTTP DDoS 請求,平均每小時約 8,226 次網路層攻擊,標題指出較前期成長 38%。",
-            "此為趨勢統計,不涉及特定漏洞或 IOC。"
+            "FBI 正式將逾 60 億美元虛擬資產的竊案歸因於北韓關聯的 TraderTraitor 組織（亦被追蹤為 Jade Sleet、Pressure Chollima、PUKCHONG、Slow Pisces、UNC4899）。FBI 並與美國特勤局及 IRS-CI 共同發布相關說明。",
+            "來源摘要在此截斷，未提供技術細節、CVE 或 IOC。本則屬歸因情資，列 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "檢視對外服務的 DDoS 防護與流量清洗容量是否足夠。",
-            "確認 DDoS 應變流程與聯絡窗口保持更新。"
+            "加密貨幣相關組織請參考 FBI 原始公告，對照自身威脅模型。",
+            "針對社交工程與開發者環境入侵情境檢視防護與演練。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -312,14 +250,14 @@
     }
   ],
   "analyst_note": {
-    "highlight": "本日最需優先處理的是 Ivanti Connect Secure:來源稱 CISA 已將兩個漏洞加入 KEV 且遭實際利用,標題並指出攻擊者可串連漏洞取得未經驗證 root 存取。其餘包含 Talos 的 VOLTA 資訊竊取程式分析、Chainalysis 事件、ChatGPT 分享連結漏洞(已修復)、Cloudflare DDoS 趨勢,以及數則 MSRC 的 Brotli/Chromium CVE 條目。",
-    "blind_spot": "MSRC 的五則 CVE 條目均未提供 CVSS、嚴重度或利用情形,因此沒有足夠資料驗證,僅能列為 info,不代表低風險。Ivanti 文章摘要被截斷,另外兩個 CVE 與完整影響版本未能確認;Chainalysis 事件的入侵手法細節亦不完整。",
-    "ioc_note": "本日來源資料未提供任何明確 IOC(IP、網域、雜湊等),VOLTA 也未列出指標;沒有進行外部查核,無法就 IOC 下結論。",
+    "highlight": "本日共 8 則：5 則為 Microsoft Edge 納入的 Chromium CVE 公告，3 則為新聞報導，包含 Polymarket 第三方腳本遭劫持造成約 270 萬美元損失，以及針對亞洲政府機關的 NetamLoader 感染鏈。",
+    "blind_spot": "5 則 Chromium CVE 皆無 CVSS 與 KEV 資訊，沒有足夠資料驗證其嚴重度，故列 info（不等於低風險）。三則新聞的來源摘要皆被截斷，技術細節不完整。",
+    "ioc_note": "來源資料未提供任何 IOC，也未執行外部查核，沒有足夠資料驗證。",
     "actions": [
-      "[P0] 24 小時內:盤點並依 Ivanti 公告修補或緩解所有對外 Ivanti Connect Secure 設備,並檢查是否有入侵跡象。",
-      "[P1] 72 小時內:確認 Edge 與 Chromium 系瀏覽器已更新,並查閱 MSRC/Chrome Releases 以補足各 CVE 的嚴重度資訊。",
-      "[P1] 72 小時內:取得 Talos VOLTA 原文,擷取 IOC 與偵測建議後評估匯入現有偵測。",
-      "[P2] 本週內:檢視 DDoS 防護容量,以及對第三方供應商與 AI 服務的資料共享政策。"
+      "[P0] 24 小時內：確認 Microsoft Edge 與 Chrome 已更新至含上述修補的版本。",
+      "[P1] 3 天內：盤點網站第三方腳本並評估 SRI 與 CSP。",
+      "[P1] 3 天內：政府與關鍵單位閱讀 Kaspersky 的 NetamLoader 原始報告並取得 IOC。"
     ]
-  }
+  },
+  "error": "Your request is invalid or could not be processed by the service"
 }
