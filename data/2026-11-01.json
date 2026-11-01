@@ -1,11 +1,11 @@
 {
   "date": "2026-11-01",
   "stats": {
-    "total": 8,
-    "high_risk": 2,
+    "total": 5,
+    "high_risk": 0,
     "cve_count": 5
   },
-  "threat_level": "high",
+  "threat_level": "info",
   "sections": [
     {
       "id": "section-vulnerability",
@@ -19,24 +19,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "Edge"
+            "Microsoft Edge"
           ],
-          "title": "Chromium: CVE-2026-118315 Improper input validation in SVG",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
+          "title": "Chromium: CVE-2026-118310 Improper input validation in Views",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
-            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。詳細資訊請參閱來源所指的 Google Chrome Releases。"
+            "MSRC 公告 CVE-2026-118310(Views 元件輸入驗證不當),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。",
+            "來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
-            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
+            "確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。",
+            "參考 Google Chrome Releases 取得詳細資訊。"
           ],
           "cve_ids": [
-            "CVE-2026-118315"
+            "CVE-2026-118310"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -48,24 +48,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "Edge"
+            "Microsoft Edge"
           ],
-          "title": "Chromium: CVE-2026-118312 Memory corruption in Paint",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
+          "title": "Chromium: CVE-2026-118305 Memory corruption in Turbolev",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 Paint 元件的記憶體損毀。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
-            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
+            "MSRC 公告 CVE-2026-118305(Turbolev 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。",
+            "來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
-            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
+            "確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。",
+            "參考 Google Chrome Releases 取得詳細資訊。"
           ],
           "cve_ids": [
-            "CVE-2026-118312"
+            "CVE-2026-118305"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -77,24 +77,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "V8"
+            "Microsoft Edge"
           ],
-          "title": "Chromium: CVE-2026-118316 Improper input validation in V8",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316",
+          "title": "Chromium: CVE-2026-118307 Use after free in Paint",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的輸入驗證不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
-            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
+            "MSRC 公告 CVE-2026-118307(Paint 元件 use after free),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。",
+            "來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
-            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
+            "確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。",
+            "參考 Google Chrome Releases 取得詳細資訊。"
           ],
           "cve_ids": [
-            "CVE-2026-118316"
+            "CVE-2026-118307"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -106,24 +106,24 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "V8"
+            "Microsoft Edge"
           ],
-          "title": "Chromium: CVE-2026-118318 Improper access control in V8",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318",
+          "title": "Chromium: CVE-2026-118306 Memory corruption in FileSystem",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 V8 的存取控制不當。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
-            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
+            "MSRC 公告 CVE-2026-118306(FileSystem 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。",
+            "來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
-            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
+            "確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。",
+            "參考 Google Chrome Releases 取得詳細資訊。"
           ],
           "cve_ids": [
-            "CVE-2026-118318"
+            "CVE-2026-118306"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -135,114 +135,25 @@
           "tags": [
             "漏洞與修補",
             "Chromium",
-            "Edge"
+            "Microsoft Edge"
           ],
-          "title": "Chromium: CVE-2026-118308 Use after free in SVG",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308",
+          "title": "Chromium: CVE-2026-118319 Memory corruption in Skia",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-10-31",
           "paragraphs": [
-            "MSRC 公告指出，此 CVE 由 Chrome 指派，漏洞類型為 SVG 的 use after free。Microsoft Edge（Chromium-based）會納入 Chromium 的修補。",
-            "來源未提供 CVSS 與 KEV 狀態，風險等級無法判定，因此暫列 info（不代表低風險）。"
+            "MSRC 公告 CVE-2026-118319(Skia 記憶體損毀),此 CVE 由 Chrome 指派。Microsoft Edge(Chromium-based)已納入 Chromium 的修補。",
+            "來源未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料判斷實際風險,故以 info 標示(並非低風險)。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認組織內 Microsoft Edge 已更新至納入此修補的版本。",
-            "參考 Google Chrome Releases 公告確認受影響與修補版本。"
+            "確認組織內 Microsoft Edge 已更新至包含 Chromium 修補的版本。",
+            "參考 Google Chrome Releases 取得詳細資訊。"
           ],
           "cve_ids": [
-            "CVE-2026-118308"
+            "CVE-2026-118319"
           ],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        }
-      ]
-    },
-    {
-      "id": "section-other",
-      "title": "其他",
-      "icon": "📰",
-      "cards": [
-        {
-          "anchor": "card-5",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "其他",
-            "供應鏈",
-            "加密貨幣"
-          ],
-          "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
-          "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-11-01",
-          "paragraphs": [
-            "報導指出，10 月 29 日 Polymarket 網站上的惡意程式碼取代了該站從外部公司載入的頁面速度（page-speed）腳本，導致部分已登入交易者的部位被出售，資金被轉給攻擊者。",
-            "Polymarket 表示將對 726 個受影響錢包退款約 270 萬美元；區塊鏈紀錄顯示約 264 萬美元加密資產流向攻擊者（來源摘要在此處截斷，其餘細節未提供）。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "盤點網站載入的第三方腳本，並評估啟用 Subresource Integrity 與嚴格的 CSP。",
-            "對第三方腳本的變更建立監控與告警機制。",
-            "使用 Polymarket 的使用者請檢查錢包交易紀錄與授權。"
-          ],
-          "cve_ids": [],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-6",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "其他",
-            "惡意程式",
-            "政府機關"
-          ],
-          "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
-          "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-11-01",
-          "paragraphs": [
-            "Kaspersky 本週揭露一條被形容為「高度精密」的感染鏈，目標為亞洲政府機關專用的客製化 Windows 10 版本，並涉及一個先前未被記載、以 .NET 組件載入為核心的框架（代號 NetamLoader）。",
-            "來源摘要在此截斷，未提供感染途徑、攻擊者歸屬、CVE 或 IOC 等細節。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "政府或關鍵基礎設施單位請參閱 Kaspersky 原始報告，取得 IOC 與偵測規則。",
-            "針對 .NET 組件載入與記憶體內注入行為檢視 EDR 偵測覆蓋。"
-          ],
-          "cve_ids": [],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-7",
-          "severity": "info",
-          "severity_label": "INFO",
-          "tags": [
-            "其他",
-            "威脅歸因",
-            "北韓"
-          ],
-          "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-          "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-11-01",
-          "paragraphs": [
-            "FBI 正式將逾 60 億美元虛擬資產的竊案歸因於北韓關聯的 TraderTraitor 組織（亦被追蹤為 Jade Sleet、Pressure Chollima、PUKCHONG、Slow Pisces、UNC4899）。FBI 並與美國特勤局及 IRS-CI 共同發布相關說明。",
-            "來源摘要在此截斷，未提供技術細節、CVE 或 IOC。本則屬歸因情資，列 info。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "加密貨幣相關組織請參考 FBI 原始公告，對照自身威脅模型。",
-            "針對社交工程與開發者環境入侵情境檢視防護與演練。"
-          ],
-          "cve_ids": [],
           "cvss": "N/A",
           "kev_status": "未提及"
         }
@@ -250,13 +161,13 @@
     }
   ],
   "analyst_note": {
-    "highlight": "本日共 8 則：5 則為 Microsoft Edge 納入的 Chromium CVE 公告，3 則為新聞報導，包含 Polymarket 第三方腳本遭劫持造成約 270 萬美元損失，以及針對亞洲政府機關的 NetamLoader 感染鏈。",
-    "blind_spot": "5 則 Chromium CVE 皆無 CVSS 與 KEV 資訊，沒有足夠資料驗證其嚴重度，故列 info（不等於低風險）。三則新聞的來源摘要皆被截斷，技術細節不完整。",
-    "ioc_note": "來源資料未提供任何 IOC，也未執行外部查核，沒有足夠資料驗證。",
+    "highlight": "今日共 5 筆 MSRC 公告,均為 Chrome 指派、由 Microsoft Edge(Chromium)納入修補的 Chromium 漏洞(Views、Turbolev、Paint、FileSystem、Skia),涉及輸入驗證不當、記憶體損毀與 use after free。",
+    "blind_spot": "來源皆未提供 CVSS、KEV 狀態或利用情況,沒有足夠資料驗證嚴重度,故全部以 info 標示(不代表低風險)。Edge 受影響與已修補的具體版本號亦未在資料中說明。",
+    "ioc_note": "來源資料未提供任何 IOC,未進行也無法宣稱已完成外部查核。",
     "actions": [
-      "[P0] 24 小時內：確認 Microsoft Edge 與 Chrome 已更新至含上述修補的版本。",
-      "[P1] 3 天內：盤點網站第三方腳本並評估 SRI 與 CSP。",
-      "[P1] 3 天內：政府與關鍵單位閱讀 Kaspersky 的 NetamLoader 原始報告並取得 IOC。"
+      "[P1] 3 日內:確認並推動全體端點的 Microsoft Edge 更新至已納入 Chromium 修補的版本。",
+      "[P1] 3 日內:查閱 Google Chrome Releases 以取得各 CVE 的嚴重度與版本細節,必要時重新評級。",
+      "[P2] 7 日內:確認同樣使用 Chromium 的其他瀏覽器或內嵌元件(如 Chrome、Electron 應用)也已更新。"
     ]
   },
   "error": "Your request is invalid or could not be processed by the service"
