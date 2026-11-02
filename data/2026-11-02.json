@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-02",
+  "stats": {
+    "total": 1,
+    "high_risk": 1,
+    "cve_count": 0
+  },
+  "threat_level": "high",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "LXD",
+            "MicroCloud",
+            "身分驗證"
+          ],
+          "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+          "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-01",
+          "paragraphs": [
+            "來源報導指出,Canonical 的 LXD 與 MicroCloud 存在嚴重漏洞,攻擊者可在不持有受信任用戶端私鑰的情況下,冒充該受信任用戶端登入。標題標示 CVSS 為 10.0,但提供的內容並未列出對應的 CVE 編號,也未提供 CVSS 向量。",
+            "利用條件依來源描述為:攻擊者須能透過網路連到 LXD 的 HTTPS API,且已取得受信任用戶端的公開憑證。成功後可以該用戶端身分存取叢集及其虛擬機。來源摘要在此處中斷,受影響版本、修補版本與實際利用情形均未提供,無法確認。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中的 LXD 與 MicroCloud 執行個體,並查閱 Canonical 官方公告確認受影響與已修補版本後儘速更新。",
+            "限制 LXD HTTPS API 的網路暴露範圍,僅允許管理網段或必要來源存取。",
+            "檢視受信任用戶端憑證清單與近期 API 存取紀錄,移除不再使用的憑證。"
+          ],
+          "cve_ids": [],
+          "cvss": "10.0",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日僅一則情資:Canonical LXD 與 MicroCloud 的身分冒充漏洞,來源標題標示 CVSS 10.0,可能影響叢集及其虛擬機的存取控制。",
+    "blind_spot": "來源摘要被截斷,缺少 CVE 編號、受影響版本、修補版本、緩解措施與利用情形;KEV 狀態未提及,沒有足夠資料驗證。風險等級依來源標示的 CVSS 10.0 評為 high,實際曝險須自行確認 API 是否對外開放。",
+    "ioc_note": "來源資料未提供任何 IOC(IP、網域、雜湊等),本日未進行也無法進行外部 IOC 查核;沒有足夠資料驗證。",
+    "actions": [
+      "[P0] 24 小時內:盤點 LXD/MicroCloud 並確認 HTTPS API 的暴露面,必要時先以防火牆限制來源。",
+      "[P1] 72 小時內:查閱 Canonical 官方公告,確認版本後套用修補並檢視受信任憑證與存取日誌。",
+      "[P2] 一週內:補齊該漏洞的 CVE 編號與 KEV 狀態,更新日報資料。"
+    ]
+  }
+}
