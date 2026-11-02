@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-02</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-02</div>
+      <h1 class="hero-heading">2026-11-02 日報</h1>
+      <p class="hero-desc">
+        本次彙整 1 則情資，其中 1 則屬高風險等級，
+        共涉及 0 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">1</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">1</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">0</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high is-active">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">1 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">LXD</span><span class="tag tag-info">MicroCloud</span><span class="tag tag-info">身分驗證</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html" target="_blank" rel="noopener noreferrer">CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-01</span>
+      </div>
+
+      <div class="card-body">
+        <p>來源報導指出,Canonical 的 LXD 與 MicroCloud 存在嚴重漏洞,攻擊者可在不持有受信任用戶端私鑰的情況下,冒充該受信任用戶端登入。標題標示 CVSS 為 10.0,但提供的內容並未列出對應的 CVE 編號,也未提供 CVSS 向量。</p><p>利用條件依來源描述為:攻擊者須能透過網路連到 LXD 的 HTTPS API,且已取得受信任用戶端的公開憑證。成功後可以該用戶端身分存取叢集及其虛擬機。來源摘要在此處中斷,受影響版本、修補版本與實際利用情形均未提供,無法確認。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中的 LXD 與 MicroCloud 執行個體,並查閱 Canonical 官方公告確認受影響與已修補版本後儘速更新。</li><li>限制 LXD HTTPS API 的網路暴露範圍,僅允許管理網段或必要來源存取。</li><li>檢視受信任用戶端憑證清單與近期 API 存取紀錄,移除不再使用的憑證。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-02</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>本日僅一則情資:Canonical LXD 與 MicroCloud 的身分冒充漏洞,來源標題標示 CVSS 10.0,可能影響叢集及其虛擬機的存取控制。</p>
+  <p><strong>防禦盲點：</strong>來源摘要被截斷,缺少 CVE 編號、受影響版本、修補版本、緩解措施與利用情形;KEV 狀態未提及,沒有足夠資料驗證。風險等級依來源標示的 CVSS 10.0 評為 high,實際曝險須自行確認 API 是否對外開放。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC(IP、網域、雜湊等),本日未進行也無法進行外部 IOC 查核;沒有足夠資料驗證。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點 LXD/MicroCloud 並確認 HTTPS API 的暴露面,必要時先以防火牆限制來源。</li><li>[P1] 72 小時內:查閱 Canonical 官方公告,確認版本後套用修補並檢視受信任憑證與存取日誌。</li><li>[P2] 一週內:補齊該漏洞的 CVE 編號與 KEV 狀態,更新日報資料。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
