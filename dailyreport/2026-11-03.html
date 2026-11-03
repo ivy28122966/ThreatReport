@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-03</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-03</div>
+      <h1 class="hero-heading">2026-11-03 日報</h1>
+      <p class="hero-desc">
+        本次彙整 5 則情資，其中 2 則屬高風險等級，
+        共涉及 2 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">5</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">2</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">2</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">漏洞利用</span><span class="tag tag-info">ICS/OT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html" target="_blank" rel="noopener noreferrer">Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-03</span>
+      </div>
+
+      <div class="card-body">
+        <p>VulnCheck 揭露 Siemens SIMATIC IoT2050 Advanced 裝置的最高嚴重度漏洞 CVE-2026-58115(CVSS 10.0)已遭到主動利用。該漏洞為關鍵功能缺少身分驗證,未經驗證的遠端攻擊者可藉此執行任意程式碼。</p><p>標題提及攻擊者藉此植入遠端命令後門,但來源摘要在此處被截斷,受影響版本、修補狀態與 KEV 收錄情形未提供。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中的 SIMATIC IoT2050 Advanced 裝置,並查閱 Siemens 官方公告確認受影響版本與修補或緩解措施。</li><li>在修補前限制這些裝置的網路暴露,避免由網際網路或不受信任網段存取,並檢查是否有異常的遠端命令或未知後門跡象。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">漏洞利用</span><span class="tag tag-info">WordPress</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/attackers-target-unpatched.html" target="_blank" rel="noopener noreferrer">Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-03</span>
+      </div>
+
+      <div class="card-body">
+        <p>Defused Cyber 指出,威脅行為者正嘗試利用 CryptoPayment Gateway WordPress 外掛中尚未修補的最高嚴重度漏洞 CVE-2026-81648(CVSS 10.0)。未經驗證的使用者可能藉此刪除伺服器上的任意檔案並竊取資料。</p><p>來源摘要被截斷,標題提及可能暴露錢包憑證;受影響版本範圍與 KEV 狀態未提供。目前來源描述為尚未修補。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認網站是否安裝 CryptoPayment Gateway 外掛;在官方修補釋出前考慮停用或以 WAF 規則暫時封鎖該外掛端點。</li><li>檢視伺服器日誌是否有異常檔案刪除或未授權存取,並評估輪替相關錢包與 API 憑證。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/attackers-target-unpatched.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">週報</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-02</span>
+      </div>
+
+      <div class="card-body">
+        <p>這是每週回顧型文章,摘要提到假支援來電、受信任的擴充功能、共享連結及無密碼裝置等小型手法即足以造成嚴重後果,並提及遭竊鉅額資金、隱藏的受駭裝置網路與遭污染軟體等事件。</p><p>提供的內容僅為開頭片段,標題列出關鍵 CVE、Linux DDoS 殭屍網路、裝置代碼釣魚與 Android 間諜軟體,但無具體 CVE 編號、CVSS 或 IOC,無法判斷風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>閱讀原文完整內容,並比對所列漏洞與自身資產是否相關。</li><li>檢視裝置代碼(device-code)登入流程的管控與使用者提醒。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">殭屍網路</span><span class="tag tag-info">Android</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html" target="_blank" rel="noopener noreferrer">Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-02</span>
+      </div>
+
+      <div class="card-body">
+        <p>Google 主導的行動使一個超過 130 萬台 Android 裝置(多為電視機上盒)組成的殭屍網路於 10 月下旬失去伺服器控制。Google 表示高度確信裝置製造商 Videostrong 蓄意在機上盒中植入後門並向犯罪者販售存取權。</p><p>來源指出這些裝置被用於廣告詐欺,並轉送他人的網路流量經過擁有者的家用網路。來源未提供 CVE、CVSS 或 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點網路中的低成本 Android 電視機上盒,特別是 Videostrong 品牌裝置,並考慮隔離或汰換。</li><li>監控家用或辦公網路中是否有來自此類裝置的異常對外流量。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">網路間諜</span><span class="tag tag-info">APT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html" target="_blank" rel="noopener noreferrer">DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-02</span>
+      </div>
+
+      <div class="card-body">
+        <p>Dream Research Labs 的報告揭露,一個與伊朗國家有關的威脅行為者 DarkBlinders,於 2026 年 8 月至 10 月間針對以色列與伊拉克庫爾德斯坦地區進行網路間諜行動。</p><p>活動導致以色列一名高知名度人士,以及一個政府雲端環境等遭到入侵。來源摘要被截斷,未提供 CVE、攻擊手法細節或 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>若組織屬相關區域或政府部門,查閱 Dream Research Labs 原始報告取得手法與 IOC。</li><li>檢視雲端環境的管理者登入與權限變更紀錄,確認有無異常。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-58115</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">10.0</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-81648</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">10.0</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/attackers-target-unpatched.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-03</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>今日兩則最高嚴重度(CVSS 10.0)漏洞已有利用報導:Siemens SIMATIC IoT2050 Advanced 的 CVE-2026-58115,以及尚未修補的 CryptoPayment Gateway WordPress 外掛 CVE-2026-81648。另有 Google 拆除 130 萬台 Android 殭屍網路與 DarkBlinders 間諜活動的報導。</p>
+  <p><strong>防禦盲點：</strong>所有來源皆為被截斷的摘要,受影響版本、修補狀態、攻擊手法細節均不完整;週報與 DarkBlinders 的風險等級因資料不足標為 info,不代表低風險。沒有足夠資料驗證 KEV 狀態。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC(IP、網域、雜湊),因此未進行 IOC 查核,也未做任何外部查證。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並限制 SIMATIC IoT2050 Advanced 的網路暴露,查閱 Siemens 公告並排查異常。</li><li>[P0] 24 小時內:檢查 WordPress 站台是否使用 CryptoPayment Gateway,必要時停用外掛並評估憑證輪替。</li><li>[P1] 3 天內:閱讀各原文與 Dream Research Labs 報告,補充受影響版本、IOC 與 KEV 資訊。</li><li>[P1] 7 天內:盤點網路中的 Android 電視機上盒等低管控 IoT 裝置。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
