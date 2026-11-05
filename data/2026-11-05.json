@@ -1,11 +1,11 @@
 {
   "date": "2026-11-05",
   "stats": {
-    "total": 11,
-    "high_risk": 5,
-    "cve_count": 7
+    "total": 10,
+    "high_risk": 3,
+    "cve_count": 6
   },
-  "threat_level": "critical",
+  "threat_level": "high",
   "sections": [
     {
       "id": "section-vulnerability",
@@ -21,22 +21,22 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium CVE-2026-119260: Use after free",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+          "title": "Chromium CVE-2026-119262: Improper input validation",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-11-04",
           "paragraphs": [
-            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 use after free。",
-            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+            "MSRC 說明此 CVE 由 Chrome 指派,屬於不當輸入驗證類型。Microsoft Edge(Chromium 架構)會納入 Chromium 的修補。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,沒有足夠資料判斷實際風險,因此標示為 info(非低風險)。詳情需參考 Google Chrome Releases。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 已更新到包含 Chromium 修復的版本。",
-            "參考 Google Chrome Releases 公告了解修復細節。"
+            "確認企業內 Microsoft Edge 已更新至包含此修補的版本。",
+            "查閱 Google Chrome Releases 公告以確認受影響版本範圍。"
           ],
           "cve_ids": [
-            "CVE-2026-119260"
+            "CVE-2026-119262"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -50,22 +50,22 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium CVE-2026-118321: Use after free",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321",
+          "title": "Chromium CVE-2026-119263: Memory corruption",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-11-04",
           "paragraphs": [
-            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 use after free。",
-            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+            "MSRC 說明此 CVE 由 Chrome 指派,類型為記憶體損毀。Microsoft Edge(Chromium 架構)會納入 Chromium 的修補。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,沒有足夠資料判斷實際風險,因此標示為 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 已更新到包含 Chromium 修復的版本。",
-            "參考 Google Chrome Releases 公告了解修復細節。"
+            "確認 Microsoft Edge 已更新至包含此修補的版本。",
+            "查閱 Google Chrome Releases 公告以確認受影響版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118321"
+            "CVE-2026-119263"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -79,22 +79,22 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium CVE-2026-118314: Incorrect reference resolution",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+          "title": "Chromium CVE-2026-119264: Memory corruption",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-11-04",
           "paragraphs": [
-            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 incorrect reference resolution。",
-            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+            "MSRC 說明此 CVE 由 Chrome 指派,類型為記憶體損毀。Microsoft Edge(Chromium 架構)會納入 Chromium 的修補。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,沒有足夠資料判斷實際風險,因此標示為 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 已更新到包含 Chromium 修復的版本。",
-            "參考 Google Chrome Releases 公告了解修復細節。"
+            "確認 Microsoft Edge 已更新至包含此修補的版本。",
+            "查閱 Google Chrome Releases 公告以確認受影響版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118314"
+            "CVE-2026-119264"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -108,22 +108,22 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium CVE-2026-118309: Incorrect reference resolution",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
+          "title": "Chromium CVE-2026-119265: Memory corruption",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-11-04",
           "paragraphs": [
-            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 incorrect reference resolution。",
-            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+            "MSRC 說明此 CVE 由 Chrome 指派,類型為記憶體損毀。Microsoft Edge(Chromium 架構)會納入 Chromium 的修補。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,沒有足夠資料判斷實際風險,因此標示為 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 已更新到包含 Chromium 修復的版本。",
-            "參考 Google Chrome Releases 公告了解修復細節。"
+            "確認 Microsoft Edge 已更新至包含此修補的版本。",
+            "查閱 Google Chrome Releases 公告以確認受影響版本。"
           ],
           "cve_ids": [
-            "CVE-2026-118309"
+            "CVE-2026-119265"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
@@ -137,54 +137,25 @@
             "Chromium",
             "Edge"
           ],
-          "title": "Chromium CVE-2026-119261: Improper input validation",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
+          "title": "Chromium CVE-2026-119266: Use after free",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266",
           "source_name": "Microsoft Security Response Center",
           "org": "Microsoft",
           "published": "2026-11-04",
           "paragraphs": [
-            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 improper input validation。",
-            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+            "MSRC 說明此 CVE 由 Chrome 指派,類型為 Use after free。Microsoft Edge(Chromium 架構)會納入 Chromium 的修補。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,沒有足夠資料判斷實際風險,因此標示為 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "確認 Edge 已更新到包含 Chromium 修復的版本。",
-            "參考 Google Chrome Releases 公告了解修復細節。"
+            "確認 Microsoft Edge 已更新至包含此修補的版本。",
+            "查閱 Google Chrome Releases 公告以確認受影響版本。"
           ],
           "cve_ids": [
-            "CVE-2026-119261"
+            "CVE-2026-119266"
           ],
           "cvss": "N/A",
           "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-5",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "漏洞與修補",
-            "CISA KEV",
-            "Apple"
-          ],
-          "title": "CVE-2024-27834 — Apple Multiple Products Improper Authentication Vulnerability",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
-          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
-          "org": "CISA",
-          "published": "2026-11-04",
-          "paragraphs": [
-            "CISA KEV 收錄 Apple 多項產品(iOS、iPadOS、macOS、Safari、tvOS、watchOS 10.5)的不當驗證漏洞。具任意讀寫能力的攻擊者可繞過指標驗證(pointer authentication)。",
-            "CISA 要求依廠商指示套用緩解措施,並遵循 BOD 26-04 與「Forensics Triage Requirements」;若無緩解措施可用,則停止使用該產品。來源未提供 CVSS。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "盤點 Apple 裝置與 Safari 版本,依廠商指示套用更新或緩解。",
-            "依 BOD 26-04 評估各資產的網際網路暴露程度並排定修補優先順序。"
-          ],
-          "cve_ids": [
-            "CVE-2024-27834"
-          ],
-          "cvss": "N/A",
-          "kev_status": "已列入 CISA KEV"
         }
       ]
     },
@@ -194,27 +165,58 @@
       "icon": "📰",
       "cards": [
         {
-          "anchor": "card-6",
+          "anchor": "card-5",
           "severity": "high",
           "severity_label": "HIGH",
           "tags": [
             "其他",
-            "APT",
-            "供應鏈"
+            "Apple",
+            "CISA KEV",
+            "資訊竊取"
           ],
-          "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-          "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+          "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
-          "published": "2026-11-04",
+          "published": "2026-11-05",
           "paragraphs": [
-            "Debian、Ubuntu 與 APT 開發者於 11 月 4 日發布公告:APT 存在漏洞,能修改套件下載內容的攻擊者可替換已檢查的套件,使其程式碼以 root 身分執行。",
-            "攻擊需要 APT 重試失敗的下載,Debian 12 起預設即會重試。摘要未提供 CVE、CVSS 或利用狀態。"
+            "CISA 將影響多個 Apple 作業系統的 CVE-2024-27834(CVSS 5.5,不當驗證)加入 KEV 目錄,依據為已有主動利用的報告。來源標題指出該漏洞已有修補,且被用於散布資訊竊取惡意程式。",
+            "CVSS 分數屬中等,但因已列入 KEV 且有主動利用報告,本日報將優先度提升為 high。來源摘錄被截斷,攻擊前提與受影響版本細節未能確認。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "查閱 Debian、Ubuntu 公告並盡速更新 APT。",
-            "在修補前,盡量避免在不受信任的網路路徑上執行套件更新。"
+            "盤點 Apple 裝置並確認已套用 CVE-2024-27834 的修補更新。",
+            "依 CISA KEV 要求的修補期限安排未更新裝置的處理。",
+            "對未能及時更新的 Apple 端點加強資訊竊取程式的偵測與監控。"
+          ],
+          "cve_ids": [
+            "CVE-2024-27834"
+          ],
+          "cvss": "5.5",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "AI",
+            "Linux",
+            "研究"
+          ],
+          "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+          "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-05",
+          "paragraphs": [
+            "OpenAI 發表一套流程,使用尚未發布的資安專用 AI 模型,驗證並修補 Linux 中 948 個本機權限提升(LPE)漏洞,API 成本約 120 萬美元。原型分析了 2,308 個候選核心發現,動態重現其中 1,724 個。",
+            "來源未提供 CVE、CVSS 或實際利用資訊,屬研究與趨勢性資訊,標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將此視為 AI 加速漏洞發現的趨勢參考,檢視 Linux 核心更新的套用節奏是否足夠快。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -222,55 +224,52 @@
         },
         {
           "anchor": "card-7",
-          "severity": "critical",
-          "severity_label": "CRITICAL",
+          "severity": "high",
+          "severity_label": "HIGH",
           "tags": [
             "其他",
-            "SonicWall",
-            "EoL"
+            "Xen",
+            "虛擬化"
           ],
-          "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-          "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+          "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+          "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-04",
           "paragraphs": [
-            "SonicWall 警告兩個影響已終止支援(EoL)GMS 9.5.2 及更早版本的漏洞,且不會提供修補。其中 CVE-2026-109593(CVSS 9.1)為未經驗證的檔案讀取漏洞,具網路存取能力的攻擊者可讀取 GMS 內部檔案。",
-            "摘要被截斷,僅能看到這一個 CVE 編號;另一個漏洞的細節與編號未在資料中。來源未提及 KEV 或利用狀態。"
+            "Xen 的兩個漏洞可讓惡意客體 VM 讀寫同一主機上其他 VM 的記憶體,包含管理用的 dom0。Xen Project 於 11 月 3 日公告,已有修補,且沒有已知緩解措施;4.6 起所有版本皆受影響。",
+            "來源未提供 CVE 編號、CVSS 或利用狀態。評級依所述的跨 VM 隔離破壞影響判定為 high,並非基於已確認的利用活動。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "盤點是否仍有 GMS 9.5.2 及更早版本,並規劃汰換或遷移。",
-            "在汰換前限制 GMS 管理介面的網路存取。"
+            "查閱 Xen Project 11 月 3 日公告並盡速套用修補,因無緩解措施。",
+            "盤點使用 Xen 4.6 以上版本的主機,並優先處理承載不受信任客體 VM 的環境。"
           ],
-          "cve_ids": [
-            "CVE-2026-109593"
-          ],
-          "cvss": "9.1",
+          "cve_ids": [],
+          "cvss": "N/A",
           "kev_status": "未提及"
         },
         {
           "anchor": "card-8",
-          "severity": "medium",
-          "severity_label": "MEDIUM",
+          "severity": "info",
+          "severity_label": "INFO",
           "tags": [
             "其他",
-            "AI 代理",
-            "Adware"
+            "AI Agent",
+            "治理"
           ],
-          "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
-          "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+          "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+          "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-04",
           "paragraphs": [
-            "Check Point Research 揭露名為 Haiou 的 OpenAI Codex 越獄工具包,會修改 AI 代理的受信任指令,以插入第三方 AI 閘道的廣告,研究人員將此現象稱為「prompt adware」。",
-            "摘要在說明其修改 Codex 設定處被截斷,未提供 CVE、IOC 或影響範圍。風險等級為依有限資料所做的判斷。"
+            "文章論述 AI Agent 執行期防護僅對流量經過企業自有閘道的 Agent 有效,多數 Agent 並不經過閘道。文中以員工請 AI 助理觸發大量郵件自動化的案例說明此缺口,摘錄被截斷,後續細節未能確認。",
+            "此為觀點型內容,無漏洞或 IOC 資料,標示為 info。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "避免在開發環境安裝來路不明的 Codex 越獄或增強工具。",
-            "檢查 Codex 設定與代理指令檔是否有未預期的修改。"
+            "盤點組織內未經企業閘道的 AI Agent 與自動化整合,評估其權限與可見性。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -282,50 +281,24 @@
           "severity_label": "HIGH",
           "tags": [
             "其他",
-            "APT29",
-            "水坑攻擊",
-            "供應鏈"
+            "APT",
+            "DNS 劫持",
+            "後門"
           ],
-          "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-          "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+          "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+          "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-04",
           "paragraphs": [
-            "報導指與 APT29 有關的行為者透過遭入侵網站、仿冒網域,以及烏克蘭網站分析服務 Plerdy SEO Tracker 的供應鏈攻擊,對 iOS 與 Android 使用者發動大規模水坑攻擊。",
-            "Sekoia 研究人員指出,注入的 JavaScript 會蒐集瀏覽器與裝置屬性。摘要被截斷,未列出所用 CVE 或 IOC。"
+            "親中威脅行為者 SlippyNunchucks 被指濫用 Windows 版搜狗輸入法不安全的 HTTP 通訊,進行 DNS 劫持以部署植入程式 DarkVigil(又名 FDMTP),屬監控行動。該活動自 2026 年 7 月 1 日起被觀察到。",
+            "來源摘錄被截斷,目標範圍與 IOC 細節未能確認。因涉及已觀察到的活動與後門部署,評為 high。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "檢查自家網站是否載入 Plerdy SEO Tracker 腳本,並審視第三方腳本完整性。",
-            "盡速更新行動裝置與瀏覽器,並參考 Sekoia 原始報告取得 IOC。"
-          ],
-          "cve_ids": [],
-          "cvss": "N/A",
-          "kev_status": "未提及"
-        },
-        {
-          "anchor": "card-10",
-          "severity": "critical",
-          "severity_label": "CRITICAL",
-          "tags": [
-            "其他",
-            "Ruby on Rails",
-            "Active Storage"
-          ],
-          "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-          "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-          "source_name": "The Hacker News",
-          "org": "The Hacker News",
-          "published": "2026-11-04",
-          "paragraphs": [
-            "Ruby on Rails 的 Active Storage 存在嚴重漏洞:若應用程式以 ImageMagick 處理上傳,未經驗證的攻擊者可上傳特製檔案,在伺服器上寫入任意檔案。",
-            "Rails 專案已在 8.1.4.1 與 8.0.5.2 修復。摘要未提供 CVE、CVSS 或利用狀態,嚴重等級採報導標題所稱的 critical。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "將 Rails 升級至 8.1.4.1 或 8.0.5.2。",
-            "盤點是否使用 Active Storage 搭配 ImageMagick 處理上傳。"
+            "盤點端點是否安裝 Windows 版搜狗輸入法,並評估停用或移除的必要性。",
+            "檢視自 2026-07-01 起 DNS 與 HTTP 更新流量中的異常解析紀錄。",
+            "向原文取得完整 IOC 後比對 EDR 與 DNS 日誌。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -335,14 +308,16 @@
     }
   ],
   "analyst_note": {
-    "highlight": "本日共 11 則,其中 SonicWall 終止支援 GMS 漏洞(CVSS 9.1,不會修補)與 Rails Active Storage 嚴重漏洞為最高等級。另有 CISA KEV 收錄的 Apple CVE-2024-27834,以及 APT29 關聯的水坑攻擊與 APT 套件管理器漏洞。",
-    "blind_spot": "5 則 Chromium CVE 與多篇報導缺少 CVSS、KEV 與利用資訊,多數 THN 摘要被截斷,故未驗證完整影響範圍。Chromium 項目標為 info 代表資料不足,並非低風險。SonicWall 報導提到兩個漏洞,但只看到一個 CVE 編號。",
-    "ioc_note": "來源未提供任何 IOC,也未執行外部查核。沒有足夠資料驗證 IOC;APT29 活動請參考 Sekoia 原始報告。",
+    "highlight": "本日共 10 則,其中 3 則為 high:CISA 將 Apple CVE-2024-27834 列入 KEV(有主動利用報告)、Xen 兩個跨 VM 記憶體讀寫漏洞(無已知緩解措施)、以及 SlippyNunchucks 劫持搜狗輸入法 DNS 部署 DarkVigil 的活動。",
+    "blind_spot": "5 則 Chromium CVE 僅有 MSRC 條目,未提供 CVSS、利用或 KEV 資訊,沒有足夠資料驗證,故標為 info(並非低風險)。Xen 未提供 CVE 編號與 CVSS。多則來源摘錄被截斷,受影響版本與目標範圍細節有限。",
+    "ioc_note": "所有來源均未提供明確 IOC(IP、網域、雜湊),因此未進行任何 IOC 查核,也無法確認 DarkVigil 活動的指標。需從原文取得後再比對。",
     "actions": [
-      "[P0] 24 小時內:確認 Rails 應用是否使用 Active Storage 加 ImageMagick,並升級至 8.1.4.1 或 8.0.5.2。",
-      "[P0] 24 小時內:盤點 Apple 裝置並依 CISA KEV 要求套用 CVE-2024-27834 的廠商緩解措施。",
-      "[P1] 72 小時內:套用 Debian/Ubuntu APT 更新,並盤點 SonicWall GMS 9.5.2 以下版本、限制其存取並規劃汰換。",
-      "[P1] 72 小時內:檢查網站是否載入 Plerdy SEO Tracker,並更新 Edge/Chromium 至含修復的版本。"
+      "[P0] 24 小時內:盤點並修補 Xen 主機(4.6 以上),因無緩解措施,優先處理承載不受信任 VM 的環境。",
+      "[P0] 24 小時內:確認 Apple 裝置已修補 CVE-2024-27834,並依 CISA KEV 期限追蹤。",
+      "[P1] 3 日內:排查 Windows 端點是否有搜狗輸入法,並檢視 2026-07-01 起的 DNS 異常紀錄。",
+      "[P1] 3 日內:確認 Microsoft Edge 已更新至包含 5 則 Chromium 修補的版本。",
+      "[P2] 1 週內:盤點未經企業閘道的 AI Agent 與自動化整合。"
     ]
-  }
+  },
+  "error": "Your request is invalid or could not be processed by the service"
 }
