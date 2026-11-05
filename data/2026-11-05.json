@@ -1,0 +1,348 @@
+{
+  "date": "2026-11-05",
+  "stats": {
+    "total": 11,
+    "high_risk": 5,
+    "cve_count": 7
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
+          ],
+          "title": "Chromium CVE-2026-119260: Use after free",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 use after free。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Edge 已更新到包含 Chromium 修復的版本。",
+            "參考 Google Chrome Releases 公告了解修復細節。"
+          ],
+          "cve_ids": [
+            "CVE-2026-119260"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
+          ],
+          "title": "Chromium CVE-2026-118321: Use after free",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 use after free。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Edge 已更新到包含 Chromium 修復的版本。",
+            "參考 Google Chrome Releases 公告了解修復細節。"
+          ],
+          "cve_ids": [
+            "CVE-2026-118321"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
+          ],
+          "title": "Chromium CVE-2026-118314: Incorrect reference resolution",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 incorrect reference resolution。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Edge 已更新到包含 Chromium 修復的版本。",
+            "參考 Google Chrome Releases 公告了解修復細節。"
+          ],
+          "cve_ids": [
+            "CVE-2026-118314"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
+          ],
+          "title": "Chromium CVE-2026-118309: Incorrect reference resolution",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 incorrect reference resolution。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Edge 已更新到包含 Chromium 修復的版本。",
+            "參考 Google Chrome Releases 公告了解修復細節。"
+          ],
+          "cve_ids": [
+            "CVE-2026-118309"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium",
+            "Edge"
+          ],
+          "title": "Chromium CVE-2026-119261: Improper input validation",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "MSRC 說明此 CVE 由 Chrome 指派,Microsoft Edge(Chromium-based)會納入 Chromium 的修復。漏洞類型為 improper input validation。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,因此風險等級標為 info(代表資料不足,並非低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Edge 已更新到包含 Chromium 修復的版本。",
+            "參考 Google Chrome Releases 公告了解修復細節。"
+          ],
+          "cve_ids": [
+            "CVE-2026-119261"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Apple"
+          ],
+          "title": "CVE-2024-27834 — Apple Multiple Products Improper Authentication Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "CISA KEV 收錄 Apple 多項產品(iOS、iPadOS、macOS、Safari、tvOS、watchOS 10.5)的不當驗證漏洞。具任意讀寫能力的攻擊者可繞過指標驗證(pointer authentication)。",
+            "CISA 要求依廠商指示套用緩解措施,並遵循 BOD 26-04 與「Forensics Triage Requirements」;若無緩解措施可用,則停止使用該產品。來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 Apple 裝置與 Safari 版本,依廠商指示套用更新或緩解。",
+            "依 BOD 26-04 評估各資產的網際網路暴露程度並排定修補優先順序。"
+          ],
+          "cve_ids": [
+            "CVE-2024-27834"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-6",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "APT",
+            "供應鏈"
+          ],
+          "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+          "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "Debian、Ubuntu 與 APT 開發者於 11 月 4 日發布公告:APT 存在漏洞,能修改套件下載內容的攻擊者可替換已檢查的套件,使其程式碼以 root 身分執行。",
+            "攻擊需要 APT 重試失敗的下載,Debian 12 起預設即會重試。摘要未提供 CVE、CVSS 或利用狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 Debian、Ubuntu 公告並盡速更新 APT。",
+            "在修補前,盡量避免在不受信任的網路路徑上執行套件更新。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "SonicWall",
+            "EoL"
+          ],
+          "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+          "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "SonicWall 警告兩個影響已終止支援(EoL)GMS 9.5.2 及更早版本的漏洞,且不會提供修補。其中 CVE-2026-109593(CVSS 9.1)為未經驗證的檔案讀取漏洞,具網路存取能力的攻擊者可讀取 GMS 內部檔案。",
+            "摘要被截斷,僅能看到這一個 CVE 編號;另一個漏洞的細節與編號未在資料中。來源未提及 KEV 或利用狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點是否仍有 GMS 9.5.2 及更早版本,並規劃汰換或遷移。",
+            "在汰換前限制 GMS 管理介面的網路存取。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109593"
+          ],
+          "cvss": "9.1",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "AI 代理",
+            "Adware"
+          ],
+          "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+          "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "Check Point Research 揭露名為 Haiou 的 OpenAI Codex 越獄工具包,會修改 AI 代理的受信任指令,以插入第三方 AI 閘道的廣告,研究人員將此現象稱為「prompt adware」。",
+            "摘要在說明其修改 Codex 設定處被截斷,未提供 CVE、IOC 或影響範圍。風險等級為依有限資料所做的判斷。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "避免在開發環境安裝來路不明的 Codex 越獄或增強工具。",
+            "檢查 Codex 設定與代理指令檔是否有未預期的修改。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "APT29",
+            "水坑攻擊",
+            "供應鏈"
+          ],
+          "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+          "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "報導指與 APT29 有關的行為者透過遭入侵網站、仿冒網域,以及烏克蘭網站分析服務 Plerdy SEO Tracker 的供應鏈攻擊,對 iOS 與 Android 使用者發動大規模水坑攻擊。",
+            "Sekoia 研究人員指出,注入的 JavaScript 會蒐集瀏覽器與裝置屬性。摘要被截斷,未列出所用 CVE 或 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查自家網站是否載入 Plerdy SEO Tracker 腳本,並審視第三方腳本完整性。",
+            "盡速更新行動裝置與瀏覽器,並參考 Sekoia 原始報告取得 IOC。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Ruby on Rails",
+            "Active Storage"
+          ],
+          "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+          "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-04",
+          "paragraphs": [
+            "Ruby on Rails 的 Active Storage 存在嚴重漏洞:若應用程式以 ImageMagick 處理上傳,未經驗證的攻擊者可上傳特製檔案,在伺服器上寫入任意檔案。",
+            "Rails 專案已在 8.1.4.1 與 8.0.5.2 修復。摘要未提供 CVE、CVSS 或利用狀態,嚴重等級採報導標題所稱的 critical。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將 Rails 升級至 8.1.4.1 或 8.0.5.2。",
+            "盤點是否使用 Active Storage 搭配 ImageMagick 處理上傳。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日共 11 則,其中 SonicWall 終止支援 GMS 漏洞(CVSS 9.1,不會修補)與 Rails Active Storage 嚴重漏洞為最高等級。另有 CISA KEV 收錄的 Apple CVE-2024-27834,以及 APT29 關聯的水坑攻擊與 APT 套件管理器漏洞。",
+    "blind_spot": "5 則 Chromium CVE 與多篇報導缺少 CVSS、KEV 與利用資訊,多數 THN 摘要被截斷,故未驗證完整影響範圍。Chromium 項目標為 info 代表資料不足,並非低風險。SonicWall 報導提到兩個漏洞,但只看到一個 CVE 編號。",
+    "ioc_note": "來源未提供任何 IOC,也未執行外部查核。沒有足夠資料驗證 IOC;APT29 活動請參考 Sekoia 原始報告。",
+    "actions": [
+      "[P0] 24 小時內:確認 Rails 應用是否使用 Active Storage 加 ImageMagick,並升級至 8.1.4.1 或 8.0.5.2。",
+      "[P0] 24 小時內:盤點 Apple 裝置並依 CISA KEV 要求套用 CVE-2024-27834 的廠商緩解措施。",
+      "[P1] 72 小時內:套用 Debian/Ubuntu APT 更新,並盤點 SonicWall GMS 9.5.2 以下版本、限制其存取並規劃汰換。",
+      "[P1] 72 小時內:檢查網站是否載入 Plerdy SEO Tracker,並更新 Edge/Chromium 至含修復的版本。"
+    ]
+  }
+}
