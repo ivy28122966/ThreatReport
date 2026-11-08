@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-08",
+  "stats": {
+    "total": 1,
+    "high_risk": 0,
+    "cve_count": 0
+  },
+  "threat_level": "info",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "AI 編碼助理",
+            "機敏資訊外洩"
+          ],
+          "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-07",
+          "paragraphs": [
+            "報導指出，開發者在 Claude Code 中核准的指令若內含密碼或 API 金鑰，這些機敏資訊目前出現在公開的 GitHub 儲存庫中，任何人都能讀取。",
+            "依來源描述，當使用者選擇「Yes, and don't ask again」時，該 AI 編碼助理可能將指令原文（包含其中的機密）存入專案設定檔。資安公司 Apiiro 表示發現 1,122 個公開副本。來源摘要內容被截斷，其餘細節（受影響範圍、是否已有修補或官方回應、是否有實際濫用）無法由所提供資料確認。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查團隊儲存庫中 Claude Code 的專案設定檔，確認是否含有曾核准指令中的密碼、API 金鑰或權杖，並避免將該設定檔提交到公開儲存庫。",
+            "若發現機密已出現在公開儲存庫，立即撤銷並輪替相關憑證，再評估是否需清理版本歷史。",
+            "避免在指令中直接內嵌機密，改用環境變數或機密管理工具，並在 CI 或 pre-commit 加入機密掃描。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日僅 1 則情資：Claude Code 核准指令可能將機密以明文寫入專案設定檔，Apiiro 稱在公開 GitHub 發現 1,122 個副本。",
+    "blind_spot": "來源摘要被截斷，缺少受影響版本、設定檔路徑、廠商回應與修補狀態，也沒有 CVE、CVSS 或 KEV 資料，沒有足夠資料驗證嚴重度，故列為 info（不代表低風險）。私有儲存庫與本機環境的暴露情況未知。",
+    "ioc_note": "來源未提供任何 IOC（IP、網域、雜湊等），也未進行外部查核；沒有足夠資料驗證。",
+    "actions": [
+      "[P0] 24 小時內：搜尋組織公開儲存庫中的 Claude Code 設定檔，確認是否含機密，若有則立即輪替。",
+      "[P1] 3 天內：在 CI 與 pre-commit 導入機密掃描，並向開發者宣導勿在指令中內嵌憑證。",
+      "[P1] 7 天內：閱讀原文及 Apiiro 與廠商公告，補足受影響版本與修補資訊後重新評估風險等級。"
+    ]
+  }
+}
