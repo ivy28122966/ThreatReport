@@ -1,11 +1,11 @@
 {
   "date": "2026-11-10",
   "stats": {
-    "total": 9,
-    "high_risk": 7,
-    "cve_count": 4
+    "total": 5,
+    "high_risk": 3,
+    "cve_count": 0
   },
-  "threat_level": "critical",
+  "threat_level": "high",
   "sections": [
     {
       "id": "section-other",
@@ -17,23 +17,23 @@
           "severity": "high",
           "severity_label": "HIGH",
           "tags": [
-            "其他",
-            "雲端安全",
-            "資料外洩"
+            "加密貨幣",
+            "供應鏈",
+            "身分驗證"
           ],
-          "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+          "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+          "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-09",
           "paragraphs": [
-            "Wiz 指出,攻擊者於 10 月 14 日至 10 月 26 日間入侵多個 Qubole 客戶的 AWS 帳號,竊取儲存的密鑰與資料。",
-            "攻擊者使用的是 Qubole 平台用來存取客戶環境的 AWS 帳號憑證,但來源未說明憑證如何被取得。Qubole 為 Idera 旗下的資料湖平台。"
+            "來源指出，部分使用 Google 或 Apple 帳號設定 Keplr 加密錢包的使用者遭竊取資金。Keplr 的 Google／Apple 登入由 Web3Auth 提供，攻擊者利用該公司的安全缺陷存取錢包，兩家公司已於上週稍晚說明。",
+            "Web3Auth 隨後利用攻擊者所用的途徑，先行清空其他有風險的錢包。來源摘要未提供缺陷細節、CVE 編號、CVSS 或 IOC。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "Qubole 客戶檢視 10 月 14 日至 26 日間 CloudTrail 中由 Qubole 跨帳號角色發出的活動,確認是否有異常存取。",
-            "輪替可能存放於受影響環境中的密鑰與憑證,並檢視跨帳號角色的權限範圍與信任條件。"
+            "使用 Keplr 社群登入（Google／Apple）建立錢包者，請查閱 Keplr 與 Web3Auth 官方公告，確認自身錢包狀態與資產處置方式。",
+            "檢視錢包交易紀錄是否有異常轉出，並依官方指引處理。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -44,23 +44,22 @@
           "severity": "high",
           "severity_label": "HIGH",
           "tags": [
-            "其他",
-            "供應鏈",
-            "惡意軟體"
+            "加密貨幣",
+            "漏洞利用"
           ],
-          "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
-          "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+          "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+          "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-09",
           "paragraphs": [
-            "攻擊者利用 Ethersphere 專案自身的發布自動化流程,發布兩個工具的惡意版本:bee-js 13.3.0 與 Swarm Desktop 0.56.2。",
-            "這兩個版本會下載並執行程式碼,目標是竊取 Swarm Desktop 為節點保存的錢包金鑰及解鎖密碼,且程式碼亦設計用於安裝後門(來源摘要在此處截斷)。"
+            "LNbits 專案表示因出現一波攻擊，呼籲所有營運者立即關閉伺服器。專案已有數項安全修補待發布，並請營運者在修補釋出前保持謹慎。",
+            "一名營運者表示，新建帳號利用漏洞從其伺服器提領 2,285,545 satoshis（約 0.023 比特幣）。來源摘要未提供 CVE 編號、CVSS 或 IOC。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "檢查專案、CI 與主機是否安裝或使用 bee-js 13.3.0 或 Swarm Desktop 0.56.2,若有則移除並回退至已確認安全的版本。",
-            "對曾執行受影響版本的環境,視為錢包金鑰與密碼已外洩,轉移資產並更換金鑰與密碼。"
+            "LNbits 營運者依專案呼籲暫停服務，待官方修補釋出後再更新並恢復。",
+            "暫停期間檢視是否有新建帳號及異常提領紀錄。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -68,26 +67,26 @@
         },
         {
           "anchor": "card-2",
-          "severity": "medium",
-          "severity_label": "MEDIUM",
+          "severity": "high",
+          "severity_label": "HIGH",
           "tags": [
-            "其他",
-            "APT",
-            "惡意軟體"
+            "AI 代理",
+            "資料外洩",
+            "台灣"
           ],
-          "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
-          "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+          "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+          "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-09",
           "paragraphs": [
-            "Fortinet FortiGuard Labs 觀察到 Bitter(又名 APT-C-08、APT-Q-37、Hazy Tiger、Orange Yali、T-APT-17、TA397)針對南亞組織,使用先前未被報告的遠端存取木馬 PapRAT。",
-            "研究員 Cara Lin 表示 PapRAT 有 C++ 與 Rust 兩種實作,功能包含命令執行與檔案相關操作(來源摘要截斷)。"
+            "Acronis 威脅研究團隊上週表示，單一攻擊者利用 AI 代理取得涵蓋台北七個行政區的緊急派遣紀錄。",
+            "AI 代理另發現台北市消防局某平台在無需登入下，暴露 2018 年的病患資料，包含心電圖與救護車影像。研究人員高度確信攻擊者為單一人員。來源摘要未提供 IOC、CVE 或 CVSS。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "位於南亞或與該區域有往來的組織,向 Fortinet 原始報告取得 IOC 並於 EDR/郵件閘道中比對。",
-            "加強對釣魚附件與不明可執行檔的偵測與封鎖。"
+            "公共服務與緊急應變系統管理者應盤點對外平台，確認是否有無需驗證即可存取的敏感資料。",
+            "檢視相關系統存取日誌，確認是否有大量自動化存取行為。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -98,22 +97,21 @@
           "severity": "info",
           "severity_label": "INFO",
           "tags": [
-            "其他",
-            "週報"
+            "司法動態",
+            "內部威脅"
           ],
-          "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
-          "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+          "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+          "url": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-09",
           "paragraphs": [
-            "此為每週回顧,標題提及 SSHole 遭利用、APT 根權限 RCE、機器人接管與約 1.5 萬個網站遭入侵;摘要提到空白密碼即可入侵,以及更新或維運工具本身成為攻擊途徑。",
-            "提供的內容僅為開頭片段,缺乏具體產品、CVE 或影響範圍,無法據以判斷風險,故列為 info(非低風險)。"
+            "據 Bloomberg 與 CNBC 報導，前 OpenAI 工程師 Abdulrahman Alfozan 因被控於公司辦公室放置隱蔽錄音裝置，上週五在舊金山聯邦法院表示不認罪，下次開庭日為 2026 年 11 月 17 日。",
+            "此為司法進展報導，來源未提供技術漏洞或 IOC 資訊。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "閱讀原文取得完整細節後,再比對自身環境中的受影響產品。",
-            "檢查是否存在空白或預設密碼的帳號與設備。"
+            "可借此檢視辦公室實體安全，包括會議室定期檢查與訪客及設備管控。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
@@ -124,163 +122,41 @@
           "severity": "high",
           "severity_label": "HIGH",
           "tags": [
-            "其他",
-            "預設密碼",
-            "身分驗證"
+            "ICS/OT",
+            "關鍵基礎設施"
           ],
-          "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
-          "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+          "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+          "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
           "source_name": "The Hacker News",
           "org": "The Hacker News",
           "published": "2026-11-09",
           "paragraphs": [
-            "兩名研究人員發現兩個汽車品牌行動應用程式背後的登入系統可被完全接管,可存取任意客戶帳號;對擁有連網車輛的車主,可解鎖車門並啟動引擎。",
-            "兩款應用皆透過 ForgeRock(現屬 Ping Identity)登入,研究人員在該等伺服器上取得存取(來源指出與預設 admin:admin 密碼有關)。來源未提及在野利用。"
+            "美國政府機關警告，威脅行為者正積極針對全球工業冷凍與冷鏈監控系統，意圖造成服務中斷、火災風險與庫存損失。",
+            "來源指出，攻擊者可能利用未修補或暴露於網際網路的控制器弱點或缺陷，遠端更改設定並迫使設備持續加熱。來源摘要未提供 CVE、CVSS 或 IOC。"
           ],
           "advisory_title": "🔔 建議行動",
           "advisory_actions": [
-            "盤點自有 ForgeRock/Ping Identity 等身分平台的管理介面,確認無預設密碼並限制對外暴露。",
-            "對管理帳號啟用強密碼與多因素驗證。"
+            "盤點冷凍與冷鏈控制器，移除其網際網路直接暴露，改置於防火牆或 VPN 後。",
+            "確認控制器韌體已更新，並檢視設定是否遭異常變更。",
+            "建立溫度異常告警與手動備援程序。"
           ],
           "cve_ids": [],
           "cvss": "N/A",
           "kev_status": "未提及"
         }
       ]
-    },
-    {
-      "id": "section-vulnerability",
-      "title": "漏洞與修補",
-      "icon": "🛡️",
-      "cards": [
-        {
-          "anchor": "card-5",
-          "severity": "critical",
-          "severity_label": "CRITICAL",
-          "tags": [
-            "漏洞與修補",
-            "CISA KEV",
-            "身分驗證繞過"
-          ],
-          "title": "CVE-2026-102895 — GPUStack Improper Authentication Vulnerability",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
-          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
-          "org": "CISA",
-          "published": "2026-11-09",
-          "paragraphs": [
-            "GPUStack 存在不當身分驗證漏洞,未經驗證者可取得管理權限,包括變更使用者與模型、建立持久性管理員 API 金鑰、洩露 worker 與雲端供應商密鑰,並可透過 POST /v2/inference-backends/from-yaml 執行程式碼。",
-            "此項目收錄於 CISA KEV。CISA 要求依 BOD 26-04 與鑑識分流要求套用廠商緩解措施,無緩解可用時停止使用。CVSS 來源未提供。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "立即盤點 GPUStack 部署與網路暴露情況,依廠商指引套用修補或緩解,無法緩解則停用。",
-            "檢查是否有非預期的管理員 API 金鑰、模型變更及對 /v2/inference-backends/from-yaml 的請求,並輪替 worker 與雲端密鑰。"
-          ],
-          "cve_ids": [
-            "CVE-2026-102895"
-          ],
-          "cvss": "N/A",
-          "kev_status": "已列入 CISA KEV"
-        },
-        {
-          "anchor": "card-6",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "漏洞與修補",
-            "CISA KEV",
-            "OpenSSH"
-          ],
-          "title": "CVE-2026-123158 — OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
-          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
-          "org": "CISA",
-          "published": "2026-11-09",
-          "paragraphs": [
-            "Linux 上的 OpenBSD OpenSSH 存在非預期狀態碼或回傳值問題,可能導致身分驗證繞過。",
-            "此項目收錄於 CISA KEV,CISA 要求依 BOD 26-04 與鑑識分流要求套用廠商緩解措施。CVSS 來源未提供。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "盤點 Linux 主機上的 OpenSSH 版本,依廠商指引更新或緩解,並優先處理對外暴露的 SSH 服務。",
-            "檢視 SSH 驗證日誌是否有異常成功登入。"
-          ],
-          "cve_ids": [
-            "CVE-2026-123158"
-          ],
-          "cvss": "N/A",
-          "kev_status": "已列入 CISA KEV"
-        },
-        {
-          "anchor": "card-7",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "漏洞與修補",
-            "CISA KEV",
-            "程式碼注入"
-          ],
-          "title": "CVE-2026-116779 — SignalWire FreeSwitch Code Injection Vulnerability",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
-          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
-          "org": "CISA",
-          "published": "2026-11-09",
-          "paragraphs": [
-            "SignalWire FreeSwitch 存在程式碼注入漏洞,可導致設定與憑證洩露、任意通話控制及命令執行。",
-            "此項目收錄於 CISA KEV,CISA 要求依 BOD 26-04 與鑑識分流要求套用廠商緩解措施。CVSS 來源未提供。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "盤點 FreeSwitch 部署並依廠商指引修補或緩解,限制管理與控制介面的網路存取。",
-            "檢視通話記錄與系統命令執行異常,並輪替可能外洩的憑證。"
-          ],
-          "cve_ids": [
-            "CVE-2026-116779"
-          ],
-          "cvss": "N/A",
-          "kev_status": "已列入 CISA KEV"
-        },
-        {
-          "anchor": "card-8",
-          "severity": "high",
-          "severity_label": "HIGH",
-          "tags": [
-            "漏洞與修補",
-            "CISA KEV",
-            "權限提升"
-          ],
-          "title": "CVE-2026-123218 — IBM Aspera Faspex Incorrect Authorization Vulnerability",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
-          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
-          "org": "CISA",
-          "published": "2026-11-09",
-          "paragraphs": [
-            "IBM Aspera Faspex 存在不當授權漏洞,已驗證使用者可建構特定訊息繞過授權並提升權限。",
-            "此項目收錄於 CISA KEV,CISA 要求依 BOD 26-04 與鑑識分流要求套用廠商緩解措施。CVSS 來源未提供。"
-          ],
-          "advisory_title": "🔔 建議行動",
-          "advisory_actions": [
-            "盤點 Aspera Faspex 實例並依 IBM 指引修補或緩解。",
-            "檢視一般帳號是否出現非預期的權限變更。"
-          ],
-          "cve_ids": [
-            "CVE-2026-123218"
-          ],
-          "cvss": "N/A",
-          "kev_status": "已列入 CISA KEV"
-        }
-      ]
     }
   ],
   "analyst_note": {
-    "highlight": "今日有 4 筆 CISA KEV 新增(GPUStack、OpenSSH、FreeSwitch、IBM Aspera Faspex),其中 GPUStack 可未經驗證取得管理權限並執行程式碼;另有 Qubole 跨帳號 AWS 存取遭濫用導致客戶資料外洩,以及 Ethersphere bee-js 與 Swarm Desktop 發布流程遭入侵。",
-    "blind_spot": "所有 CVE 均無 CVSS 分數,嚴重度為依來源描述的判斷,沒有足夠資料驗證。Qubole 憑證取得方式未揭露;Weekly Recap 僅有片段,「SSHole」與其他項目與本日 KEV 條目的關聯無法確認;汽車案例來源未提及在野利用。信任的第三方存取、發布自動化與預設密碼是共通的防禦盲點。",
-    "ioc_note": "來源資料未提供任何 IOC(IP、網域、雜湊),未進行外部查核,無法給出 IOC 結論。PapRAT 的 IOC 需自行向 Fortinet 原始報告取得。",
+    "highlight": "今日 5 則來源中，加密錢包（Keplr/Web3Auth、LNbits）有實際資金遭竊，另有台北緊急派遣資料外洩與冷鏈控制器攻擊警告，共 4 則列為高風險；前 OpenAI 工程師案為司法動態，列為 info。",
+    "blind_spot": "來源僅為摘要片段，未含漏洞細節、受影響版本、CVE、CVSS 與 KEV 狀態，沒有足夠資料驗證；高風險等級依據報導的實際損失或積極攻擊描述，而非技術評分。",
+    "ioc_note": "來源未提供任何 IOC，未進行外部查核，無法得出 IOC 結論。",
     "actions": [
-      "[P0] 24 小時內:盤點並修補或緩解 GPUStack、OpenSSH、FreeSwitch、IBM Aspera Faspex,優先處理對外暴露資產,並依 CISA 鑑識分流要求檢查入侵跡象。",
-      "[P0] 24 小時內:Qubole 客戶檢視 CloudTrail 並輪替密鑰;檢查是否使用 bee-js 13.3.0 或 Swarm Desktop 0.56.2。",
-      "[P1] 3 日內:盤點身分平台與管理介面的預設或空白密碼,並啟用 MFA。",
-      "[P1] 7 日內:審查第三方跨帳號存取權限與 CI/CD 發布流程的保護措施,並取得 PapRAT IOC 進行比對。"
+      "[P0] 立即：LNbits 營運者依專案呼籲暫停伺服器，並等待官方修補。",
+      "[P0] 24 小時內：Keplr 社群登入使用者查閱官方公告並檢查錢包交易。",
+      "[P1] 72 小時內：盤點對外暴露的冷鏈／OT 控制器與無驗證的公共服務平台。",
+      "[P2] 本週：持續追蹤各事件官方公告，補充 CVE 與 IOC 資料。"
     ]
-  }
+  },
+  "error": "Your request is invalid or could not be processed by the service"
 }
