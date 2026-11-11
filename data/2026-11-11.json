@@ -1,0 +1,495 @@
+{
+  "date": "2026-11-11",
+  "stats": {
+    "total": 16,
+    "high_risk": 9,
+    "cve_count": 13
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-browser",
+      "title": "瀏覽器安全",
+      "icon": "🌐",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "瀏覽器安全",
+            "隱私"
+          ],
+          "title": "Open research, stronger privacy: Making Firefox users harder to fingerprint",
+          "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+          "source_name": "Mozilla Security Blog",
+          "org": "Mozilla",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Mozilla 表示 Firefox 正在強化對跨網站追蹤的防護，即使追蹤者不使用 Cookie 也適用。最新出貨的指紋辨識防護會減少可被擷取的識別特徵。",
+            "來源僅為摘要，未提供漏洞、CVE 或攻擊活動資訊，屬隱私強化類資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將 Firefox 更新至最新版以取得最新的指紋辨識防護。",
+            "若有隱私政策要求，評估企業管理的 Firefox 是否需調整相關設定。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "資訊洩漏"
+          ],
+          "title": "CVE-2026-102868 Windows Shell Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102868",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Windows Shell 存在敏感系統資訊暴露問題，已授權的攻擊者可在本機洩漏資訊。",
+            "來源未提供 CVSS、嚴重度或利用狀態，無法判斷風險等級，故標示為 info（不代表低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 更新指南確認受影響版本並安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-102868"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "權限提升"
+          ],
+          "title": "CVE-2026-105582 Windows DWM Core Library Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105582",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Windows DWM Core Library 因釋放無效指標或參照，已授權的攻擊者可在本機提升權限。",
+            "來源未提供 CVSS 與利用狀態，風險等級無法判斷，標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 更新指南確認受影響版本並安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105582"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "權限提升"
+          ],
+          "title": "CVE-2026-105583 Windows DWM Core Library Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105583",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Windows DWM Core Library 因釋放無效指標或參照，已授權的攻擊者可在本機提升權限。",
+            "來源未提供 CVSS 與利用狀態，風險等級無法判斷，標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "與 CVE-2026-105582 一併對照 MSRC 更新指南安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105583"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "資訊洩漏"
+          ],
+          "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Windows Inventory Backup 使用外部可控的格式字串，已授權的攻擊者可在本機洩漏資訊。",
+            "來源未提供 CVSS 與利用狀態，標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 更新指南確認受影響版本並安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105584"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Windows",
+            "權限提升"
+          ],
+          "title": "CVE-2026-105586 Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105586",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Windows SCSI Class System File 存在空指標解參考，已授權的攻擊者可在本機提升權限。",
+            "來源未提供 CVSS 與利用狀態，標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 更新指南確認受影響版本並安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105586"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Outlook"
+          ],
+          "title": "CVE-2026-124194 — Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "CISA KEV 收錄 Microsoft Office Outlook 的缺少使用者互動確認漏洞，未經授權的攻擊者可透過網路進行偽造（spoofing）。",
+            "CISA 要求依廠商指示套用緩解措施，並遵循 BOD 26-04 與鑑識分流要求。來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示套用修補或緩解措施。",
+            "依 CISA 要求執行鑑識分流並確認資產暴露狀況。"
+          ],
+          "cve_ids": [
+            "CVE-2026-124194"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Openwave"
+          ],
+          "title": "CVE-2026-111793 — Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "CISA KEV 收錄 Openwave Webtop Media Transcoder 漏洞，已驗證使用者若繞過 Webmail 介面，可處理並轉換非預期的文件類型。",
+            "來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認是否使用該產品，並依廠商指示套用緩解措施。",
+            "依 CISA 要求執行鑑識分流，檢視資產暴露狀況。"
+          ],
+          "cve_ids": [
+            "CVE-2026-111793"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Cisco"
+          ],
+          "title": "CVE-2026-20320 — Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "CISA KEV 收錄 Cisco BroadWorks 的 XXE 漏洞，未經驗證的遠端攻擊者可讀取受影響系統上的敏感設定資訊。",
+            "來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依 Cisco 指示修補或緩解，並限制管理與服務介面的暴露。",
+            "依 CISA 要求執行鑑識分流。"
+          ],
+          "cve_ids": [
+            "CVE-2026-20320"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Barracuda"
+          ],
+          "title": "CVE-2026-111560 — Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "CISA KEV 收錄 Barracuda 多項產品（ESG、Load Balancer、ADC、BMA、WCC、WAF、WSG）的 OS 命令注入漏洞，已驗證管理員可藉特製時區值以 root 權限執行命令。",
+            "來源指出可與 CVE-2026-116606 串連。來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "清點 Barracuda 設備，依廠商指示修補，並與 CVE-2026-116606 一併處理。",
+            "依 CISA 要求執行鑑識分流並限制管理介面暴露。"
+          ],
+          "cve_ids": [
+            "CVE-2026-111560"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Barracuda"
+          ],
+          "title": "CVE-2026-116606 — Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "CISA KEV 收錄 Barracuda ESG 的驗證繞過漏洞，未經驗證的遠端攻擊者可呼叫設定匯入功能，還原特製備份檔而修改設備全域設定。",
+            "來源指出可與 CVE-2026-111560 串連。來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示修補 ESG，並檢查全域設定是否遭未授權變更。",
+            "依 CISA 要求執行鑑識分流。"
+          ],
+          "cve_ids": [
+            "CVE-2026-116606"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-11",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "Git",
+            "遠端程式碼執行"
+          ],
+          "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+          "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Git 的索引處理存在整數截斷漏洞（CVE-2026-111760），惡意儲存庫在被遞迴複製（含子模組）時可在複製者電腦上執行攻擊者程式碼。",
+            "Git 已發布 2.56.1，並為 2.50 至 2.55 系列提供 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1 修補版。來源未提供 CVSS 與利用活動資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將 Git 升級至對應的修補版本。",
+            "在升級前避免對不受信任的儲存庫使用 --recursive 複製。"
+          ],
+          "cve_ids": [
+            "CVE-2026-111760"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-12",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "AI",
+            "遠端程式碼執行"
+          ],
+          "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+          "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "攻擊者利用開源推論引擎 SGLang 的遠端程式碼執行漏洞，在 NEAR AI 的一台推論伺服器上執行程式碼。據 NEAR AI 說明，攻擊者也可能看到當日該伺服器處理的請求，包含機密模式下的請求。",
+            "來源摘要未列出 CVE 與 CVSS，標題提到影響 18 個代理與約 100 名使用者，細節未能於摘要中驗證。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "清查是否部署 SGLang，並依官方公告更新並限制服務對外暴露。",
+            "檢視推論伺服器日誌與相關憑證，必要時輪換金鑰。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-13",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Xen Orchestra",
+            "驗證繞過",
+            "遭利用"
+          ],
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Vates VMS 警告 Xen Orchestra 存在嚴重驗證繞過漏洞（追蹤編號 VSA-2026-062，尚無 CVE），並表示已遭實際利用。廠商指出 REST Cookie 解析會將 authenticationToken=j:%7B%7D 轉為 {}，再交由 REST 驗證流程處理。",
+            "標題指出攻擊者可藉此取得管理員權限。來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即依 Vates VSA-2026-062 公告修補或緩解 Xen Orchestra。",
+            "限制管理介面的網路暴露，並檢視管理員帳號與近期登入紀錄。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-14",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "APT",
+            "中國關聯"
+          ],
+          "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+          "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Check Point Research 追蹤三個具共享基礎設施與惡意程式碼相似性的活動群集（其一為 SilentDelivery），過去一年針對拉丁美洲、亞洲與歐洲的電信、政府、軍事、研究機構與關鍵基礎設施。",
+            "來源摘要未提供 IOC、CVE 或完整細節，風險以中等標示。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "電信、政府與關鍵基礎設施單位應查閱 Check Point 完整報告取得 IOC 並比對日誌。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-15",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "AhsayCBS",
+            "遭利用",
+            "後門"
+          ],
+          "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+          "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-10",
+          "paragraphs": [
+            "Huntress 於 2026 年 10 月初觀察到攻擊者串連 CVE-2026-105133 與 CVE-2026-105134，繞過 AhsayCBS 驗證並執行任意命令，進而部署 Python 植入程式。兩個漏洞皆已有修補。",
+            "來源未提供 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 AhsayCBS 已套用修補版本。",
+            "檢視 2026 年 10 月以來的主機是否有可疑 Python 程序與異常命令執行。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105133",
+            "CVE-2026-105134"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日以遭利用的邊界與管理系統為重點：Xen Orchestra 驗證繞過（廠商稱已遭利用）、AhsayCBS 漏洞鏈、SGLang RCE，以及 CISA KEV 新增的 Outlook、Cisco BroadWorks、Barracuda（可串連）等五項漏洞。Git 遞迴複製 RCE 已有修補版本。",
+    "blind_spot": "來源皆未提供 CVSS，MSRC 項目亦無嚴重度或利用狀態，沒有足夠資料驗證，風險等級僅依來源敘述與 KEV 收錄判斷。Xen Orchestra 尚無 CVE；SGLang 摘要未列 CVE。多數來源僅為摘要，細節未驗證。",
+    "ioc_note": "輸入資料未提供任何 IOC（雜湊、IP、網域），也未執行外部查核，因此無法給出 IOC 查核結論。",
+    "actions": [
+      "[P0] 24 小時內：依 VSA-2026-062 處理 Xen Orchestra，並清查 Barracuda、Cisco BroadWorks、Outlook 的 KEV 項目與修補狀態。",
+      "[P0] 24 小時內：確認 AhsayCBS 與 SGLang 是否存在於環境並套用修補，檢視異常程序與日誌。",
+      "[P1] 3 天內：將 Git 升級至修補版本，並限制對不受信任儲存庫的遞迴複製。",
+      "[P1] 1 週內：評估 MSRC 列出的五項 Windows 漏洞並納入修補排程。"
+    ]
+  }
+}
