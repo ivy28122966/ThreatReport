@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-12</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-12</div>
+      <h1 class="hero-heading">2026-11-12 日報</h1>
+      <p class="hero-desc">
+        本次彙整 11 則情資，其中 3 則屬高風險等級，
+        共涉及 6 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">11</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">3</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">6</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">.NET</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">CVE-2026-105544 .NET Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 針對 .NET 權限提升漏洞 CVE-2026-105544 更新頁面，來源說明此次僅為安全更新連結與資訊的變更，屬資訊性調整。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，故標示為 info（並非低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對照 MSRC 頁面確認所用 .NET 版本是否在受影響產品清單內，並依官方更新指引安排修補。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">.NET</span><span class="tag tag-info">阻斷服務</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475" target="_blank" rel="noopener noreferrer">CVE-2026-109475 .NET Denial of Service Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新 .NET 阻斷服務漏洞 CVE-2026-109475 頁面，來源說明為安全更新連結與資訊的資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>查閱 MSRC 頁面確認受影響版本，並將對應更新納入例行修補排程。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">ASP.NET Core</span><span class="tag tag-info">資訊洩漏</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476" target="_blank" rel="noopener noreferrer">CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新 ASP.NET Core 資訊洩漏漏洞 CVE-2026-109476 頁面，來源說明為安全更新連結與資訊的資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點使用 ASP.NET Core 的應用程式，對照 MSRC 頁面確認是否受影響並安排更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">ASP.NET Core</span><span class="tag tag-info">阻斷服務</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478" target="_blank" rel="noopener noreferrer">CVE-2026-109478 ASP.NET Core Denial of Service Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新 ASP.NET Core 阻斷服務漏洞 CVE-2026-109478 頁面，來源說明此次更新了安全更新表中列出的產品，屬資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>查看 MSRC 更新後的產品清單，確認自家 ASP.NET Core 版本是否列於其中。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">ASP.NET Core</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481" target="_blank" rel="noopener noreferrer">CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新 ASP.NET Core 權限提升漏洞 CVE-2026-109481 頁面，來源說明為安全更新連結與資訊的資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對照 MSRC 頁面確認受影響的 ASP.NET Core 版本，並依官方指引修補。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-105544</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-109475</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-109476</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-109478</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-109481</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🎯</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">1 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-5" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">Patch Tuesday</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/" target="_blank" rel="noopener noreferrer">Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 指出 Microsoft 2026 年 11 月每月安全更新涵蓋 1328 個漏洞，其中 60 個被 Microsoft 標為 critical，這 60 個中有 45 個為遠端程式碼執行（RCE）漏洞。</p><p>提供的摘要未列出個別 CVE、CVSS、利用狀態或 KEV 資訊，因此本卡依 critical 漏洞數量判定為 high，並非確認已遭利用。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>優先針對 Microsoft 標為 critical 的 RCE 更新排定測試與部署，先涵蓋對外暴露與關鍵系統。</li><li>閱讀 Talos 原文取得涵蓋的 Snort 規則，評估是否更新偵測規則集。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-6" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Zoom</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html" target="_blank" rel="noopener noreferrer">Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>Zoom 已釋出更新，修補影響 Windows 版 Zoom Workplace 的兩個漏洞。其中 CVE-2026-108186（CVSS 9.6）為不當輸入驗證，未經驗證的使用者可藉此進行權限提升。</p><p>來源摘要中另一個漏洞的細節被截斷，本日報不列入；也未提及利用活動或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>將 Windows 版 Zoom Workplace 更新至 Zoom 公告所列的修補版本。</li><li>以資產清單確認各端點的 Zoom Workplace 版本，找出尚未更新者。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">雲端安全</span><span class="tag tag-info">憑證竊取</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html" target="_blank" rel="noopener noreferrer">AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>研究人員揭露一起活動：新興的代理式滲透測試平台 AntiFox 被用於竊取 AWS 憑證並在受害環境中橫向移動。</p><p>來源提到，在數起近期入侵中，託管 AntiFox 介面的阿里雲系統與已確認的惡意行動有關。提供的摘要未包含具體 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視 AWS 存取金鑰與 CloudTrail 紀錄中的異常使用，必要時輪換可能外洩的憑證。</li><li>限縮 IAM 權限並啟用憑證異常使用告警。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">攻擊活動</span><span class="tag tag-info">Qlik Sense</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html" target="_blank" rel="noopener noreferrer">Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>Cynet 指出，2026 年 10 月有攻擊者針對多個歐盟客戶環境的 Qlik Sense 伺服器，在約三分鐘內嘗試投遞 PowerShell 反向 shell 指令，但未成功。</p><p>標題另提到攻擊者預備 ActiveMQ 與 Veeam 的利用手法；提供的摘要未列出 CVE、IOC 或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢查 Qlik Sense 伺服器是否對外暴露，並確認已套用廠商最新更新。</li><li>在 EDR 與日誌中偵測由伺服器程序啟動的 PowerShell 反向 shell 行為。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">AI 應用</span><span class="tag tag-info">資料外洩</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html" target="_blank" rel="noopener noreferrer">Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>Claroc 在網路上發現 37,571 個 Grok 建置的應用程式，其中 35,578 個無需登入即可存取，包含 24 個由 X 與 SpaceXSI 員工建置的應用。</p><p>多數開放的應用為遊戲、登陸頁與計算機，但約十分之一含有內部業務資料等內容（摘要被截斷）。來源未提供 CVE 或 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點組織內以 AI 工具快速建置的應用，確認是否預設開放匿名存取並補上驗證。</li><li>檢查這類應用中是否存放密碼或內部資料，必要時輪換相關憑證。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">AI 代理</span><span class="tag tag-info">身分管理</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html" target="_blank" rel="noopener noreferrer">We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-11</span>
+      </div>
+
+      <div class="card-body">
+        <p>Token 團隊分享其自建 AI 代理預設即違反自家三項原則：代理應有獨立身分、依任務給予適當權限、並有獨立於人類的可追溯性。</p><p>此文屬經驗分享性質，摘要未描述具體漏洞或攻擊事件，故標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>為 AI 代理配置獨立身分與最小權限，並確保其操作紀錄可與人類操作分開追蹤。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-108186</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.6</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-12</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>今日重點為 Zoom Workplace for Windows 的 CVE-2026-108186（CVSS 9.6）、Microsoft 11 月 Patch Tuesday（60 個 critical，其中 45 個 RCE），以及 AntiFox 平台與 AWS 憑證竊取活動有關的報導。</p>
+  <p><strong>防禦盲點：</strong>5 則 MSRC 條目僅為資訊性更新，且未提供 CVSS 與利用狀態，無法判斷實際風險。Patch Tuesday 摘要未列出個別 CVE，所有項目的 KEV 狀態皆未提及，沒有足夠資料驗證。部分來源摘要被截斷，如 Zoom 的第二個漏洞。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何明確 IOC（IP、網域、雜湊），且未進行外部查核，無法給出 IOC 查核結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：確認並更新 Windows 版 Zoom Workplace 以修補 CVE-2026-108186。</li><li>[P0] 24 小時內：檢查 AWS 憑證與 CloudTrail 是否有異常使用，並視需要輪換金鑰。</li><li>[P1] 72 小時內：依 Microsoft 11 月更新優先部署 critical RCE 修補，並對照 MSRC 頁面確認 .NET 與 ASP.NET Core 受影響版本。</li><li>[P1] 1 週內：檢視 Qlik Sense 伺服器暴露面，並盤點 AI 建置應用的匿名存取設定。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-105544 .NET Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-109475 .NET Denial of Service Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-109478 ASP.NET Core Denial of Service Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🎯 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-5">Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-6">Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
