@@ -1,0 +1,346 @@
+{
+  "date": "2026-11-12",
+  "stats": {
+    "total": 11,
+    "high_risk": 3,
+    "cve_count": 6
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            ".NET",
+            "權限提升"
+          ],
+          "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "MSRC 針對 .NET 權限提升漏洞 CVE-2026-105544 更新頁面，來源說明此次僅為安全更新連結與資訊的變更，屬資訊性調整。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，故標示為 info（並非低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 頁面確認所用 .NET 版本是否在受影響產品清單內，並依官方更新指引安排修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105544"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            ".NET",
+            "阻斷服務"
+          ],
+          "title": "CVE-2026-109475 .NET Denial of Service Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "MSRC 更新 .NET 阻斷服務漏洞 CVE-2026-109475 頁面，來源說明為安全更新連結與資訊的資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 MSRC 頁面確認受影響版本，並將對應更新納入例行修補排程。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109475"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "ASP.NET Core",
+            "資訊洩漏"
+          ],
+          "title": "CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "MSRC 更新 ASP.NET Core 資訊洩漏漏洞 CVE-2026-109476 頁面，來源說明為安全更新連結與資訊的資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點使用 ASP.NET Core 的應用程式，對照 MSRC 頁面確認是否受影響並安排更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109476"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "ASP.NET Core",
+            "阻斷服務"
+          ],
+          "title": "CVE-2026-109478 ASP.NET Core Denial of Service Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "MSRC 更新 ASP.NET Core 阻斷服務漏洞 CVE-2026-109478 頁面，來源說明此次更新了安全更新表中列出的產品，屬資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查看 MSRC 更新後的產品清單，確認自家 ASP.NET Core 版本是否列於其中。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109478"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "ASP.NET Core",
+            "權限提升"
+          ],
+          "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "MSRC 更新 ASP.NET Core 權限提升漏洞 CVE-2026-109481 頁面，來源說明為安全更新連結與資訊的資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊，沒有足夠資料驗證嚴重度。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 頁面確認受影響的 ASP.NET Core 版本，並依官方指引修補。"
+          ],
+          "cve_ids": [
+            "CVE-2026-109481"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🎯",
+      "cards": [
+        {
+          "anchor": "card-5",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "威脅獵捕",
+            "Patch Tuesday",
+            "Microsoft"
+          ],
+          "title": "Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities",
+          "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "Talos 指出 Microsoft 2026 年 11 月每月安全更新涵蓋 1328 個漏洞，其中 60 個被 Microsoft 標為 critical，這 60 個中有 45 個為遠端程式碼執行（RCE）漏洞。",
+            "提供的摘要未列出個別 CVE、CVSS、利用狀態或 KEV 資訊，因此本卡依 critical 漏洞數量判定為 high，並非確認已遭利用。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "優先針對 Microsoft 標為 critical 的 RCE 更新排定測試與部署，先涵蓋對外暴露與關鍵系統。",
+            "閱讀 Talos 原文取得涵蓋的 Snort 規則，評估是否更新偵測規則集。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-6",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Zoom",
+            "權限提升"
+          ],
+          "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+          "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "Zoom 已釋出更新，修補影響 Windows 版 Zoom Workplace 的兩個漏洞。其中 CVE-2026-108186（CVSS 9.6）為不當輸入驗證，未經驗證的使用者可藉此進行權限提升。",
+            "來源摘要中另一個漏洞的細節被截斷，本日報不列入；也未提及利用活動或 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將 Windows 版 Zoom Workplace 更新至 Zoom 公告所列的修補版本。",
+            "以資產清單確認各端點的 Zoom Workplace 版本，找出尚未更新者。"
+          ],
+          "cve_ids": [
+            "CVE-2026-108186"
+          ],
+          "cvss": "9.6",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "雲端安全",
+            "憑證竊取"
+          ],
+          "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "研究人員揭露一起活動：新興的代理式滲透測試平台 AntiFox 被用於竊取 AWS 憑證並在受害環境中橫向移動。",
+            "來源提到，在數起近期入侵中，託管 AntiFox 介面的阿里雲系統與已確認的惡意行動有關。提供的摘要未包含具體 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視 AWS 存取金鑰與 CloudTrail 紀錄中的異常使用，必要時輪換可能外洩的憑證。",
+            "限縮 IAM 權限並啟用憑證異常使用告警。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "攻擊活動",
+            "Qlik Sense"
+          ],
+          "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+          "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "Cynet 指出，2026 年 10 月有攻擊者針對多個歐盟客戶環境的 Qlik Sense 伺服器，在約三分鐘內嘗試投遞 PowerShell 反向 shell 指令，但未成功。",
+            "標題另提到攻擊者預備 ActiveMQ 與 Veeam 的利用手法；提供的摘要未列出 CVE、IOC 或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查 Qlik Sense 伺服器是否對外暴露，並確認已套用廠商最新更新。",
+            "在 EDR 與日誌中偵測由伺服器程序啟動的 PowerShell 反向 shell 行為。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "AI 應用",
+            "資料外洩"
+          ],
+          "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "Claroc 在網路上發現 37,571 個 Grok 建置的應用程式，其中 35,578 個無需登入即可存取，包含 24 個由 X 與 SpaceXSI 員工建置的應用。",
+            "多數開放的應用為遊戲、登陸頁與計算機，但約十分之一含有內部業務資料等內容（摘要被截斷）。來源未提供 CVE 或 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點組織內以 AI 工具快速建置的應用，確認是否預設開放匿名存取並補上驗證。",
+            "檢查這類應用中是否存放密碼或內部資料，必要時輪換相關憑證。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "AI 代理",
+            "身分管理"
+          ],
+          "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+          "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-11",
+          "paragraphs": [
+            "Token 團隊分享其自建 AI 代理預設即違反自家三項原則：代理應有獨立身分、依任務給予適當權限、並有獨立於人類的可追溯性。",
+            "此文屬經驗分享性質，摘要未描述具體漏洞或攻擊事件，故標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "為 AI 代理配置獨立身分與最小權限，並確保其操作紀錄可與人類操作分開追蹤。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日重點為 Zoom Workplace for Windows 的 CVE-2026-108186（CVSS 9.6）、Microsoft 11 月 Patch Tuesday（60 個 critical，其中 45 個 RCE），以及 AntiFox 平台與 AWS 憑證竊取活動有關的報導。",
+    "blind_spot": "5 則 MSRC 條目僅為資訊性更新，且未提供 CVSS 與利用狀態，無法判斷實際風險。Patch Tuesday 摘要未列出個別 CVE，所有項目的 KEV 狀態皆未提及，沒有足夠資料驗證。部分來源摘要被截斷，如 Zoom 的第二個漏洞。",
+    "ioc_note": "來源資料未提供任何明確 IOC（IP、網域、雜湊），且未進行外部查核，無法給出 IOC 查核結論。",
+    "actions": [
+      "[P0] 24 小時內：確認並更新 Windows 版 Zoom Workplace 以修補 CVE-2026-108186。",
+      "[P0] 24 小時內：檢查 AWS 憑證與 CloudTrail 是否有異常使用，並視需要輪換金鑰。",
+      "[P1] 72 小時內：依 Microsoft 11 月更新優先部署 critical RCE 修補，並對照 MSRC 頁面確認 .NET 與 ASP.NET Core 受影響版本。",
+      "[P1] 1 週內：檢視 Qlik Sense 伺服器暴露面，並盤點 AI 建置應用的匿名存取設定。"
+    ]
+  }
+}
