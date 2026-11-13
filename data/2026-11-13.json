@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-13",
+  "stats": {
+    "total": 6,
+    "high_risk": 3,
+    "cve_count": 1
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔎",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "非技術文章"
+          ],
+          "title": "Never be afraid to ask questions",
+          "url": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "這是一篇個人心得文章。作者回顧大學人類學課程，說明提問如何幫助跨越文化差異。",
+            "來源摘要沒有提到漏洞、攻擊活動或 IOC，因此歸為 info，僅供參考。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "無需技術處置。可在事件應變團隊內分享，鼓勵成員在調查時主動提問、釐清假設。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "身分安全",
+            "活動資訊"
+          ],
+          "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+          "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "這是一則網路研討會宣傳。內容指出，資安團隊的警報和日誌很多，但事件發生時仍可能難以快速確認活動背後是誰或什麼，以及它能存取哪些資源。",
+            "文中舉例，可疑登入可能來自員工，異常 API 呼叫可能來自機器帳號，也可能來自 AI 代理。來源摘要沒有提供具體漏洞或攻擊事件。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點人員、機器帳號與 AI 代理的身分及權限，確認警報能對應到明確的身分擁有者。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "id": "card-2-placeholder",
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "每週彙整"
+          ],
+          "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+          "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "這是每週威脅彙整。標題提到 59 個 Linux 核心漏洞、Falcon 間諜軟體與 GSocket 後門等主題。",
+            "摘要僅概述攻擊者利用假網站、遭竊存取權限和受信任工具入侵，並提到 AI 加速攻擊建置。提供的內容沒有具體 CVE、CVSS、KEV 或 IOC，無法判斷個別風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀原文，逐項比對自身環境是否使用受影響的 Linux 核心或相關工具。",
+            "提醒使用者留意搜尋結果中的假網站與非預期的存取請求。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "Windows",
+            "權限提升",
+            "公開 PoC"
+          ],
+          "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+          "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "本週稍早公開的 PoC「SignDrop」宣稱，本機 Windows 使用者可透過 Common Log File System（CLFS）驅動程式取得 SYSTEM 權限。",
+            "該 PoC 針對去年新增的日誌驗證功能。當高權限程序開啟特製日誌時，它利用 clfs.sys 建立附屬檔案的方式，以路徑重新導向取得控制。來源摘要未提供 CVE、CVSS、KEV 或修補資訊，風險等級依其公開 PoC 與 SYSTEM 提權描述暫列 high。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "追蹤 Microsoft 的官方公告與修補，一旦釋出就優先部署。",
+            "在修補前，強化對 clfs.sys 異常行為與本機提權跡象的監控，並限制不受信任使用者的本機登入。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "容器登錄庫",
+            "Red Hat Quay"
+          ],
+          "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+          "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "Red Hat Quay 的嚴重漏洞，可讓能存取 Quay 登錄庫的攻擊者讀取並覆寫每個儲存庫中的私有容器映像。",
+            "Quay 預設啟用匿名存取，啟用時攻擊者不需帳號。關閉匿名存取後，任何有效帳號仍可利用。Red Hat 已發布多個 Quay 版本的修正版本；摘要沒有提供 CVE 或 CVSS。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依 Red Hat 公告確認所用 Quay 版本，並盡速升級到修正版本。",
+            "在修補前，檢查是否啟用匿名存取，並限制登錄庫的網路可達範圍。",
+            "檢視映像摘要與推送紀錄，確認私有映像沒有遭到非預期覆寫。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Citrix",
+            "NetScaler",
+            "驗證繞過"
+          ],
+          "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+          "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-12",
+          "paragraphs": [
+            "Citrix 發布修補，涵蓋 NetScaler ADC、NetScaler Gateway 與 NetScaler Console 的多個嚴重漏洞，可能導致阻斷服務或驗證繞過。標題指出共修補 12 個 NetScaler 與 Secure Access Client 漏洞。",
+            "來源明確列出 CVE-2026-120868（CVSS 9.3），為封包處理相關的記憶體溢位漏洞，摘要在此處截斷。其餘漏洞的 CVE 編號與 CVSS 未在提供內容中列出，來源也未提及 KEV 或已遭利用。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 Citrix 官方公告，盤點 NetScaler ADC、Gateway、Console 與 Secure Access Client 的版本，並優先修補。",
+            "暴露於網際網路的 NetScaler 設備應優先處理，修補後檢視驗證與管理介面日誌是否有異常。"
+          ],
+          "cve_ids": [
+            "CVE-2026-120868"
+          ],
+          "cvss": "9.3",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日最高風險為 Citrix NetScaler 嚴重漏洞（CVE-2026-120868，CVSS 9.3）與 Red Hat Quay 嚴重漏洞，另有 Windows CLFS SignDrop 公開 PoC 提權。其餘三則為彙整、活動宣傳或非技術文章。",
+    "blind_spot": "來源只有摘要且部分被截斷：Citrix 其餘漏洞的 CVE 與 CVSS、Quay 的 CVE 與受影響版本、SignDrop 的 CVE 與修補狀態都未提供。三項高風險的 KEV 狀態皆未提及，沒有足夠資料驗證。ThreatsDay 內的 Linux 核心與 Falcon、GSocket 等項目也無法逐一評估。",
+    "ioc_note": "輸入資料未提供任何 IOC（IP、網域、雜湊等），也沒有做外部查核，因此無法給出 IOC 結論。",
+    "actions": [
+      "[P0] 24 小時內：盤點並修補對外的 NetScaler ADC / Gateway / Console，並核對官方公告中的全部 CVE。",
+      "[P0] 24 小時內：確認 Red Hat Quay 版本，升級至修正版本，並檢查匿名存取設定與映像覆寫紀錄。",
+      "[P1] 3 天內：追蹤 Microsoft 對 CLFS SignDrop 的公告，並加強對本機提權行為的偵測。",
+      "[P1] 3 天內：閱讀 ThreatsDay 原文，比對自身環境是否受 Linux 核心漏洞與相關後門影響。"
+    ]
+  }
+}
