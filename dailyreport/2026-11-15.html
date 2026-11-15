@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-15</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-15</div>
+      <h1 class="hero-heading">2026-11-15 日報</h1>
+      <p class="hero-desc">
+        本次彙整 2 則情資，其中 1 則屬高風險等級，
+        共涉及 1 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">2</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">1</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">1</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high is-active">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">2 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">供應鏈</span><span class="tag tag-info">開發工具</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html" target="_blank" rel="noopener noreferrer">Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-15</span>
+      </div>
+
+      <div class="card-body">
+        <p>據報導,Anthropic 官方 Claude Code 擴充套件在 Cursor 擴充套件市集遭到入侵,起因是 Cursor 發給 Fireworks 的存取金鑰被竊。Cursor 在週五更新中表示,該金鑰由 Fireworks 端暴露,攻擊者利用它從唯讀來源複製資料。</p><p>來源摘錄內容不完整,未提供受影響版本、影響範圍、IOC 或 CVE 資訊,因此風險等級以 info 標示,不代表低風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>參考 Cursor 與 Anthropic 的官方公告,確認是否安裝過受影響的 Claude Code 擴充套件版本。</li><li>檢視並輪替與 Cursor、Fireworks AI 整合相關的存取金鑰與權杖。</li><li>在取得官方細節前,暫時審查開發環境中擴充套件的來源與更新紀錄。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">漏洞</span><span class="tag tag-info">KEV</span><span class="tag tag-info">主動利用</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html" target="_blank" rel="noopener noreferrer">Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-14</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA 於週五將影響開源 IRC 伺服器 UnrealIRCd 的高嚴重性漏洞 CVE-2026-114713(CVSS 8.6)加入已知遭利用漏洞(KEV)目錄,原因是已有主動利用的報告。</p><p>該漏洞屬於分隔符號處理不當(improper neutralization of delimiters)問題,標題指出可造成伺服器層級的命令注入。來源摘錄未提供受影響版本與修補版本的細節。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中的 UnrealIRCd 實例,並依官方公告確認版本與修補狀態。</li><li>儘速套用廠商修補;無法立即修補時,限制 IRC 服務對外暴露並檢查伺服器日誌是否有異常指令。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-114713</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">8.6</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-15</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>本日兩則情資:UnrealIRCd 漏洞 CVE-2026-114713 已列入 CISA KEV 並有主動利用報告(CVSS 8.6),優先度最高;另有 Cursor 市集 Claude Code 擴充套件因 Fireworks AI 外洩金鑰而遭入侵的供應鏈事件。</p>
+  <p><strong>防禦盲點：</strong>供應鏈事件的來源摘錄不完整,缺少受影響版本、時間範圍與影響面,沒有足夠資料驗證其嚴重度。UnrealIRCd 的受影響版本與修補版本也未提供。開發者工作站上的擴充套件與暴露的 IRC 服務可能不在一般資產盤點範圍內。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC(雜湊、網域、IP 等),未進行外部查核,沒有足夠資料驗證。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並修補或隔離 UnrealIRCd 實例(CVE-2026-114713)。</li><li>[P1] 48 小時內:確認是否使用過受影響的 Cursor Claude Code 擴充套件,並輪替相關金鑰與權杖。</li><li>[P1] 72 小時內:追蹤 Cursor、Anthropic 及 Fireworks AI 的官方公告,以取得受影響版本與 IOC。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
