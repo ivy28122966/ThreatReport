@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-15",
+  "stats": {
+    "total": 2,
+    "high_risk": 1,
+    "cve_count": 1
+  },
+  "threat_level": "high",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "供應鏈",
+            "開發工具"
+          ],
+          "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+          "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-15",
+          "paragraphs": [
+            "據報導,Anthropic 官方 Claude Code 擴充套件在 Cursor 擴充套件市集遭到入侵,起因是 Cursor 發給 Fireworks 的存取金鑰被竊。Cursor 在週五更新中表示,該金鑰由 Fireworks 端暴露,攻擊者利用它從唯讀來源複製資料。",
+            "來源摘錄內容不完整,未提供受影響版本、影響範圍、IOC 或 CVE 資訊,因此風險等級以 info 標示,不代表低風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "參考 Cursor 與 Anthropic 的官方公告,確認是否安裝過受影響的 Claude Code 擴充套件版本。",
+            "檢視並輪替與 Cursor、Fireworks AI 整合相關的存取金鑰與權杖。",
+            "在取得官方細節前,暫時審查開發環境中擴充套件的來源與更新紀錄。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "漏洞",
+            "KEV",
+            "主動利用"
+          ],
+          "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+          "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-14",
+          "paragraphs": [
+            "CISA 於週五將影響開源 IRC 伺服器 UnrealIRCd 的高嚴重性漏洞 CVE-2026-114713(CVSS 8.6)加入已知遭利用漏洞(KEV)目錄,原因是已有主動利用的報告。",
+            "該漏洞屬於分隔符號處理不當(improper neutralization of delimiters)問題,標題指出可造成伺服器層級的命令注入。來源摘錄未提供受影響版本與修補版本的細節。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中的 UnrealIRCd 實例,並依官方公告確認版本與修補狀態。",
+            "儘速套用廠商修補;無法立即修補時,限制 IRC 服務對外暴露並檢查伺服器日誌是否有異常指令。"
+          ],
+          "cve_ids": [
+            "CVE-2026-114713"
+          ],
+          "cvss": "8.6",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日兩則情資:UnrealIRCd 漏洞 CVE-2026-114713 已列入 CISA KEV 並有主動利用報告(CVSS 8.6),優先度最高;另有 Cursor 市集 Claude Code 擴充套件因 Fireworks AI 外洩金鑰而遭入侵的供應鏈事件。",
+    "blind_spot": "供應鏈事件的來源摘錄不完整,缺少受影響版本、時間範圍與影響面,沒有足夠資料驗證其嚴重度。UnrealIRCd 的受影響版本與修補版本也未提供。開發者工作站上的擴充套件與暴露的 IRC 服務可能不在一般資產盤點範圍內。",
+    "ioc_note": "來源資料未提供任何 IOC(雜湊、網域、IP 等),未進行外部查核,沒有足夠資料驗證。",
+    "actions": [
+      "[P0] 24 小時內:盤點並修補或隔離 UnrealIRCd 實例(CVE-2026-114713)。",
+      "[P1] 48 小時內:確認是否使用過受影響的 Cursor Claude Code 擴充套件,並輪替相關金鑰與權杖。",
+      "[P1] 72 小時內:追蹤 Cursor、Anthropic 及 Fireworks AI 的官方公告,以取得受影響版本與 IOC。"
+    ]
+  }
+}
