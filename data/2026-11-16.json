@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-16",
+  "stats": {
+    "total": 1,
+    "high_risk": 0,
+    "cve_count": 0
+  },
+  "threat_level": "info",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "隱私法遵"
+          ],
+          "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+          "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-15",
+          "paragraphs": [
+            "義大利資料保護機關 Garante 對 Meta 處以 8.05 億歐元罰款，原因是 Android 版 Facebook 的一項功能會從使用者手機相簿中建議照片與影片供發文使用。",
+            "依來源摘要，Garante 認定該功能預設啟用，且 App 在未取得明確同意下存取義大利使用者的照片、影片及相關中繼資料。來源摘要提到 Meta 有 60 天期限，但後續內容在提供的資料中被截斷，細節無法確認。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點組織內 App 與自家產品是否有預設啟用的相簿、檔案或中繼資料存取功能，並確認存取前有取得明確同意。",
+            "檢視行動裝置管理政策，對員工裝置上的社群 App 限制不必要的媒體與儲存權限。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日僅有 1 則情資，為義大利對 Meta 的隱私裁罰，屬資料保護與法遵議題，來源未提及漏洞或攻擊活動。",
+    "blind_spot": "來源摘要內容被截斷，Meta 回應、60 天期限的具體要求與其他細節無法確認；本日資料量少，不足以代表整體威脅態勢。",
+    "ioc_note": "來源未提供任何 IOC，也未執行外部查核；CVSS 與 KEV 狀態沒有足夠資料驗證，分別標示為 N/A 與未提及。",
+    "actions": [
+      "[P1] 一週內：盤點自家與第三方 App 的媒體相簿存取權限及預設同意設定。",
+      "[P2] 一個月內：追蹤原始報導與 Garante 公告，確認裁罰細節與合規要求。"
+    ]
+  }
+}
