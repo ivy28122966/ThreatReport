@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-17</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-17</div>
+      <h1 class="hero-heading">2026-11-17 日報</h1>
+      <p class="hero-desc">
+        本次彙整 7 則情資，其中 0 則屬高風險等級，
+        共涉及 3 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">7</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">0</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">3</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info is-active">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">3 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">資訊更新</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 CVE 的描述與標題，來源明確指出這僅是資訊性變更。</p><p>來源未提供 CVSS、KEV 或利用狀況，因此無法判斷實際風險，暫以 info 標示。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對照 MSRC 更新指南頁面，確認環境中的 .NET／Visual Studio 相關元件是否受影響。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">SharePoint</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223" target="_blank" rel="noopener noreferrer">CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>微軟表示此 CVE 已由 2026 年 11 月發布的更新修補，但當時不慎未列入 11 月安全更新清單，此次為資訊性補登。</p><p>已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 SharePoint 伺服器已安裝 2026 年 11 月更新。</li><li>尚未安裝者，將其納入修補排程。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">SharePoint</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222" target="_blank" rel="noopener noreferrer">CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>微軟表示此 CVE 已由 2026 年 11 月發布的更新修補，但當時不慎未列入 11 月安全更新清單，此次為資訊性補登。</p><p>已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 SharePoint 伺服器已安裝 2026 年 11 月更新。</li><li>尚未安裝者，將其納入修補排程。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-105544</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-124223</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-124222</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">AI 威脅</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html" target="_blank" rel="noopener noreferrer">Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>Google 揭露，威脅行為者對 AI 的濫用已超越手動提示，開始部署 ARTEX、CAIRN、CyberStrikeAI、PentAGI 等自主多代理攻擊框架，以更快的速度執行多階段入侵。</p><p>提供的來源摘要有限，未包含具體 CVE、IOC 或受影響產品，無法進一步評估風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>縮短高風險修補的處理時程，以因應修補後被快速武器化的可能。</li><li>閱讀完整報告後，再評估是否調整偵測規則。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">週報</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>這是每週回顧，標題提到 N-able、Windows、Chrome 與冰箱控制器等零時差，並提及預設密碼、受信任更新遞送惡意程式等議題。</p><p>提供的摘要僅有概述，沒有具體 CVE、CVSS、KEV 或 IOC，無法驗證各項細節。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>閱讀完整週報，確認是否涉及貴組織使用的 N-able、Windows、Chrome 產品。</li><li>檢查設備是否仍使用預設密碼。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">ICS／OT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html" target="_blank" rel="noopener noreferrer">Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>Midnight Blue 指出，Danfoss AK-SM800A 冷藏控制器存在六個漏洞，遠端攻擊者可能不需登入即接管控制器。目前沒有修補程式，最新韌體 5.4.0 亦未修復。</p><p>比利時、愛爾蘭與德國的政府資安機關已通知營運者採取因應措施。來源摘要未提供 CVE、CVSS 或 KEV 資訊，因此風險等級暫標 info；此標示不代表低風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 AK-SM800A 控制器，並確認其未直接暴露於網際網路。</li><li>將控制器置於隔離網段，限制遠端存取來源。</li><li>追蹤 Danfoss 與各國資安機關的後續通告。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">惡意程式</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html" target="_blank" rel="noopener noreferrer">Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>研究人員揭露 CoffeeLoader 新變種。Kaspersky 分析指出，NSIS 安裝程式會將 7z.dll 釋放至暫存目錄，並透過 rundll32.exe 執行。</p><p>來源摘要被截斷，未提供完整雜湊、網域或 IP 等 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>偵測由 rundll32.exe 從暫存目錄載入 7z.dll 的行為。</li><li>自 Kaspersky 完整報告取得 IOC 後進行比對。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">挖礦惡意程式</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html" target="_blank" rel="noopener noreferrer">SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-16</span>
+      </div>
+
+      <div class="card-body">
+        <p>以獲利為目的的威脅活動群集 REF3364 被歸因於一項針對 Linux 的挖礦行動，會竄改用於偵測 GPU 高負載的讀數。核心工具為 SANSAR，這是以 Rust 撰寫的協調器，透過 TOR 接收指令以管理 CPU 與 GPU 挖礦程式。</p><p>來源摘要被截斷，未提供 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對 Linux GPU 主機，以 NVIDIA 工具之外的方式交叉檢查負載與電力用量。</li><li>監控 Linux 主機的 TOR 出站連線。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-17</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>今日 7 則情資中，3 則為 MSRC CVE 資訊更新（.NET VSTest 的描述更正，以及兩個 SharePoint CVE 事後補登，均為資訊性變更）。其餘為 Google 揭露的 AI 代理攻擊框架、Danfoss 控制器無修補漏洞、CoffeeLoader 與 SANSAR 惡意程式。</p>
+  <p><strong>防禦盲點：</strong>所有來源均未提供 CVSS、KEV 狀態與完整 IOC，沒有足夠資料驗證實際風險，因此全部以 info 標示，這不代表低風險。Danfoss 控制器漏洞目前無修補，且最新韌體仍受影響，應優先關注。週報提及的多項零時差沒有細節。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源未提供可用的 IOC（雜湊、網域、IP），也未進行外部查核，因此沒有 IOC 查核結論。僅有 7z.dll、rundll32.exe 等行為線索。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：盤點 Danfoss AK-SM800A 控制器，確認未暴露於網際網路並完成網路隔離。</li><li>[P1] 3 天內：確認 SharePoint 伺服器已安裝 2026 年 11 月更新。</li><li>[P1] 3 天內：取得 Kaspersky 與 REF3364 完整報告中的 IOC 並比對日誌。</li><li>[P2] 1 週內：閱讀 Google AI 代理攻擊報告與週報，評估對修補時程與偵測規則的影響。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-3">Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
