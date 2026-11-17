@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-17",
+  "stats": {
+    "total": 7,
+    "high_risk": 0,
+    "cve_count": 3
+  },
+  "threat_level": "info",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "資訊更新"
+          ],
+          "title": "CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "MSRC 更新了此 CVE 的描述與標題，來源明確指出這僅是資訊性變更。",
+            "來源未提供 CVSS、KEV 或利用狀況，因此無法判斷實際風險，暫以 info 標示。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對照 MSRC 更新指南頁面，確認環境中的 .NET／Visual Studio 相關元件是否受影響。"
+          ],
+          "cve_ids": [
+            "CVE-2026-105544"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "SharePoint"
+          ],
+          "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124223",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "微軟表示此 CVE 已由 2026 年 11 月發布的更新修補，但當時不慎未列入 11 月安全更新清單，此次為資訊性補登。",
+            "已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 或 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 SharePoint 伺服器已安裝 2026 年 11 月更新。",
+            "尚未安裝者，將其納入修補排程。"
+          ],
+          "cve_ids": [
+            "CVE-2026-124223"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "SharePoint"
+          ],
+          "title": "CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "微軟表示此 CVE 已由 2026 年 11 月發布的更新修補，但當時不慎未列入 11 月安全更新清單，此次為資訊性補登。",
+            "已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 或 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 SharePoint 伺服器已安裝 2026 年 11 月更新。",
+            "尚未安裝者，將其納入修補排程。"
+          ],
+          "cve_ids": [
+            "CVE-2026-124222"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "AI 威脅"
+          ],
+          "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+          "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "Google 揭露，威脅行為者對 AI 的濫用已超越手動提示，開始部署 ARTEX、CAIRN、CyberStrikeAI、PentAGI 等自主多代理攻擊框架，以更快的速度執行多階段入侵。",
+            "提供的來源摘要有限，未包含具體 CVE、IOC 或受影響產品，無法進一步評估風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "縮短高風險修補的處理時程，以因應修補後被快速武器化的可能。",
+            "閱讀完整報告後，再評估是否調整偵測規則。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "週報"
+          ],
+          "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+          "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "這是每週回顧，標題提到 N-able、Windows、Chrome 與冰箱控制器等零時差，並提及預設密碼、受信任更新遞送惡意程式等議題。",
+            "提供的摘要僅有概述，沒有具體 CVE、CVSS、KEV 或 IOC，無法驗證各項細節。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀完整週報，確認是否涉及貴組織使用的 N-able、Windows、Chrome 產品。",
+            "檢查設備是否仍使用預設密碼。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "ICS／OT"
+          ],
+          "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+          "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "Midnight Blue 指出，Danfoss AK-SM800A 冷藏控制器存在六個漏洞，遠端攻擊者可能不需登入即接管控制器。目前沒有修補程式，最新韌體 5.4.0 亦未修復。",
+            "比利時、愛爾蘭與德國的政府資安機關已通知營運者採取因應措施。來源摘要未提供 CVE、CVSS 或 KEV 資訊，因此風險等級暫標 info；此標示不代表低風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 AK-SM800A 控制器，並確認其未直接暴露於網際網路。",
+            "將控制器置於隔離網段，限制遠端存取來源。",
+            "追蹤 Danfoss 與各國資安機關的後續通告。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "惡意程式"
+          ],
+          "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+          "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "研究人員揭露 CoffeeLoader 新變種。Kaspersky 分析指出，NSIS 安裝程式會將 7z.dll 釋放至暫存目錄，並透過 rundll32.exe 執行。",
+            "來源摘要被截斷，未提供完整雜湊、網域或 IP 等 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "偵測由 rundll32.exe 從暫存目錄載入 7z.dll 的行為。",
+            "自 Kaspersky 完整報告取得 IOC 後進行比對。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "挖礦惡意程式"
+          ],
+          "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+          "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-16",
+          "paragraphs": [
+            "以獲利為目的的威脅活動群集 REF3364 被歸因於一項針對 Linux 的挖礦行動，會竄改用於偵測 GPU 高負載的讀數。核心工具為 SANSAR，這是以 Rust 撰寫的協調器，透過 TOR 接收指令以管理 CPU 與 GPU 挖礦程式。",
+            "來源摘要被截斷，未提供 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對 Linux GPU 主機，以 NVIDIA 工具之外的方式交叉檢查負載與電力用量。",
+            "監控 Linux 主機的 TOR 出站連線。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日 7 則情資中，3 則為 MSRC CVE 資訊更新（.NET VSTest 的描述更正，以及兩個 SharePoint CVE 事後補登，均為資訊性變更）。其餘為 Google 揭露的 AI 代理攻擊框架、Danfoss 控制器無修補漏洞、CoffeeLoader 與 SANSAR 惡意程式。",
+    "blind_spot": "所有來源均未提供 CVSS、KEV 狀態與完整 IOC，沒有足夠資料驗證實際風險，因此全部以 info 標示，這不代表低風險。Danfoss 控制器漏洞目前無修補，且最新韌體仍受影響，應優先關注。週報提及的多項零時差沒有細節。",
+    "ioc_note": "來源未提供可用的 IOC（雜湊、網域、IP），也未進行外部查核，因此沒有 IOC 查核結論。僅有 7z.dll、rundll32.exe 等行為線索。",
+    "actions": [
+      "[P0] 24 小時內：盤點 Danfoss AK-SM800A 控制器，確認未暴露於網際網路並完成網路隔離。",
+      "[P1] 3 天內：確認 SharePoint 伺服器已安裝 2026 年 11 月更新。",
+      "[P1] 3 天內：取得 Kaspersky 與 REF3364 完整報告中的 IOC 並比對日誌。",
+      "[P2] 1 週內：閱讀 Google AI 代理攻擊報告與週報，評估對修補時程與偵測規則的影響。"
+    ]
+  }
+}
