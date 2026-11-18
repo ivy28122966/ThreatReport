@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-18</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-18</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-18</div>
+      <h1 class="hero-heading">2026-11-18 日報</h1>
+      <p class="hero-desc">
+        本次彙整 11 則情資，其中 2 則屬高風險等級，
+        共涉及 7 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">11</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">2</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">7</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high is-active">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">6 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680" target="_blank" rel="noopener noreferrer">CVE-2026-121680 Windows NTLM Spoofing Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新此 Windows NTLM 偽造漏洞的致謝內容，來源明確說明這只是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，故列為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認嚴重度與修補狀態，並對照內部資產是否已套用對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961" target="_blank" rel="noopener noreferrer">CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新此 Windows IIS 遠端程式碼執行漏洞的致謝內容，來源說明僅為資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，故列為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認對外提供服務的 IIS 主機是否已套用 MSRC 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914" target="_blank" rel="noopener noreferrer">CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新此 Windows Setup and Deployment 權限提升漏洞的致謝內容，來源說明僅為資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，故列為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>於修補管理流程中確認此 CVE 的更新是否已部署。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440" target="_blank" rel="noopener noreferrer">CVE-2026-108440 Microsoft Office Word Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新此 Microsoft Office Word 遠端程式碼執行漏洞的致謝內容，來源說明僅為資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，故列為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Office 更新是否已涵蓋此 CVE。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251" target="_blank" rel="noopener noreferrer">CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新此 PowerShell 遠端程式碼執行漏洞的致謝內容，來源說明僅為資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，故列為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 PowerShell 相關更新是否已部署至受影響系統。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">RCE</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115731" target="_blank" rel="noopener noreferrer">CVE-2026-115731 — Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Perforce Puppet Enterprise 的不受信任資料反序列化漏洞。持有任何 CA 簽發 agent 憑證的用戶端，可透過 PUT 請求提交特製 rich-data 型別報告，以服務帳號身分在 Puppet Server 上執行任意程式碼。</p><p>若憑證授權中心自動簽發請求且缺乏強驗證，未經驗證的網路攻擊者可取得有效憑證並利用此漏洞。CISA 要求依廠商指示緩解，遵循 BOD 26-04 與「Forensics Triage Requirements」，無法緩解時停用產品。來源未提供 CVSS。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示套用緩解或更新，並盤點 Puppet Server 的網際網路暴露情形。</li><li>檢查 CA 是否自動簽發憑證，改為需強驗證的簽發流程。</li><li>依 CISA 鑑識分流要求檢視 Puppet Server 是否有異常報告提交或執行痕跡。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-115731" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-121680</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-119961</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-119914</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-108440</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-96251</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-115731</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115731" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-6" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">行動裝置</span><span class="tag tag-info">Telegram</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html" target="_blank" rel="noopener noreferrer">Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>NebuSec 宣稱惡意 widget 可繞過 Telegram 上週為 Android 版新增的安全過濾機制並在其外執行程式碼。Widget 是 bot 在聊天訊息中傳送的互動區塊，其 JavaScript 在使用者手機上執行。</p><p>研究人員在 Telegram 測試伺服器上示範，因為只有經核准的 bot 才能傳送此類內容。此為研究人員主張，來源未提供 CVE、CVSS 或實際攻擊活動。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>關注 Telegram 官方更新並維持 Android 版為最新。</li><li>企業環境可評估是否限制不受信任 bot 的使用。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Java</span><span class="tag tag-info">Oracle</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html" target="_blank" rel="noopener noreferrer">Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>Oracle 預告 2026-11-17 修補 Java SE 的 11 個漏洞，皆可能在無需驗證下遠端利用，Oracle 預先通知中的最高 CVSS 3.1 分數為 8.1。</p><p>另有報告警告 OpenJDK 可能存在嚴重 RCE 漏洞（標題列為 CVE-2026-114938）。來源未提供該 CVE 的 CVSS 與 KEV 狀態，亦未顯示已遭利用。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 Java SE 與 OpenJDK 部署，套用 Oracle 本次發布的更新。</li><li>追蹤 CVE-2026-114938 的廠商公告與修補版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">供應鏈</span><span class="tag tag-info">資訊竊取</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html" target="_blank" rel="noopener noreferrer">Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>Stormshield 報告指出，名為 Trigram 的大規模活動冒充約 50 個區塊鏈與 AI 品牌，誘使開發者自行執行資訊竊取程式。目標涵蓋歐洲與美國的 AI、區塊鏈與物流產業。</p><p>來源摘要未提供 IOC、CVE 或詳細感染手法。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>提醒開發者勿執行來源不明的安裝指令或腳本，並驗證品牌官方管道。</li><li>參考 Stormshield 技術報告取得 IOC 並比對內部日誌。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">供應鏈</span><span class="tag tag-info">GitHub Actions</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html" target="_blank" rel="noopener noreferrer">Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>文章指出 SHA 釘選 GitHub Actions 雖是常見供應鏈防禦，但已有繞過手法。據稱 2026 年 3 月劫持 Trivy 的攻擊者植入看似來自 GitHub 官方 checkout 工具的惡意程式碼。</p><p>此文為網路研討會推廣，摘要細節有限，無法評估具體風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢視 CI/CD workflow 中第三方 Action 的來源與引用方式，不只依賴 SHA 釘選。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-low">
+      <div class="card-tags">
+        <span class="tag tag-low">LOW</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">行動裝置</span><span class="tag tag-info">Apple</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html" target="_blank" rel="noopener noreferrer">Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-17</span>
+      </div>
+
+      <div class="card-body">
+        <p>Apple 音訊服務的已修補漏洞，使 iPhone 與 iPad 上的應用程式在使用者拒絕麥克風權限後仍可錄音。首批修正更新於 8 月 17 日發布。</p><p>Apple 與兩位研究人員均未表示已遭攻擊利用。Meta Red Team X 的 Nik Tsytsarkin 上週公布技術細節。</p>
+      </div>
+
+      <div class="advisory-box advisory-low">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 iOS 與 iPadOS 裝置已更新至含修補的版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-114938</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-18</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>CISA KEV 收錄 Perforce Puppet Enterprise 反序列化 RCE（CVE-2026-115731），是今日唯一有明確利用佐證的項目；另 Oracle 預告修補 11 個 Java SE 漏洞（最高 CVSS 3.1 為 8.1），並有 OpenJDK 嚴重 RCE 報告。</p>
+  <p><strong>防禦盲點：</strong>5 筆 MSRC 條目僅為致謝資訊更新，未提供嚴重度與利用資料，不能視為低風險。多數來源未提供 CVSS 與 KEV 狀態，沒有足夠資料驗證。Telegram 繞過屬研究人員主張，Oracle 的 OpenJDK RCE 為未經驗證的報告。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC，未執行外部查核，沒有足夠資料驗證。Trigram 的 IOC 需自行查閱 Stormshield 報告。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：盤點並依廠商指示緩解 Puppet Enterprise（CVE-2026-115731），檢查 CA 自動簽發設定與異常報告提交。</li><li>[P1] 72 小時內：盤點 Java SE/OpenJDK 並套用 Oracle 本次更新，追蹤 CVE-2026-114938 公告。</li><li>[P1] 本週內：確認 MSRC 所列 5 個 CVE 的修補狀態與嚴重度。</li><li>[P2] 本週內：提醒開發者防範冒充品牌的惡意安裝指令，並檢視 CI/CD 第三方 Action 引用方式。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-121680 Windows NTLM Spoofing Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-108440 Microsoft Office Word Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">CVE-2026-115731 — Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-6">Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
