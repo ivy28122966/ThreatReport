@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-19</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-19</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-19</div>
+      <h1 class="hero-heading">2026-11-19 日報</h1>
+      <p class="hero-desc">
+        本次彙整 14 則情資，其中 8 則屬高風險等級，
+        共涉及 8 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">14</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">8</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">8</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🔎</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">3 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">區塊鏈 C2</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/" target="_blank" rel="noopener noreferrer">The challenge of defending against bulletproof dead drops on public blockchains</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 指出惡意程式的 C2 基礎設施正從脆弱的集中式伺服器與寫死網域,轉向具韌性的去中心化區塊鏈網路,以消除單點失效。</p><p>提供的資料僅有摘要,未包含具體技術細節、受影響產品或 IOC,無法據此評定風險等級。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>閱讀原文後,評估現有網域/IP 封鎖型偵測是否涵蓋區塊鏈 RPC 或節點連線的異常外連。</li><li>檢視終端與網路側對非預期區塊鏈相關流量的可視性。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">疑似北韓關聯</span><span class="tag tag-info">資訊竊取</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/" target="_blank" rel="noopener noreferrer">UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 發現與財務動機威脅組織 UAT-12643 相關的惡意基礎設施;標題稱其為疑似北韓關聯,結合區塊鏈韌性與針對性資訊竊取。</p><p>來源摘要未提供目標、感染鏈或 IOC,風險等級僅能標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>取得 Talos 原文中的 IOC 與 TTP,對照內部日誌進行回溯獵捕。</li><li>針對瀏覽器憑證與加密資產相關資料的存取行為加強監控。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">OpenJDK</span><span class="tag tag-info">RCE</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener noreferrer">CVE-2026-114938: Critical vulnerability in OpenJDK Java</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 追蹤 OpenJDK Java 的嚴重漏洞 CVE-2026-114938(代號 Java4Shell),CVSS 4.0 分數 9.2,可能導致未經身分驗證的遠端程式碼執行(RCE)。</p><p>來源摘要未提及修補版本、利用活動或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中使用 OpenJDK 的系統,特別是對外服務,並追蹤廠商修補公告。</li><li>在修補前,評估暴露面並考慮加強邊界防護與日誌監控。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-114938</span></td>
+            <td>Cisco Talos IR</td>
+            <td><span class="cvss-badge">9.2 (CVSS 4.0)</span></td>
+            <td>未提及</td>
+            <td><a href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener noreferrer">Cisco Talos Intelligence Blog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Active Directory</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148" target="_blank" rel="noopener noreferrer">CVE-2026-118148 Active Directory Domain Services Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Microsoft 更新了此 Active Directory Domain Services 權限提升漏洞的 CVSS 分數並修正 FAQ,並說明這僅是資訊性變更。</p><p>來源未提供新的分數數值、利用狀態或修補細節,無法據此判斷風險等級。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>至 MSRC 頁面確認更新後的 CVSS 與適用修補,並對照網域控制站修補狀態。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">KEV</span><span class="tag tag-info">Synology</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-10441" target="_blank" rel="noopener noreferrer">CVE-2024-10441 — Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Synology DSM(BeeStation OS)系統外掛常駐程式的輸出編碼/跳脫不當漏洞,遠端攻擊者可能經由未明向量執行任意程式碼。</p><p>CISA 要求依廠商指示套用緩解措施,並遵循 BOD 26-04 與鑑識分流要求。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 Synology DSM/BeeStation 設備並依廠商指示更新或緩解。</li><li>檢查設備是否暴露於網際網路,並依 CISA 鑑識分流要求執行檢查。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2024-10441" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">KEV</span><span class="tag tag-info">LiteLLM</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40217" target="_blank" rel="noopener noreferrer">CVE-2026-40217 — BerriAI LiteLLM Unprotected Alternate Channel Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 BerriAI LiteLLM 的未受保護替代通道漏洞,遠端攻擊者可能透過 /guardrails/test_custom_code 以位元組碼改寫執行任意程式碼。</p><p>CISA 要求依廠商指示緩解,若無緩解措施則停止使用該產品。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 LiteLLM 部署並依廠商指示更新或緩解。</li><li>檢查 /guardrails/test_custom_code 的存取紀錄,並限制該端點的對外暴露。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-40217" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">KEV</span><span class="tag tag-info">REDCap</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90817" target="_blank" rel="noopener noreferrer">CVE-2026-90817 — Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 REDCap 程式碼注入漏洞,未經驗證的攻擊者可透過公開問卷情境存取非預期控制器路由,並在資料匯入處理時提供特製檔案路徑或串流參數,在伺服器上執行任意程式碼。</p><p>來源指出利用需知道有效的公開問卷雜湊值。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示更新 REDCap 或套用緩解措施。</li><li>檢視公開問卷相關請求日誌,留意異常的路由與檔案路徑/串流參數。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-90817" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">KEV</span><span class="tag tag-info">Apache Axis</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90436" target="_blank" rel="noopener noreferrer">CVE-2026-90436 — Apache Axis Unsafe Reflection Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Apache Axis 不安全反射漏洞:未經驗證的遠端攻擊者可用特製 SOAP fault 訊息,使 Axis 載入並實例化 classpath 上的指定類別,進而執行任意程式碼。</p><p>來源指出受影響產品可能已 EoL/EoS,建議停止使用或轉換至受支援版本。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點使用 Apache Axis 的應用並規劃汰換或遷移至受支援版本。</li><li>在遷移前限制 SOAP 服務的對外暴露,並依 CISA 要求評估暴露面。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-90436" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-118148</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2024-10441</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-10441" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-40217</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40217" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-90817</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90817" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-90436</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90436" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">6 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-8" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">NGINX</span><span class="tag tag-info">RCE</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html" target="_blank" rel="noopener noreferrer">10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>NGINX HTTP/2 支援中的漏洞 CVE-2026-123007(代號 nginx2root)可讓未經驗證的攻擊者在啟用 HTTP/2 的伺服器上執行程式碼。該缺陷自 2015 年 9 月發布的 1.9.5 版即存在。</p><p>修補版本為 1.31.9 與 1.30.7。來源摘要未提供 CVSS 與利用狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點啟用 HTTP/2 的 NGINX 並升級至 1.31.9 或 1.30.7。</li><li>無法立即升級時,參考 F5 公告評估緩解方式。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">F5</span><span class="tag tag-info">BIG-IP</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html" target="_blank" rel="noopener noreferrer">F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>F5 揭露 6 個 BIG-IP 嚴重漏洞,未經登入的攻擊者可使流量管理微核心(TMM)當機,中斷流量直到 TMM 重啟。</p><p>每個漏洞都需要特定設定:虛擬伺服器上使用特定指令的 iRule,或包含兩種特定代理的 APM 政策。來源未提供 CVE ID、CVSS 或利用狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>檢查 BIG-IP 虛擬伺服器是否使用相關 iRule 指令或 APM 政策組合,確認是否受影響。</li><li>參照 F5 公告套用修補或緩解。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Apache Roller</span><span class="tag tag-info">已遭利用</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html" target="_blank" rel="noopener noreferrer">Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Apache Roller 的 CVE-2026-129448(CVSS 9.8)為 XML-RPC 端點的未驗證反序列化漏洞,可導致遠端程式碼執行;依 ASF 說法已出現實際利用。</p><p>來源摘要未提及 CISA KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 Apache Roller 實例,依 ASF 公告升級或套用緩解。</li><li>限制 XML-RPC 端點的對外存取,並檢查是否有可疑請求或入侵跡象。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-11" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">EggStreme</span><span class="tag tag-info">APT</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html" target="_blank" rel="noopener noreferrer">New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>Bitdefender 指出,疑似中國 APT 組織重建 EggStreme 工具組,持續鎖定菲律賓政府機構。</p><p>來源強調攻擊者在曝光後會更換雜湊與網域等指標,單靠靜態 IOC 的偵測容易失效。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>取得 Bitdefender 報告,以行為層面偵測規則補強僅依雜湊/網域的偵測。</li><li>政府與相關單位檢視端點偵測覆蓋與日誌保存。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-12" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">TPM</span><span class="tag tag-info">BitLocker</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html" target="_blank" rel="noopener noreferrer">New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p>柏林工業大學研究人員指出,在 AMD 平台及部分 Intel 平台上,有人打開機殼即可重設 Windows Hello 與 BitLocker PIN 的 TPM 鎖定機制,使短 PIN 可被猜測。</p><p>實驗室中已破解 AMD 筆電的 4 位數 Hello PIN 與 Intel 筆電的 6 位數 BitLocker PIN。攻擊需實體接觸裝置。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對高風險或易遺失的筆電,改用較長的 PIN 或密碼,避免短數字 PIN。</li><li>加強遺失/被竊裝置的實體保管與處置流程。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-13" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="" target="_blank" rel="noopener noreferrer">(保留)</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 </span>
+        <span class="separator">·</span>
+        <span></span>
+        <span class="separator">·</span>
+        <span>2026-11-18</span>
+      </div>
+
+      <div class="card-body">
+        <p></p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-123007</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-129448</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.8</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-19</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>當日最高風險為 Java4Shell(CVE-2026-114938,CVSS 4.0 為 9.2)與 Apache Roller(CVE-2026-129448,CVSS 9.8,ASF 稱已遭利用),另有 NGINX HTTP/2 RCE、F5 BIG-IP 六個嚴重漏洞,以及四筆 CISA KEV 新增項目。</p>
+  <p><strong>防禦盲點：</strong>多數來源僅提供摘要,缺少 CVSS、修補版本與利用細節;Talos 兩篇獵捕報告與 EggStreme 缺乏技術細節,區塊鏈 C2 與頻繁更換指標可能使僅依網域/雜湊的偵測失效。F5 BIG-IP 六個漏洞未提供 CVE ID,故未計入 CVE 統計。沒有足夠資料驗證 KEV 狀態(KEV 以外項目)與 CVSS(多數項目)。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC,亦未執行外部查核,無法對 IOC 下結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並處置 Apache Roller、OpenJDK(Java4Shell)、NGINX HTTP/2 暴露資產,依廠商公告修補或緩解。</li><li>[P0] 24 小時內:依 CISA KEV 要求處理 Synology DSM、LiteLLM、REDCap、Apache Axis,並檢查暴露面。</li><li>[P1] 72 小時內:確認 F5 BIG-IP 是否使用受影響 iRule/APM 設定並套用修補。</li><li>[P1] 一週內:取得 Talos 與 Bitdefender 原文 IOC/TTP 進行獵捕,並評估筆電 PIN 強度政策。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🔎 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">The challenge of defending against bulletproof dead drops on public blockchains</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-114938: Critical vulnerability in OpenJDK Java</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-118148 Active Directory Domain Services Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2024-10441 — Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">CVE-2026-40217 — BerriAI LiteLLM Unprotected Alternate Channel Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">CVE-2026-90817 — Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">CVE-2026-90436 — Apache Axis Unsafe Reflection Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-8">10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</a></li>
+        
+        <li><a class="tree-card-link" href="#card-11">New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</a></li>
+        
+        <li><a class="tree-card-link" href="#card-12">New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years</a></li>
+        
+        <li><a class="tree-card-link" href="#card-13">(保留)</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
