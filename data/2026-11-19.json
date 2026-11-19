@@ -1,0 +1,431 @@
+{
+  "date": "2026-11-19",
+  "stats": {
+    "total": 14,
+    "high_risk": 8,
+    "cve_count": 8
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔎",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "區塊鏈 C2"
+          ],
+          "title": "The challenge of defending against bulletproof dead drops on public blockchains",
+          "url": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Talos 指出惡意程式的 C2 基礎設施正從脆弱的集中式伺服器與寫死網域,轉向具韌性的去中心化區塊鏈網路,以消除單點失效。",
+            "提供的資料僅有摘要,未包含具體技術細節、受影響產品或 IOC,無法據此評定風險等級。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀原文後,評估現有網域/IP 封鎖型偵測是否涵蓋區塊鏈 RPC 或節點連線的異常外連。",
+            "檢視終端與網路側對非預期區塊鏈相關流量的可視性。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "疑似北韓關聯",
+            "資訊竊取"
+          ],
+          "title": "UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing",
+          "url": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Talos 發現與財務動機威脅組織 UAT-12643 相關的惡意基礎設施;標題稱其為疑似北韓關聯,結合區塊鏈韌性與針對性資訊竊取。",
+            "來源摘要未提供目標、感染鏈或 IOC,風險等級僅能標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "取得 Talos 原文中的 IOC 與 TTP,對照內部日誌進行回溯獵捕。",
+            "針對瀏覽器憑證與加密資產相關資料的存取行為加強監控。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "威脅獵捕",
+            "OpenJDK",
+            "RCE"
+          ],
+          "title": "CVE-2026-114938: Critical vulnerability in OpenJDK Java",
+          "url": "https://blog.talosintelligence.com/java4shell/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Talos 追蹤 OpenJDK Java 的嚴重漏洞 CVE-2026-114938(代號 Java4Shell),CVSS 4.0 分數 9.2,可能導致未經身分驗證的遠端程式碼執行(RCE)。",
+            "來源摘要未提及修補版本、利用活動或 KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中使用 OpenJDK 的系統,特別是對外服務,並追蹤廠商修補公告。",
+            "在修補前,評估暴露面並考慮加強邊界防護與日誌監控。"
+          ],
+          "cve_ids": [
+            "CVE-2026-114938"
+          ],
+          "cvss": "9.2 (CVSS 4.0)",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Active Directory",
+            "權限提升"
+          ],
+          "title": "CVE-2026-118148 Active Directory Domain Services Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Microsoft 更新了此 Active Directory Domain Services 權限提升漏洞的 CVSS 分數並修正 FAQ,並說明這僅是資訊性變更。",
+            "來源未提供新的分數數值、利用狀態或修補細節,無法據此判斷風險等級。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "至 MSRC 頁面確認更新後的 CVSS 與適用修補,並對照網域控制站修補狀態。"
+          ],
+          "cve_ids": [
+            "CVE-2026-118148"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "KEV",
+            "Synology"
+          ],
+          "title": "CVE-2024-10441 — Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "CISA KEV 收錄 Synology DSM(BeeStation OS)系統外掛常駐程式的輸出編碼/跳脫不當漏洞,遠端攻擊者可能經由未明向量執行任意程式碼。",
+            "CISA 要求依廠商指示套用緩解措施,並遵循 BOD 26-04 與鑑識分流要求。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 Synology DSM/BeeStation 設備並依廠商指示更新或緩解。",
+            "檢查設備是否暴露於網際網路,並依 CISA 鑑識分流要求執行檢查。"
+          ],
+          "cve_ids": [
+            "CVE-2024-10441"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "KEV",
+            "LiteLLM"
+          ],
+          "title": "CVE-2026-40217 — BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "CISA KEV 收錄 BerriAI LiteLLM 的未受保護替代通道漏洞,遠端攻擊者可能透過 /guardrails/test_custom_code 以位元組碼改寫執行任意程式碼。",
+            "CISA 要求依廠商指示緩解,若無緩解措施則停止使用該產品。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 LiteLLM 部署並依廠商指示更新或緩解。",
+            "檢查 /guardrails/test_custom_code 的存取紀錄,並限制該端點的對外暴露。"
+          ],
+          "cve_ids": [
+            "CVE-2026-40217"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "KEV",
+            "REDCap"
+          ],
+          "title": "CVE-2026-90817 — Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "CISA KEV 收錄 REDCap 程式碼注入漏洞,未經驗證的攻擊者可透過公開問卷情境存取非預期控制器路由,並在資料匯入處理時提供特製檔案路徑或串流參數,在伺服器上執行任意程式碼。",
+            "來源指出利用需知道有效的公開問卷雜湊值。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示更新 REDCap 或套用緩解措施。",
+            "檢視公開問卷相關請求日誌,留意異常的路由與檔案路徑/串流參數。"
+          ],
+          "cve_ids": [
+            "CVE-2026-90817"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "KEV",
+            "Apache Axis"
+          ],
+          "title": "CVE-2026-90436 — Apache Axis Unsafe Reflection Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "CISA KEV 收錄 Apache Axis 不安全反射漏洞:未經驗證的遠端攻擊者可用特製 SOAP fault 訊息,使 Axis 載入並實例化 classpath 上的指定類別,進而執行任意程式碼。",
+            "來源指出受影響產品可能已 EoL/EoS,建議停止使用或轉換至受支援版本。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點使用 Apache Axis 的應用並規劃汰換或遷移至受支援版本。",
+            "在遷移前限制 SOAP 服務的對外暴露,並依 CISA 要求評估暴露面。"
+          ],
+          "cve_ids": [
+            "CVE-2026-90436"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-8",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "NGINX",
+            "RCE"
+          ],
+          "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+          "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "NGINX HTTP/2 支援中的漏洞 CVE-2026-123007(代號 nginx2root)可讓未經驗證的攻擊者在啟用 HTTP/2 的伺服器上執行程式碼。該缺陷自 2015 年 9 月發布的 1.9.5 版即存在。",
+            "修補版本為 1.31.9 與 1.30.7。來源摘要未提供 CVSS 與利用狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點啟用 HTTP/2 的 NGINX 並升級至 1.31.9 或 1.30.7。",
+            "無法立即升級時,參考 F5 公告評估緩解方式。"
+          ],
+          "cve_ids": [
+            "CVE-2026-123007"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "F5",
+            "BIG-IP"
+          ],
+          "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+          "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "F5 揭露 6 個 BIG-IP 嚴重漏洞,未經登入的攻擊者可使流量管理微核心(TMM)當機,中斷流量直到 TMM 重啟。",
+            "每個漏洞都需要特定設定:虛擬伺服器上使用特定指令的 iRule,或包含兩種特定代理的 APM 政策。來源未提供 CVE ID、CVSS 或利用狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查 BIG-IP 虛擬伺服器是否使用相關 iRule 指令或 APM 政策組合,確認是否受影響。",
+            "參照 F5 公告套用修補或緩解。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Apache Roller",
+            "已遭利用"
+          ],
+          "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+          "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Apache Roller 的 CVE-2026-129448(CVSS 9.8)為 XML-RPC 端點的未驗證反序列化漏洞,可導致遠端程式碼執行;依 ASF 說法已出現實際利用。",
+            "來源摘要未提及 CISA KEV 狀態。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 Apache Roller 實例,依 ASF 公告升級或套用緩解。",
+            "限制 XML-RPC 端點的對外存取,並檢查是否有可疑請求或入侵跡象。"
+          ],
+          "cve_ids": [
+            "CVE-2026-129448"
+          ],
+          "cvss": "9.8",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-11",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "EggStreme",
+            "APT"
+          ],
+          "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+          "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "Bitdefender 指出,疑似中國 APT 組織重建 EggStreme 工具組,持續鎖定菲律賓政府機構。",
+            "來源強調攻擊者在曝光後會更換雜湊與網域等指標,單靠靜態 IOC 的偵測容易失效。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "取得 Bitdefender 報告,以行為層面偵測規則補強僅依雜湊/網域的偵測。",
+            "政府與相關單位檢視端點偵測覆蓋與日誌保存。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-12",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "TPM",
+            "BitLocker"
+          ],
+          "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+          "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-18",
+          "paragraphs": [
+            "柏林工業大學研究人員指出,在 AMD 平台及部分 Intel 平台上,有人打開機殼即可重設 Windows Hello 與 BitLocker PIN 的 TPM 鎖定機制,使短 PIN 可被猜測。",
+            "實驗室中已破解 AMD 筆電的 4 位數 Hello PIN 與 Intel 筆電的 6 位數 BitLocker PIN。攻擊需實體接觸裝置。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對高風險或易遺失的筆電,改用較長的 PIN 或密碼,避免短數字 PIN。",
+            "加強遺失/被竊裝置的實體保管與處置流程。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-13",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他"
+          ],
+          "title": "(保留)",
+          "url": "",
+          "source_name": "",
+          "org": "",
+          "published": "2026-11-18",
+          "paragraphs": [
+            ""
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            ""
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "當日最高風險為 Java4Shell(CVE-2026-114938,CVSS 4.0 為 9.2)與 Apache Roller(CVE-2026-129448,CVSS 9.8,ASF 稱已遭利用),另有 NGINX HTTP/2 RCE、F5 BIG-IP 六個嚴重漏洞,以及四筆 CISA KEV 新增項目。",
+    "blind_spot": "多數來源僅提供摘要,缺少 CVSS、修補版本與利用細節;Talos 兩篇獵捕報告與 EggStreme 缺乏技術細節,區塊鏈 C2 與頻繁更換指標可能使僅依網域/雜湊的偵測失效。F5 BIG-IP 六個漏洞未提供 CVE ID,故未計入 CVE 統計。沒有足夠資料驗證 KEV 狀態(KEV 以外項目)與 CVSS(多數項目)。",
+    "ioc_note": "來源資料未提供任何 IOC,亦未執行外部查核,無法對 IOC 下結論。",
+    "actions": [
+      "[P0] 24 小時內:盤點並處置 Apache Roller、OpenJDK(Java4Shell)、NGINX HTTP/2 暴露資產,依廠商公告修補或緩解。",
+      "[P0] 24 小時內:依 CISA KEV 要求處理 Synology DSM、LiteLLM、REDCap、Apache Axis,並檢查暴露面。",
+      "[P1] 72 小時內:確認 F5 BIG-IP 是否使用受影響 iRule/APM 設定並套用修補。",
+      "[P1] 一週內:取得 Talos 與 Bitdefender 原文 IOC/TTP 進行獵捕,並評估筆電 PIN 強度政策。"
+    ]
+  }
+}
