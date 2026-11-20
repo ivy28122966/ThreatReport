@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-20</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-20</div>
+      <h1 class="hero-heading">2026-11-20 日報</h1>
+      <p class="hero-desc">
+        本次彙整 11 則情資，其中 3 則屬高風險等級，
+        共涉及 7 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">11</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">3</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">7</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🔍</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">1 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">營運觀點</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/" target="_blank" rel="noopener noreferrer">The internet needs a nap (and you do, too)</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 這篇文章從持續不斷的突發資安新聞中抽身,主張應優先重視環境掌握度與團隊穩定性,而不是一味被動地救火式修補。</p><p>來源摘要未提供漏洞、IOC 或攻擊活動細節,屬觀點性內容,因此列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點資產與環境可視性,作為修補優先順序的依據。</li><li>檢視值班與修補流程,避免團隊長期處於被動應變狀態。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874" target="_blank" rel="noopener noreferrer">CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此 Xbox Gaming Services 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊,無法據此判斷實際風險。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認受影響環境是否已套用 Microsoft 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989" target="_blank" rel="noopener noreferrer">CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了 vhdmp.sys 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Windows 主機是否已套用 Microsoft 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">阻斷服務</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082" target="_blank" rel="noopener noreferrer">CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了 Windows Kerberos 阻斷服務漏洞的致謝資訊,來源說明這僅是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認網域控制器與相關 Windows 主機是否已套用 Microsoft 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">權限提升</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817" target="_blank" rel="noopener noreferrer">CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了 Windows Devices Human Interface 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Windows 端點是否已套用 Microsoft 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">資訊洩露</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669" target="_blank" rel="noopener noreferrer">CVE-2026-121669 PowerShell Information Disclosure Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了 PowerShell 資訊洩露漏洞的致謝資訊,來源說明這僅是資訊性變更。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 PowerShell 版本是否已套用 Microsoft 對應更新。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-95874</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-95989</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-96082</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-113817</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-121669</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-6" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">週報</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html" target="_blank" rel="noopener noreferrer">ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>本週彙整指出,攻擊者常利用人們預期中的事物(如工作邀約、服務中斷通知、熟悉的應用程式)來竊取資料、散布惡意程式並騙取存取權。</p><p>來源摘要也提到 AI 正讓部分攻擊更容易發動,但提供的內容被截斷,缺乏具體技術細節,故僅列為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>提醒員工對求職訊息、服務中斷通知及不明應用程式保持警覺,並透過獨立管道查證。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">PHP</span><span class="tag tag-info">遠端程式碼執行</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html" target="_blank" rel="noopener noreferrer">phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>phpAfterShell 為 PHP 預設檔案式 session 儲存的缺陷:攻擊者可在特定時機中斷 session 寫入,使其回傳由攻擊者選定的物件。若應用程式同時存在合適的 gadget chain,這些物件可能導致伺服器端程式碼執行。</p><p>來源指出本日 PHP 版本已修復,追蹤編號為 CVE-2026-126714;但提供的內容在評級處被截斷,因此嚴重度無法判定,暫列 info(不代表低風險)。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>升級至已修復此問題的 PHP 版本。</li><li>檢視應用程式是否存在可被利用的反序列化 gadget chain。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">PHP</span><span class="tag tag-info">遠端程式碼執行</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html" target="_blank" rel="noopener noreferrer">PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>PHP Foundation 發布安全更新,修補多個嚴重漏洞,其中包含 CVE-2026-115560;這些漏洞在特定條件下可能導致受影響部署遠端程式碼執行。</p><p>此次更新先前已有預告,影響所有受支援的 PHP 版本(依特定條件)。來源未提供 CVSS、利用活動或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盡速盤點並升級所有受支援分支的 PHP 至已修復版本。</li><li>對無法立即升級的對外 PHP 服務,評估暫時性的存取限制。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">VMware</span><span class="tag tag-info">驗證繞過</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html" target="_blank" rel="noopener noreferrer">Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>Broadcom 公告指出,VMware vCenter 存在嚴重漏洞,具網路存取能力的攻擊者可繞過驗證並取得系統未授權存取。所有受支援分支均已有修復版本,且未列出替代緩解措施。</p><p>vCenter 是管理 ESX 主機與虛擬機的中央主控台,風險影響面大。來源標題標示 CVSS 9.8;提供內容未列出 CVE 編號,也未提及 KEV 或利用活動。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>立即依 Broadcom 公告將 vCenter 升級至對應分支的修復版本。</li><li>在修補完成前,限制 vCenter 管理介面僅供管理網段存取。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Drupal</span><span class="tag tag-info">站台接管</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html" target="_blank" rel="noopener noreferrer">Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-19</span>
+      </div>
+
+      <div class="card-body">
+        <p>Drupal core 存在嚴重漏洞:在特定條件下,未經驗證的攻擊者可利用內建安裝程式嘗試重新安裝站台,進而導致站台被接管或遠端程式碼執行。</p><p>專案評估有漏洞的設定屬於少見情況。所有受支援分支的修復版本已於前一日發布。提供內容未列出 CVE 編號、CVSS 或 KEV 資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>將 Drupal 升級至所屬分支的修復版本。</li><li>確認正式環境無法由外部存取安裝程式路徑。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-126714</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-115560</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-20</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>本日最高風險為 PHP 多個嚴重漏洞(含可能的遠端程式碼執行)、VMware vCenter 驗證繞過(標題標示 CVSS 9.8)及 Drupal 安裝程式嚴重漏洞,三者皆已有修復版本。MSRC 的 5 筆項目僅為致謝資訊更新,不代表新的風險。</p>
+  <p><strong>防禦盲點：</strong>來源多為摘要且部分內容被截斷(如 phpAfterShell 評級),VMware 與 Drupal 未提供 CVE 編號;除 VMware 標題外,CVSS 與 KEV 狀態沒有足夠資料驗證,且未見任何利用活動證據,不可據此判斷實際被利用情形。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC(IP、網域、雜湊等),本日報未進行外部 IOC 查核,無法得出 IOC 結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並升級 VMware vCenter 至 Broadcom 公告的修復版本,並限制管理介面存取。</li><li>[P0] 48 小時內:盤點 PHP 與 Drupal 部署,升級至已修復版本。</li><li>[P1] 本週內:確認 Microsoft 相關更新(Kerberos、vhdmp.sys、PowerShell 等)已部署,並逐一向原廠公告核對 CVSS 與利用狀態。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🔍 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">The internet needs a nap (and you do, too)</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">CVE-2026-121669 PowerShell Information Disclosure Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-6">ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
