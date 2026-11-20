@@ -1,0 +1,345 @@
+{
+  "date": "2026-11-20",
+  "stats": {
+    "total": 11,
+    "high_risk": 3,
+    "cve_count": 7
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔍",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "營運觀點"
+          ],
+          "title": "The internet needs a nap (and you do, too)",
+          "url": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "Talos 這篇文章從持續不斷的突發資安新聞中抽身,主張應優先重視環境掌握度與團隊穩定性,而不是一味被動地救火式修補。",
+            "來源摘要未提供漏洞、IOC 或攻擊活動細節,屬觀點性內容,因此列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點資產與環境可視性,作為修補優先順序的依據。",
+            "檢視值班與修補流程,避免團隊長期處於被動應變狀態。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "權限提升"
+          ],
+          "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "MSRC 更新了此 Xbox Gaming Services 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊,無法據此判斷實際風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認受影響環境是否已套用 Microsoft 對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-95874"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "權限提升"
+          ],
+          "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "MSRC 更新了 vhdmp.sys 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Windows 主機是否已套用 Microsoft 對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-95989"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "阻斷服務"
+          ],
+          "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "MSRC 更新了 Windows Kerberos 阻斷服務漏洞的致謝資訊,來源說明這僅是資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認網域控制器與相關 Windows 主機是否已套用 Microsoft 對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-96082"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "權限提升"
+          ],
+          "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "MSRC 更新了 Windows Devices Human Interface 權限提升漏洞的致謝資訊,來源說明這僅是資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Windows 端點是否已套用 Microsoft 對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-113817"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "資訊洩露"
+          ],
+          "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "MSRC 更新了 PowerShell 資訊洩露漏洞的致謝資訊,來源說明這僅是資訊性變更。",
+            "來源未提供 CVSS、利用狀態或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 PowerShell 版本是否已套用 Microsoft 對應更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-121669"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "週報"
+          ],
+          "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+          "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "本週彙整指出,攻擊者常利用人們預期中的事物(如工作邀約、服務中斷通知、熟悉的應用程式)來竊取資料、散布惡意程式並騙取存取權。",
+            "來源摘要也提到 AI 正讓部分攻擊更容易發動,但提供的內容被截斷,缺乏具體技術細節,故僅列為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "提醒員工對求職訊息、服務中斷通知及不明應用程式保持警覺,並透過獨立管道查證。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "PHP",
+            "遠端程式碼執行"
+          ],
+          "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+          "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "phpAfterShell 為 PHP 預設檔案式 session 儲存的缺陷:攻擊者可在特定時機中斷 session 寫入,使其回傳由攻擊者選定的物件。若應用程式同時存在合適的 gadget chain,這些物件可能導致伺服器端程式碼執行。",
+            "來源指出本日 PHP 版本已修復,追蹤編號為 CVE-2026-126714;但提供的內容在評級處被截斷,因此嚴重度無法判定,暫列 info(不代表低風險)。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "升級至已修復此問題的 PHP 版本。",
+            "檢視應用程式是否存在可被利用的反序列化 gadget chain。"
+          ],
+          "cve_ids": [
+            "CVE-2026-126714"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "PHP",
+            "遠端程式碼執行"
+          ],
+          "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+          "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "PHP Foundation 發布安全更新,修補多個嚴重漏洞,其中包含 CVE-2026-115560;這些漏洞在特定條件下可能導致受影響部署遠端程式碼執行。",
+            "此次更新先前已有預告,影響所有受支援的 PHP 版本(依特定條件)。來源未提供 CVSS、利用活動或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盡速盤點並升級所有受支援分支的 PHP 至已修復版本。",
+            "對無法立即升級的對外 PHP 服務,評估暫時性的存取限制。"
+          ],
+          "cve_ids": [
+            "CVE-2026-115560"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "VMware",
+            "驗證繞過"
+          ],
+          "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+          "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "Broadcom 公告指出,VMware vCenter 存在嚴重漏洞,具網路存取能力的攻擊者可繞過驗證並取得系統未授權存取。所有受支援分支均已有修復版本,且未列出替代緩解措施。",
+            "vCenter 是管理 ESX 主機與虛擬機的中央主控台,風險影響面大。來源標題標示 CVSS 9.8;提供內容未列出 CVE 編號,也未提及 KEV 或利用活動。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即依 Broadcom 公告將 vCenter 升級至對應分支的修復版本。",
+            "在修補完成前,限制 vCenter 管理介面僅供管理網段存取。"
+          ],
+          "cve_ids": [],
+          "cvss": "9.8",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Drupal",
+            "站台接管"
+          ],
+          "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+          "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-19",
+          "paragraphs": [
+            "Drupal core 存在嚴重漏洞:在特定條件下,未經驗證的攻擊者可利用內建安裝程式嘗試重新安裝站台,進而導致站台被接管或遠端程式碼執行。",
+            "專案評估有漏洞的設定屬於少見情況。所有受支援分支的修復版本已於前一日發布。提供內容未列出 CVE 編號、CVSS 或 KEV 資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "將 Drupal 升級至所屬分支的修復版本。",
+            "確認正式環境無法由外部存取安裝程式路徑。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日最高風險為 PHP 多個嚴重漏洞(含可能的遠端程式碼執行)、VMware vCenter 驗證繞過(標題標示 CVSS 9.8)及 Drupal 安裝程式嚴重漏洞,三者皆已有修復版本。MSRC 的 5 筆項目僅為致謝資訊更新,不代表新的風險。",
+    "blind_spot": "來源多為摘要且部分內容被截斷(如 phpAfterShell 評級),VMware 與 Drupal 未提供 CVE 編號;除 VMware 標題外,CVSS 與 KEV 狀態沒有足夠資料驗證,且未見任何利用活動證據,不可據此判斷實際被利用情形。",
+    "ioc_note": "來源資料未提供任何 IOC(IP、網域、雜湊等),本日報未進行外部 IOC 查核,無法得出 IOC 結論。",
+    "actions": [
+      "[P0] 24 小時內:盤點並升級 VMware vCenter 至 Broadcom 公告的修復版本,並限制管理介面存取。",
+      "[P0] 48 小時內:盤點 PHP 與 Drupal 部署,升級至已修復版本。",
+      "[P1] 本週內:確認 Microsoft 相關更新(Kerberos、vhdmp.sys、PowerShell 等)已部署,並逐一向原廠公告核對 CVSS 與利用狀態。"
+    ]
+  }
+}
