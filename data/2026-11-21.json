@@ -1,0 +1,234 @@
+{
+  "date": "2026-11-21",
+  "stats": {
+    "total": 7,
+    "high_risk": 3,
+    "cve_count": 3
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium"
+          ],
+          "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+          "published": "2026-11-20",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "paragraphs": [
+            "MSRC 發布 Chromium「Sharing」元件 use-after-free 漏洞的條目，來源內容僅有「Information published.」，未提供嚴重度、CVSS 或利用狀況。",
+            "注意：標題寫的是 CVE-2024-7533，但連結指向 CVE-2024-7532，兩者不一致。因無法確認正確編號，本卡不將其列入 CVE 清單，請以 MSRC 頁面核對。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "核對 MSRC 頁面確認正確的 CVE 編號與受影響版本。",
+            "確認組織內 Chromium 系瀏覽器（含 Edge）已更新至最新版本。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Chromium"
+          ],
+          "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+          "published": "2026-11-20",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "paragraphs": [
+            "MSRC 發布 Chromium ANGLE 元件 use-after-free 漏洞 CVE-2023-1531 的條目。來源內容僅有「Information published.」，未提供嚴重度、CVSS、受影響版本或利用狀況，因此風險等級以 info 表示（不代表低風險）。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 MSRC 條目確認受影響版本與修補狀態。",
+            "盤點並確認 Chromium 系瀏覽器已更新。"
+          ],
+          "cve_ids": [
+            "CVE-2023-1531"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-2",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "AI 助理",
+            "研究"
+          ],
+          "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+          "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+          "published": "2026-11-21",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "paragraphs": [
+            "研究人員示範，惡意網頁可在不觸發任何核准提示的情況下，從 Meta Muse 取得使用者的私人對話與儲存的記憶，且攻擊可延伸至助理為已連結帳號儲存的憑證。",
+            "來源強調這是實驗室示範，並非針對真實使用者的攻擊。來源未提供 CVE、CVSS 或實際被利用的證據。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視員工使用的 AI 助理所連結的帳號與權限，移除不必要的連結。",
+            "關注 Meta 的修補或公告後再評估是否需要輪替憑證。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "GnuPG",
+            "記憶體安全"
+          ],
+          "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+          "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+          "published": "2026-11-21",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "paragraphs": [
+            "GnuPG 專案警告，具有異常長使用者 ID 的惡意 OpenPGP 金鑰可觸發 GPGME 的嚴重記憶體漏洞（CVE-2026-129975），可能被用來竊取受影響應用程式的資料。2.3.0 之前所有使用 GPGME 的軟體皆受影響，修正版本已釋出。",
+            "來源以「critical」描述此漏洞，風險等級依此判定；來源未提供 CVSS 分數、KEV 狀態或實際利用證據。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點使用 GPGME 的應用程式與套件，升級至 2.3.0 或更新版本。",
+            "在修補完成前，對來源不明的 OpenPGP 金鑰匯入或處理保持謹慎。"
+          ],
+          "cve_ids": [
+            "CVE-2026-129975"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "AI 代理",
+            "醫療影像",
+            "零時差"
+          ],
+          "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+          "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+          "published": "2026-11-21",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "paragraphs": [
+            "Amazon Threat Intelligence 表示，疑似與中國有關的攻擊者使用自主 AI 代理，在開源醫療影像伺服器 MONAI Label 中找到未知漏洞，並取得某大學伺服器的 root 權限。",
+            "該漏洞允許無帳號的攻擊者將檔案寫入伺服器儲存資料夾之外，影響預設設定下的 MONAI Label 0.8.5 及更早版本。來源摘要未提供 CVE 編號、CVSS 或 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點是否有部署 MONAI Label 0.8.5 或更早版本，並避免將其直接暴露於網際網路。",
+            "檢查伺服器是否有儲存目錄以外的異常檔案寫入，並關注廠商修補資訊。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "隱私",
+            "行動裝置"
+          ],
+          "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+          "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+          "published": "2026-11-21",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "paragraphs": [
+            "Signal 宣布預設限制螢幕截圖，以防 AI 代理透過截圖讀取私人對話，適用於 iOS 27 內建的代理系統，以及 Signal 能偵測到 AI 助理嘗試讀取的 Android 版本。Signal 也承認此防護「並不完整」。",
+            "此為產品防護功能公告，並非漏洞通報，來源未提供 CVE 或利用資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "更新 Signal 並確認截圖限制設定已啟用。",
+            "評估行動裝置上 AI 代理對敏感通訊 App 的存取權限。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "KEV",
+            "主動利用",
+            "VMware",
+            "Cisco",
+            "SAP",
+            "Apache"
+          ],
+          "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+          "published": "2026-11-21",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "paragraphs": [
+            "CISA 於週五將影響 Apache Roller、Cisco Expressway、SAP NetWeaver 與 Broadcom VMware vCenter 的四個漏洞加入 KEV 清單，並指出有主動利用證據。來源列出其中 CVE-2026-129448（CVSS 9.8）為不受信任資料反序列化漏洞。",
+            "來源摘要被截斷，其餘三個漏洞的 CVE 編號與 CVSS 未提供，故未列入 CVE 清單；間諜攻擊的細節也無法由現有資料確認。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即盤點 Apache Roller、Cisco Expressway、SAP NetWeaver、VMware vCenter 並對照 CISA KEV 條目套用修補。",
+            "無法立即修補者，限制管理介面與外部存取，並檢查相關系統日誌是否有異常活動。"
+          ],
+          "cve_ids": [
+            "CVE-2026-129448"
+          ],
+          "cvss": "9.8",
+          "kev_status": "已列入 CISA KEV（依來源報導）"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "當日最高風險為 CISA 將 Apache Roller、Cisco Expressway、SAP NetWeaver、VMware vCenter 四個漏洞加入 KEV（主動利用），以及 GPGME 嚴重記憶體漏洞（CVE-2026-129975）與疑似 AI 代理發現的 MONAI Label 零時差漏洞。",
+    "blind_spot": "MSRC 兩筆 Chromium 條目僅有「Information published.」，缺乏嚴重度與版本資訊，其中一筆標題與連結的 CVE 編號不一致；KEV 新聞的摘要被截斷，另三個漏洞的編號與 CVSS 缺失；GPGME 與 MONAI 的 CVSS 亦未提供。這些部分沒有足夠資料驗證。",
+    "ioc_note": "來源資料未提供任何 IOC（IP、網域、雜湊等），也未進行外部查核，因此無法對 IOC 下結論；KEV 狀態僅依 The Hacker News 報導，未獨立驗證。",
+    "actions": [
+      "[P0] 24 小時內：盤點 Apache Roller、Cisco Expressway、SAP NetWeaver、VMware vCenter，對照 CISA KEV 條目修補或隔離。",
+      "[P0] 48 小時內：盤點使用 GPGME 的軟體並升級至 2.3.0 以上。",
+      "[P1] 3 天內：確認是否部署 MONAI Label 0.8.5 以下版本，並檢查異常檔案寫入。",
+      "[P1] 3 天內：核對 MSRC Chromium 條目的正確 CVE 與受影響版本，確認瀏覽器已更新。",
+      "[P2] 本週：檢視 AI 助理的連結帳號與權限，並更新 Signal。"
+    ]
+  }
+}
