@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-23",
+  "stats": {
+    "total": 2,
+    "high_risk": 0,
+    "cve_count": 0
+  },
+  "threat_level": "info",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "AI 供應鏈",
+            "資料外洩"
+          ],
+          "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+          "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-22",
+          "paragraphs": [
+            "根據來源摘要,工控資安公司 Dragos 表示,攻擊者在數月間從三家 AI 推論服務供應商內部竊取資料,而這三家業者在研究人員通報前都不知情。",
+            "摘要並指出,部分被竊的請求被標示為 Zero Data Retention(原本應表示提示內容不會被儲存)。OpenRouter 是將客戶 AI 請求路由到多家供應商的閘道。摘要內容在此中斷,受影響供應商名稱、攻擊手法、影響範圍與 IOC 均未提供,無法進一步判斷嚴重度。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點組織是否經由 OpenRouter 或第三方 AI 推論供應商傳送敏感提示,並檢視其所傳送資料的類型。",
+            "閱讀原文及供應商公告,確認受影響供應商名稱與影響期間,再評估是否需要輪替 API 金鑰或調整資料傳送政策。",
+            "重新檢視對 Zero Data Retention 承諾的依賴,敏感資料傳送前先要求供應商提供書面保證或稽核證明。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "Ghostscript",
+            "沙箱逃逸",
+            "RCE"
+          ],
+          "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+          "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-22",
+          "paragraphs": [
+            "來源指出,Ghostscript 存在一個已修補的漏洞,惡意構造的檔案可逃脫其安全沙箱,並在處理該檔案的伺服器上執行命令。許多 Linux 伺服器會用 Ghostscript 轉換上傳的 PDF、PostScript 與圖片,且應用程式常是間接呼叫。",
+            "資安公司 pwn.ai 本週展示了此攻擊。來源摘要未提供 CVE 編號、CVSS、受影響與修補版本,也未提及 KEV 或實際利用活動,因此無法據以評定風險等級。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點處理使用者上傳檔案的伺服器與應用程式,確認是否直接或間接使用 Ghostscript。",
+            "閱讀原文及 Ghostscript 官方公告,確認已修補版本後更新套件。",
+            "在確認修補前,評估對上傳檔案轉換流程採用額外隔離(例如獨立容器或低權限帳號)。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日兩則皆來自 The Hacker News:一是 AI 推論供應商遭長期竊取提示資料的事件,二是 Ghostscript 沙箱逃逸 RCE(已修補)的展示。兩者都與處理外部資料或委外服務的基礎元件相關。",
+    "blind_spot": "來源僅有摘要片段,沒有足夠資料驗證 CVE、CVSS、KEV 狀態、受影響版本與實際利用情形,因此兩則皆標為 info(代表資料不足,並非低風險)。組織可能未盤點 Ghostscript 的間接依賴,也可能未掌握員工使用第三方 AI 閘道的情形。",
+    "ioc_note": "來源未提供任何 IOC,也未進行外部查核,無法給出 IOC 結論。",
+    "actions": [
+      "[P0] 24 小時內:盤點上傳檔案處理流程中的 Ghostscript 使用情形,並閱讀原文確認修補版本。",
+      "[P1] 3 天內:盤點對 OpenRouter 與其他第三方 AI 推論供應商的使用及傳送的資料類型,並閱讀原文確認受影響供應商。",
+      "[P2] 1 週內:檢視 AI 供應商資料保存承諾(如 Zero Data Retention)的契約與稽核依據。"
+    ]
+  }
+}
