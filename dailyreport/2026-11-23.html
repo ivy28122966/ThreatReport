@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-23</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-23</div>
+      <h1 class="hero-heading">2026-11-23 日報</h1>
+      <p class="hero-desc">
+        本次彙整 2 則情資，其中 0 則屬高風險等級，
+        共涉及 0 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">2</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">0</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">0</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical ">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info is-active">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">2 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">AI 供應鏈</span><span class="tag tag-info">資料外洩</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html" target="_blank" rel="noopener noreferrer">OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-22</span>
+      </div>
+
+      <div class="card-body">
+        <p>根據來源摘要,工控資安公司 Dragos 表示,攻擊者在數月間從三家 AI 推論服務供應商內部竊取資料,而這三家業者在研究人員通報前都不知情。</p><p>摘要並指出,部分被竊的請求被標示為 Zero Data Retention(原本應表示提示內容不會被儲存)。OpenRouter 是將客戶 AI 請求路由到多家供應商的閘道。摘要內容在此中斷,受影響供應商名稱、攻擊手法、影響範圍與 IOC 均未提供,無法進一步判斷嚴重度。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點組織是否經由 OpenRouter 或第三方 AI 推論供應商傳送敏感提示,並檢視其所傳送資料的類型。</li><li>閱讀原文及供應商公告,確認受影響供應商名稱與影響期間,再評估是否需要輪替 API 金鑰或調整資料傳送政策。</li><li>重新檢視對 Zero Data Retention 承諾的依賴,敏感資料傳送前先要求供應商提供書面保證或稽核證明。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Ghostscript</span><span class="tag tag-info">沙箱逃逸</span><span class="tag tag-info">RCE</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html" target="_blank" rel="noopener noreferrer">Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-22</span>
+      </div>
+
+      <div class="card-body">
+        <p>來源指出,Ghostscript 存在一個已修補的漏洞,惡意構造的檔案可逃脫其安全沙箱,並在處理該檔案的伺服器上執行命令。許多 Linux 伺服器會用 Ghostscript 轉換上傳的 PDF、PostScript 與圖片,且應用程式常是間接呼叫。</p><p>資安公司 pwn.ai 本週展示了此攻擊。來源摘要未提供 CVE 編號、CVSS、受影響與修補版本,也未提及 KEV 或實際利用活動,因此無法據以評定風險等級。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點處理使用者上傳檔案的伺服器與應用程式,確認是否直接或間接使用 Ghostscript。</li><li>閱讀原文及 Ghostscript 官方公告,確認已修補版本後更新套件。</li><li>在確認修補前,評估對上傳檔案轉換流程採用額外隔離(例如獨立容器或低權限帳號)。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-23</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>今日兩則皆來自 The Hacker News:一是 AI 推論供應商遭長期竊取提示資料的事件,二是 Ghostscript 沙箱逃逸 RCE(已修補)的展示。兩者都與處理外部資料或委外服務的基礎元件相關。</p>
+  <p><strong>防禦盲點：</strong>來源僅有摘要片段,沒有足夠資料驗證 CVE、CVSS、KEV 狀態、受影響版本與實際利用情形,因此兩則皆標為 info(代表資料不足,並非低風險)。組織可能未盤點 Ghostscript 的間接依賴,也可能未掌握員工使用第三方 AI 閘道的情形。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源未提供任何 IOC,也未進行外部查核,無法給出 IOC 結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點上傳檔案處理流程中的 Ghostscript 使用情形,並閱讀原文確認修補版本。</li><li>[P1] 3 天內:盤點對 OpenRouter 與其他第三方 AI 推論供應商的使用及傳送的資料類型,並閱讀原文確認受影響供應商。</li><li>[P2] 1 週內:檢視 AI 供應商資料保存承諾(如 Zero Data Retention)的契約與稽核依據。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
