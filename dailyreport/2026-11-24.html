@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-24</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-24</div>
+      <h1 class="hero-heading">2026-11-24 日報</h1>
+      <p class="hero-desc">
+        本次彙整 13 則情資，其中 5 則屬高風險等級，
+        共涉及 9 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">13</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">5</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">9</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">7 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291" target="_blank" rel="noopener noreferrer">CVE-2026-69291 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此弱點頁面，內容僅為致謝名單調整，來源說明這是資訊性變更。標題顯示為 Windows Volume Manager Extension Driver 遠端程式碼執行弱點。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法據此判斷實際風險，因此標示為 info（不代表低風險）。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認受影響 Windows 系統是否已套用 MSRC 頁面所列的更新。</li><li>查閱 MSRC 原頁面取得嚴重度與受影響版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462" target="_blank" rel="noopener noreferrer">CVE-2026-78462 Visual Studio Code Security Feature Bypass Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此弱點頁面，僅為致謝名單調整，屬資訊性變更。標題顯示為 Visual Studio Code 安全功能繞過弱點。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，無法判斷風險，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認開發環境中的 Visual Studio Code 已更新至 MSRC 所列修補版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965" target="_blank" rel="noopener noreferrer">CVE-2026-72965 Windows WebClient Service Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此弱點頁面，僅為致謝名單調整，屬資訊性變更。標題顯示為 Windows WebClient Service 權限提升弱點。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Windows 系統已套用 MSRC 所列更新。</li><li>盤點是否有不需要啟用 WebClient 服務的主機。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697" target="_blank" rel="noopener noreferrer">CVE-2026-87697 .NET Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此弱點頁面，僅為致謝名單調整，屬資訊性變更。標題顯示為 .NET 遠端程式碼執行弱點。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 .NET 執行環境與 SDK 已更新至 MSRC 所列版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175" target="_blank" rel="noopener noreferrer">CVE-2026-70175 ASP.NET Core Elevation of Privilege Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 更新了此弱點頁面，僅為致謝名單調整，屬資訊性變更。標題顯示為 ASP.NET Core 權限提升弱點。</p><p>來源未提供 CVSS、利用狀態或 KEV 資訊，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 ASP.NET Core 應用程式的執行階段已更新至 MSRC 所列版本。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133968" target="_blank" rel="noopener noreferrer">CVE-2026-133968 — Project MONAI MONAI Label Path Traversal Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Project MONAI MONAI Label 的路徑穿越弱點。未經身分驗證的遠端攻擊者可將檔案寫到預期資料儲存目錄之外，可能導致遠端程式碼執行。</p><p>CISA 要求依廠商指示套用緩解措施，並遵循 BOD 26-04 與「Forensics Triage Requirements」；若無緩解措施，應停用該產品。來源未提供 CVSS。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中的 MONAI Label 實例及其網路暴露情況。</li><li>依廠商指示套用緩解措施；無法緩解時停用或隔離該產品。</li><li>依 CISA 鑑識分流要求檢查是否有異常檔案寫入。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-133968" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-134624" target="_blank" rel="noopener noreferrer">CVE-2026-134624 — N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 N-able MailAssure (SpamExperts) 的 SSRF 弱點，位於 LDAP 同步連線檢查功能。已驗證的 API 使用者可連線任意內部主機與連接埠、判斷其可達性，並對內部服務送出構造資料。</p><p>CISA 要求依廠商指示套用緩解措施並遵循 BOD 26-04；無緩解措施時應停止使用。來源未提供 CVSS。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示套用 MailAssure 緩解措施或修補。</li><li>檢視 API 帳號權限與近期 LDAP 同步連線檢查的使用紀錄。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-134624" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-69291</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-78462</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-72965</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-87697</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-70175</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-133968</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133968" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-134624</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-134624" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-7" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">威脅行為者</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html" target="_blank" rel="noopener noreferrer">Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>報導指出，與中國有關的威脅行為者 Webworm 涉嫌使用客製化的開源 SoftEther VPN Bridge，去除可辨識的偵測特徵，並偽裝成網路監控軟體，以在受害網路中建立隱蔽的遠端存取。</p><p>此為「涉嫌」的歸因，來源摘要未提供 CVE 或 IOC，無法進一步判斷風險，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點主機上非預期的 SoftEther VPN 元件，以及偽裝成網路監控軟體的程序。</li><li>檢查異常的對外 VPN 連線。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">週報</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>The Hacker News 週報，標題提及 VMware 0-day、Java4Shell、NGINX2Root、Ruby2Shell 等議題。提供的摘要只描述小缺口（遭竊金鑰、受信任訊息、例行更新）可能擴大成重大事件，沒有具體技術細節。</p><p>因來源內容不足，不能確認各項事件的影響範圍、CVE 或利用狀態，標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>閱讀完整週報，確認標題所提產品是否存在於自身環境。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">程式碼注入</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html" target="_blank" rel="noopener noreferrer">Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>binary-parser 函式庫 2.3.1 之前的版本存在程式碼注入弱點（CVE-2026-134814）。若攻擊者能控制 parser 定義，即可執行任意程式碼。來源標示 CVSS 為 9.2 / 8.1。</p><p>來源摘要未提及利用活動或 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>將 binary-parser 升級至 2.3.1 或以上。</li><li>確認 parser 定義不會來自不受信任的輸入。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">ScreenConnect</span><span class="tag tag-info">MSP</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html" target="_blank" rel="noopener noreferrer">Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>報導指出，威脅行為者正利用已修補的 ConnectWise ScreenConnect 弱點（CVE-2026-84869，CVSS 9.9）攻擊 MSP 伺服器。該弱點讓訪客可在連線的技術人員主機上傳送並執行惡意載荷。</p><p>來源提到曾於 2026 年 11 月 12 日觀察到相關活動。本日資料未提及 KEV 狀態。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 ScreenConnect 已更新至含修補的版本。</li><li>檢視技術人員工作站在連線工作階段期間是否有非預期檔案傳輸或程序執行。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-11" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">N-able</span><span class="tag tag-info">MSP</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html" target="_blank" rel="noopener noreferrer">N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-23</span>
+      </div>
+
+      <div class="card-body">
+        <p>N-able 揭露在調查其 Mail Assure 與 SpamExperts Hosted Cloud 入侵事件時發現的重大弱點（CVE-2026-134624），為 SSRF。具高階 API 存取權的使用者可連線至內部系統。</p><p>同一 CVE 也出現在本日 CISA KEV 條目。本篇未提供 CVSS。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依 N-able 與 CISA 指引套用緩解措施。</li><li>審查高權限 API 帳號與金鑰，並檢視其近期活動。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-134814</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.2 / 8.1</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-84869</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.9</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-134624</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV（依本日 CISA 條目）</td>
+            <td><a href="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-24</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>本日最高風險為 3 項 critical：binary-parser 程式碼注入（CVSS 9.2 / 8.1）、ScreenConnect 遭利用的弱點（CVSS 9.9），以及 N-able Mail Assure SSRF。CISA KEV 另收錄 MONAI Label 路徑穿越與 N-able MailAssure SSRF，MSP 相關產品值得優先關注。</p>
+  <p><strong>防禦盲點：</strong>5 則 MSRC 條目僅為致謝名單的資訊性更新，沒有 CVSS 或利用資訊，因此標為 info，不代表低風險。週報與 Webworm 報導的摘要內容有限，缺乏足夠資料驗證其影響。多數項目沒有提供 CVSS，一律填 N/A。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC（IP、網域、雜湊），因此未進行也無法進行 IOC 查核。Webworm 與 ScreenConnect 活動的指標需參閱原始報導。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：盤點並處理 N-able MailAssure（CVE-2026-134624）與 MONAI Label（CVE-2026-133968）的 CISA KEV 項目，依廠商指示緩解。</li><li>[P0] 24 小時內：確認 ScreenConnect 已修補（CVE-2026-84869），並檢查技術人員工作站是否有異常執行。</li><li>[P1] 3 天內：將 binary-parser 升級至 2.3.1 以上，並確認 parser 定義來源可信。</li><li>[P1] 7 天內：核對 MSRC 所列五項弱點在環境中的修補狀態，並查閱原頁面取得嚴重度。</li><li>[P2] 7 天內：盤點非預期的 SoftEther VPN 元件，並閱讀完整週報確認環境相關性。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-69291 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-78462 Visual Studio Code Security Feature Bypass Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-72965 Windows WebClient Service Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-87697 .NET Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2026-70175 ASP.NET Core Elevation of Privilege Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">CVE-2026-133968 — Project MONAI MONAI Label Path Traversal Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">CVE-2026-134624 — N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-7">Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</a></li>
+        
+        <li><a class="tree-card-link" href="#card-11">N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
