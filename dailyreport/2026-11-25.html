@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-25</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-25</div>
+      <h1 class="hero-heading">2026-11-25 日報</h1>
+      <p class="hero-desc">
+        本次彙整 9 則情資，其中 4 則屬高風險等級，
+        共涉及 6 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">9</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">4</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">6</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛡️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">4 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">Microsoft</span><span class="tag tag-info">Visio</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732" target="_blank" rel="noopener noreferrer">CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Microsoft Security Response Center</span>
+        <span class="separator">·</span>
+        <span>Microsoft</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>MSRC 表示此 CVE 已由 2026 年 11 月發布的更新修補，但先前不慎未列入 11 月安全更新清單，本次僅為資訊性更新。</p><p>來源指出已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 分數或利用狀況。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Visio 相關資產已安裝 2026 年 11 月更新。</li><li>將此 CVE 補入資產與修補追蹤清單，以利稽核對照。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">Optimizely</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132224" target="_blank" rel="noopener noreferrer">CVE-2026-132224 — Optimizely Web Experimentation External Control of Critical State Data Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Optimizely Web Experimentation 帳號註冊流程中的關鍵狀態資料外部控制漏洞，攻擊者可能冒充既有客戶使用者並修改 Project JavaScript。</p><p>成功利用可能使攻擊者控制的 JavaScript 透過 Optimizely 託管資產散布，並在造訪受影響客戶網站的瀏覽器中執行。CISA 要求依廠商指示套用緩解措施並遵循 BOD 26-04。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示套用緩解措施，並依 BOD 26-04 評估雲端服務處置；若無緩解措施則考慮停用。</li><li>檢視 Project JavaScript 近期是否有未經授權的異動，並依 CISA 鑑識分流要求保存證據。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-132224" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">反序列化</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-131914" target="_blank" rel="noopener noreferrer">CVE-2026-131914 — Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Idunno AntiCsrf 不受信任資料反序列化漏洞，未經身分驗證的遠端攻擊者可透過物件注入執行任意程式碼。</p><p>來源指出受影響產品可能已終止支援（EoL/EoS），建議停用或轉換至受支援版本。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中是否使用 Idunno AntiCsrf，並評估其網際網路暴露面。</li><li>依廠商指示緩解；無法緩解時停用或汰換為受支援元件。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-131914" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">Drupal</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132165" target="_blank" rel="noopener noreferrer">CVE-2026-132165 — Drupal Core Remote Code Execution Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Drupal Core 漏洞：在特定條件下，未經身分驗證的攻擊者可利用 install.php 嘗試重新安裝 Drupal，進而接管網站或透過安裝程式執行任意程式碼。</p><p>CISA 要求依廠商指示套用緩解措施並遵循 BOD 26-04。來源未提供 CVSS 分數。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依 Drupal 官方指示更新或緩解，並確認對外網站無法存取 install.php。</li><li>檢查網站是否有非預期的重新安裝或設定變更跡象。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-132165" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-112732</span></td>
+            <td>Microsoft</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-132224</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132224" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-131914</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-131914" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-132165</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132165" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-4" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">APT</span><span class="tag tag-info">間諜活動</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html" target="_blank" rel="noopener noreferrer">Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>報導指出，先前未被記錄的親伊朗網路間諜組織 Volant Manticore 以賽普勒斯的電信業者、航空公司與關鍵基礎設施為目標。</p><p>該組織使用以 IPFS 作為 C2 的後門 KuboShell，並部署名為 Homa 的後滲透框架。來源摘要未提供 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>電信、航空與關鍵基礎設施業者可檢視環境中是否有異常的 IPFS 流量。</li><li>待取得原報告的 IOC 後再進行威脅獵捕。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-5" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">VMware</span><span class="tag tag-info">驗證繞過</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html" target="_blank" rel="noopener noreferrer">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>Broadcom 發布修補，涵蓋 VMware ESX、vCenter、Workstation、Fusion 與 Avi Load Balancer 共 23 個漏洞，其中包含一個可繞過驗證的嚴重漏洞。</p><p>該漏洞編號 CVE-2026-123903，CVSS 9.8，位於 VMware Directory Service（vmdir）。標題提及先前的 zero-day 遭利用，但來源摘要未說明此 CVE 本身是否遭利用。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 vCenter 等 VMware 產品並優先套用 Broadcom 修補。</li><li>限制 vCenter 管理介面僅供受信任管理網段存取。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">語音釣魚</span><span class="tag tag-info">資料外洩</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html" target="_blank" rel="noopener noreferrer">Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>Okta 威脅情資團隊指出，原被評估與 ShinyHunters 勒索集團有關的威脅叢集 O-UNC-053，可能已改名為 INCEPTION 並持續活動。</p><p>該叢集以語音釣魚（vishing）誘使目標在釣魚頁面輸入憑證並核准驗證要求。來源摘要未提供 IOC。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>對客服與 IT 人員加強語音釣魚的身分查驗與通報流程。</li><li>審視 MFA 核准流程，對異常的驗證核准提出警示並調查。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Windows</span><span class="tag tag-info">研究</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html" target="_blank" rel="noopener noreferrer">Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>Google Project Zero 研究員 James Forshaw 揭露，.NET Framework 載入程式檔案的特性可讓本機攻擊者繞過 Windows 上兩項阻擋不受信任程式碼的保護。</p><p>同一載入行為也繞過 Oracle VirtualBox 在 Windows 主機上的程序強化，編號 CVE-2026-87268；Windows 程式碼完整性繞過的編號在來源摘要中被截斷，故未列入。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 VirtualBox 與 Windows 已套用相關修補，細節請參閱原報告。</li><li>查閱原始報導與 Project Zero 文章，確認完整 CVE 與修補狀態。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-8" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">SOC</span><span class="tag tag-info">廠商內容</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html" target="_blank" rel="noopener noreferrer">2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-24</span>
+      </div>
+
+      <div class="card-body">
+        <p>本文探討 SOC 預算與分析師時間耗損，引用 ANY.RUN 估計：每調查 1,000 則警報，透過更快的威脅分析與 IOC 研究可回收約 450 分析師工時。</p><p>內容為廠商導向的營運與預算建議，不含具體漏洞或攻擊活動資訊。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>可檢視 SOC 重複查證與不必要升級的耗時，作為 2027 預算規劃參考。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-123903</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.8</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-87268</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-25</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>今日重點為 VMware vCenter vmdir 驗證繞過漏洞（CVE-2026-123903，CVSS 9.8），以及 CISA KEV 新增的 Optimizely、Idunno AntiCsrf 與 Drupal Core 三項漏洞，三者皆列入 KEV。另有 Volant Manticore 與 INCEPTION（O-UNC-053）兩則威脅組織報導。</p>
+  <p><strong>防禦盲點：</strong>除 VMware 外，其餘多數項目未提供 CVSS，VMware 與 Project Zero 項目亦未提供 KEV 資訊，因此沒有足夠資料驗證其利用狀態。Idunno AntiCsrf 可能為 EoL/EoS 元件，常被資產盤點遺漏。Project Zero 研究中 Windows 程式碼完整性繞過的 CVE 編號被截斷，未納入統計。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>來源資料未提供任何 IOC（IP、網域、雜湊等），因此未執行外部 IOC 查核，也沒有足夠資料驗證。Volant Manticore 與 INCEPTION 的 IOC 需自原報告取得。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內：盤點並修補 VMware vCenter 等 Broadcom 產品，並限制管理介面暴露。</li><li>[P0] 24 小時內：依 CISA KEV 要求處理 Optimizely、Idunno AntiCsrf 與 Drupal Core，確認 install.php 不對外暴露。</li><li>[P1] 72 小時內：確認 Visio 已套用 2026 年 11 月更新，並補登 CVE-2026-112732 追蹤。</li><li>[P1] 一週內：加強語音釣魚與 MFA 核准流程的防護與員工宣導，並自原報告取得 IOC 進行獵捕。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛡️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-132224 — Optimizely Web Experimentation External Control of Critical State Data Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2026-131914 — Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2026-132165 — Drupal Core Remote Code Execution Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-4">Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns</a></li>
+        
+        <li><a class="tree-card-link" href="#card-5">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity</a></li>
+        
+        <li><a class="tree-card-link" href="#card-8">2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
