@@ -1,0 +1,290 @@
+{
+  "date": "2026-11-25",
+  "stats": {
+    "total": 9,
+    "high_risk": 4,
+    "cve_count": 6
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補",
+            "Microsoft",
+            "Visio"
+          ],
+          "title": "CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "MSRC 表示此 CVE 已由 2026 年 11 月發布的更新修補，但先前不慎未列入 11 月安全更新清單，本次僅為資訊性更新。",
+            "來源指出已安裝 2026 年 11 月更新的客戶無需採取進一步行動。來源未提供 CVSS 分數或利用狀況。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Visio 相關資產已安裝 2026 年 11 月更新。",
+            "將此 CVE 補入資產與修補追蹤清單，以利稽核對照。"
+          ],
+          "cve_ids": [
+            "CVE-2026-112732"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Optimizely"
+          ],
+          "title": "CVE-2026-132224 — Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "CISA KEV 收錄 Optimizely Web Experimentation 帳號註冊流程中的關鍵狀態資料外部控制漏洞，攻擊者可能冒充既有客戶使用者並修改 Project JavaScript。",
+            "成功利用可能使攻擊者控制的 JavaScript 透過 Optimizely 託管資產散布，並在造訪受影響客戶網站的瀏覽器中執行。CISA 要求依廠商指示套用緩解措施並遵循 BOD 26-04。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示套用緩解措施，並依 BOD 26-04 評估雲端服務處置；若無緩解措施則考慮停用。",
+            "檢視 Project JavaScript 近期是否有未經授權的異動，並依 CISA 鑑識分流要求保存證據。"
+          ],
+          "cve_ids": [
+            "CVE-2026-132224"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "反序列化"
+          ],
+          "title": "CVE-2026-131914 — Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "CISA KEV 收錄 Idunno AntiCsrf 不受信任資料反序列化漏洞，未經身分驗證的遠端攻擊者可透過物件注入執行任意程式碼。",
+            "來源指出受影響產品可能已終止支援（EoL/EoS），建議停用或轉換至受支援版本。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中是否使用 Idunno AntiCsrf，並評估其網際網路暴露面。",
+            "依廠商指示緩解；無法緩解時停用或汰換為受支援元件。"
+          ],
+          "cve_ids": [
+            "CVE-2026-131914"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "Drupal"
+          ],
+          "title": "CVE-2026-132165 — Drupal Core Remote Code Execution Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "CISA KEV 收錄 Drupal Core 漏洞：在特定條件下，未經身分驗證的攻擊者可利用 install.php 嘗試重新安裝 Drupal，進而接管網站或透過安裝程式執行任意程式碼。",
+            "CISA 要求依廠商指示套用緩解措施並遵循 BOD 26-04。來源未提供 CVSS 分數。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依 Drupal 官方指示更新或緩解，並確認對外網站無法存取 install.php。",
+            "檢查網站是否有非預期的重新安裝或設定變更跡象。"
+          ],
+          "cve_ids": [
+            "CVE-2026-132165"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-4",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "APT",
+            "間諜活動"
+          ],
+          "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+          "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "報導指出，先前未被記錄的親伊朗網路間諜組織 Volant Manticore 以賽普勒斯的電信業者、航空公司與關鍵基礎設施為目標。",
+            "該組織使用以 IPFS 作為 C2 的後門 KuboShell，並部署名為 Homa 的後滲透框架。來源摘要未提供 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "電信、航空與關鍵基礎設施業者可檢視環境中是否有異常的 IPFS 流量。",
+            "待取得原報告的 IOC 後再進行威脅獵捕。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "VMware",
+            "驗證繞過"
+          ],
+          "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+          "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "Broadcom 發布修補，涵蓋 VMware ESX、vCenter、Workstation、Fusion 與 Avi Load Balancer 共 23 個漏洞，其中包含一個可繞過驗證的嚴重漏洞。",
+            "該漏洞編號 CVE-2026-123903，CVSS 9.8，位於 VMware Directory Service（vmdir）。標題提及先前的 zero-day 遭利用，但來源摘要未說明此 CVE 本身是否遭利用。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 vCenter 等 VMware 產品並優先套用 Broadcom 修補。",
+            "限制 vCenter 管理介面僅供受信任管理網段存取。"
+          ],
+          "cve_ids": [
+            "CVE-2026-123903"
+          ],
+          "cvss": "9.8",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "語音釣魚",
+            "資料外洩"
+          ],
+          "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+          "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "Okta 威脅情資團隊指出，原被評估與 ShinyHunters 勒索集團有關的威脅叢集 O-UNC-053，可能已改名為 INCEPTION 並持續活動。",
+            "該叢集以語音釣魚（vishing）誘使目標在釣魚頁面輸入憑證並核准驗證要求。來源摘要未提供 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "對客服與 IT 人員加強語音釣魚的身分查驗與通報流程。",
+            "審視 MFA 核准流程，對異常的驗證核准提出警示並調查。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "Windows",
+            "研究"
+          ],
+          "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+          "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "Google Project Zero 研究員 James Forshaw 揭露，.NET Framework 載入程式檔案的特性可讓本機攻擊者繞過 Windows 上兩項阻擋不受信任程式碼的保護。",
+            "同一載入行為也繞過 Oracle VirtualBox 在 Windows 主機上的程序強化，編號 CVE-2026-87268；Windows 程式碼完整性繞過的編號在來源摘要中被截斷，故未列入。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 VirtualBox 與 Windows 已套用相關修補，細節請參閱原報告。",
+            "查閱原始報導與 Project Zero 文章，確認完整 CVE 與修補狀態。"
+          ],
+          "cve_ids": [
+            "CVE-2026-87268"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-8",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "SOC",
+            "廠商內容"
+          ],
+          "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+          "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-24",
+          "paragraphs": [
+            "本文探討 SOC 預算與分析師時間耗損，引用 ANY.RUN 估計：每調查 1,000 則警報，透過更快的威脅分析與 IOC 研究可回收約 450 分析師工時。",
+            "內容為廠商導向的營運與預算建議，不含具體漏洞或攻擊活動資訊。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "可檢視 SOC 重複查證與不必要升級的耗時，作為 2027 預算規劃參考。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "今日重點為 VMware vCenter vmdir 驗證繞過漏洞（CVE-2026-123903，CVSS 9.8），以及 CISA KEV 新增的 Optimizely、Idunno AntiCsrf 與 Drupal Core 三項漏洞，三者皆列入 KEV。另有 Volant Manticore 與 INCEPTION（O-UNC-053）兩則威脅組織報導。",
+    "blind_spot": "除 VMware 外，其餘多數項目未提供 CVSS，VMware 與 Project Zero 項目亦未提供 KEV 資訊，因此沒有足夠資料驗證其利用狀態。Idunno AntiCsrf 可能為 EoL/EoS 元件，常被資產盤點遺漏。Project Zero 研究中 Windows 程式碼完整性繞過的 CVE 編號被截斷，未納入統計。",
+    "ioc_note": "來源資料未提供任何 IOC（IP、網域、雜湊等），因此未執行外部 IOC 查核，也沒有足夠資料驗證。Volant Manticore 與 INCEPTION 的 IOC 需自原報告取得。",
+    "actions": [
+      "[P0] 24 小時內：盤點並修補 VMware vCenter 等 Broadcom 產品，並限制管理介面暴露。",
+      "[P0] 24 小時內：依 CISA KEV 要求處理 Optimizely、Idunno AntiCsrf 與 Drupal Core，確認 install.php 不對外暴露。",
+      "[P1] 72 小時內：確認 Visio 已套用 2026 年 11 月更新，並補登 CVE-2026-112732 追蹤。",
+      "[P1] 一週內：加強語音釣魚與 MFA 核准流程的防護與員工宣導，並自原報告取得 IOC 進行獵捕。"
+    ]
+  }
+}
