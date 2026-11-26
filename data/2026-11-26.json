@@ -1,0 +1,397 @@
+{
+  "date": "2026-11-26",
+  "stats": {
+    "total": 13,
+    "high_risk": 5,
+    "cve_count": 8
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛠️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "命令注入"
+          ],
+          "title": "CVE-2026-103406 — Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA KEV 收錄 HPE Juniper Session Smart Conductor 與 Session Smart Router 的作業系統命令注入漏洞。依來源描述,遠端攻擊者可透過特製的 salt minion ID,以 root 權限執行任意命令。",
+            "來源未提供 CVSS 分數,風險等級依 KEV 收錄及 root 層級遠端命令執行的描述判定為 high。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中的 Session Smart Conductor 與 Session Smart Router,並依廠商指示套用緩解措施或更新。",
+            "依 CISA BOD 26-04 與 Forensics Triage 要求評估資產的網際網路暴露面,並檢視是否有異常的 minion ID 或 root 命令執行紀錄。"
+          ],
+          "cve_ids": [
+            "CVE-2026-103406"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "驗證繞過"
+          ],
+          "title": "CVE-2026-133469 — Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA KEV 收錄 Vates Xen Orchestra 的輸入驗證不當漏洞。未經驗證的攻擊者可使用內含空 JSON 物件的特製驗證權杖繞過驗證,並取得管理者權限執行操作。",
+            "來源未提供 CVSS 分數,風險等級依 KEV 收錄及管理權限繞過的描述判定為 high。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "確認 Xen Orchestra 是否暴露於網際網路,並依廠商指示套用修補或緩解措施。",
+            "檢視管理介面的驗證與管理操作日誌,留意不尋常的管理者行為。"
+          ],
+          "cve_ids": [
+            "CVE-2026-133469"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "資訊洩露"
+          ],
+          "title": "CVE-2025-41450 — Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA KEV 收錄 Danfoss AK-SM 800A 系列的驗證不當漏洞。攻擊者可產生網頁報告,洩露內部 IP 位址、使用者名稱與店面名稱等敏感資訊。",
+            "來源未提供 CVSS 分數,依描述的影響為資訊洩露,判定為 medium。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示套用緩解措施,並確認 AK-SM 800A 設備未直接暴露於網際網路。"
+          ],
+          "cve_ids": [
+            "CVE-2025-41450"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "路徑穿越"
+          ],
+          "title": "CVE-2023-25914 — Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA KEV 收錄 Danfoss AK-SM 800A 系列的路徑穿越漏洞。攻擊者可經由 XML 介面讀取底層伺服器系統檔案。",
+            "來源未提供 CVSS 分數,依描述的檔案讀取影響判定為 medium。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "依廠商指示套用緩解措施,並限制 XML 介面的網路存取範圍。"
+          ],
+          "cve_ids": [
+            "CVE-2023-25914"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "漏洞與修補",
+            "CISA KEV",
+            "遠端命令執行"
+          ],
+          "title": "CVE-2023-25915 — Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+          "source_name": "CISA Known Exploited Vulnerabilities Catalog",
+          "org": "CISA",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA KEV 收錄 Danfoss AK-SM 800A 系列的輸入驗證不當漏洞。遠端攻擊者可在受影響系統上執行任意命令。",
+            "來源未提供 CVSS 分數,風險等級依 KEV 收錄及遠端命令執行的描述判定為 high。同日另有 CVE-2025-41450、CVE-2023-25914 影響同一產品系列,可合併盤點處理。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "優先盤點 AK-SM 800A 系列設備,依廠商指示套用緩解措施,並隔離於不可信網路之外。",
+            "依 CISA Forensics Triage 要求,檢視設備是否有異常命令執行跡象。"
+          ],
+          "cve_ids": [
+            "CVE-2023-25915"
+          ],
+          "cvss": "N/A",
+          "kev_status": "已列入 CISA KEV"
+        }
+      ]
+    },
+    {
+      "id": "section-hunting",
+      "title": "威脅獵捕",
+      "icon": "🔍",
+      "cards": [
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "AI 代理"
+          ],
+          "title": "The Great Escape: Tradecraft insights from an agentic swarm",
+          "url": "https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "Talos 分析 2026 年與 OpenAI 相關的代理式(agentic)群集活動之攻擊手法,並與目前在實際環境觀察到的代理式攻擊早期跡象與行為進行比較。來源指出該活動可透過公開紀錄完整追溯。",
+            "提供的資料僅為摘要,沒有具體技術細節或 IOC,因此無法評估實際風險,標示為 info。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀完整文章,取得手法細節後,再評估是否需要調整偵測規則與獵捕假設。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-6",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "社群"
+          ],
+          "title": "Oh, is it Thanksgiving? I hadn’t noticed!",
+          "url": "https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "感恩節主題的社群文章,作者向資安社群致謝。依來源摘要,內容沒有技術性的威脅情資。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "無需特定防禦行動,可作為一般閱讀。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-7",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "威脅獵捕",
+            "人物專訪"
+          ],
+          "title": "Securing Grandma's groceries with Pierre Cadieux",
+          "url": "https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/",
+          "source_name": "Cisco Talos Intelligence Blog",
+          "org": "Cisco Talos IR",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "人物專訪,Pierre 回顧 90 年代在服務台工作的經歷,以及比對 Windows 與 Unix 日誌如何啟發他進入資安領域。依來源摘要,內容沒有技術性的威脅情資。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "無需特定防禦行動;跨平台日誌關聯分析可作為團隊訓練的參考。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-8",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "其他",
+            "Drupal",
+            "遠端程式碼執行",
+            "CISA KEV"
+          ],
+          "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+          "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "CISA 於週二將 Drupal core 的遠端程式碼執行漏洞 CVE-2026-132165(又稱 Fail2Install,CVSS 9.8)加入 KEV,要求聯邦機構於 2026-11-27 前完成修補。標題指出該漏洞正遭積極利用且已有利用細節公開。",
+            "提供的資料為摘要節錄,受影響版本與修補版本未包含在內,需查閱完整文章與 Drupal 官方公告。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "立即盤點 Drupal 站台,對照官方公告套用修補版本,對外站台優先處理。",
+            "修補前後檢視網頁目錄是否有異常檔案及可疑的安裝流程請求。"
+          ],
+          "cve_ids": [
+            "CVE-2026-132165"
+          ],
+          "cvss": "9.8",
+          "kev_status": "已列入 CISA KEV(修補期限 2026-11-27)"
+        },
+        {
+          "anchor": "card-9",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "其他",
+            "GeoServer",
+            "遠端程式碼執行"
+          ],
+          "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "依 watchTowr,威脅行為者正積極利用 GeoServer 兩個新修補的漏洞:CVE-2026-120705(CVSS 8.6)為任意檔案讀取,可讀取 GeoServer 程序可存取的本機文字檔;另一個為 CVE-2026-129243。標題並指研究人員警告可能形成未經驗證的 RCE 利用鏈。",
+            "摘要在 CVE-2026-129243 處被截斷,其 CVSS 與細節未提供;KEV 狀態亦未提及。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點 GeoServer 並盡速更新至已修補版本,對外暴露的實例優先處理。",
+            "檢視 GeoServer 存取日誌是否有異常的檔案讀取請求,並盤點其可存取的設定檔與憑證。"
+          ],
+          "cve_ids": [
+            "CVE-2026-120705",
+            "CVE-2026-129243"
+          ],
+          "cvss": "CVE-2026-120705: 8.6;CVE-2026-129243: 來源未提供",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-10",
+          "severity": "medium",
+          "severity_label": "MEDIUM",
+          "tags": [
+            "其他",
+            "資安事件",
+            "政府"
+          ],
+          "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+          "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "美國財政部金融犯罪執法網路(FinCEN)表示發生資安事件,有限部分系統遭未授權存取,並已預防性下線部分系統。該機構負責蒐集銀行等機構提交的可疑活動報告與銀行保密法(BSA)申報資料。",
+            "資料未說明入侵手法、攻擊者或資料是否外洩,影響範圍尚不明確。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "向 FinCEN 申報或交換 BSA 資料的機構,應留意官方後續通告,並確認相關傳輸管道與帳號是否有異常。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-11",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "機密管理",
+            "憑證"
+          ],
+          "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+          "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "文章引用 GitGuardian《State of Secrets Sprawl 2026》:2022 年發現的有效機密,超過 64% 在 2026 年 1 月仍然有效,原因是團隊擔心撤銷會造成服務中斷。僅以有效性排序會漏掉 46% 的關鍵機密,建議依可存取範圍與是否公開外洩排序。",
+            "此為廠商研究內容,屬機密管理實務討論,非特定漏洞或攻擊事件。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "建立機密盤點清單,依可存取資源與是否公開外洩排序撤銷優先順序,並先確認相依服務再輪替。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-12",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "內部威脅",
+            "法律"
+          ],
+          "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+          "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-25",
+          "paragraphs": [
+            "舊金山聯邦法院法官週二裁定,被控在 OpenAI 舊金山辦公室藏匿隱藏式錄音裝置的前員工,可繳交 100 萬美元保釋金後釋放。被告於 2026-10-09 遭逮捕。",
+            "此為司法進展報導,資料中沒有可直接套用的技術指標。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "可借鏡於實體安全管理:定期檢查辦公空間是否有未授權裝置,並重新檢視離職與訪客的實體存取控管。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "Drupal core 的 CVE-2026-132165(CVSS 9.8)已列入 CISA KEV 並要求於 2026-11-27 前修補,為當日最高優先事項。GeoServer 兩個漏洞據 watchTowr 遭積極利用。CISA KEV 同日新增 HPE Juniper Session Smart、Vates Xen Orchestra 及 Danfoss AK-SM 800A 系列共五個漏洞。",
+    "blind_spot": "KEV 項目均未提供 CVSS,GeoServer 的 CVE-2026-129243 細節被截斷,以上沒有足夠資料驗證。Danfoss 等 OT/商用設備常不在一般資產清單中,易漏掉盤點。Talos 的代理式攻擊文章與 FinCEN 事件僅有摘要,無法判斷具體風險。",
+    "ioc_note": "本次來源沒有提供任何 IOC(IP、網域、雜湊等),也未執行外部查核,因此無法給出 IOC 查核結論。",
+    "actions": [
+      "[P0] 24 小時內:盤點並修補 Drupal CVE-2026-132165(KEV 期限 2026-11-27),對外站台優先並檢查是否有入侵跡象。",
+      "[P0] 24 小時內:盤點 GeoServer 並更新至修補版本,檢視存取日誌與其可存取的憑證。",
+      "[P1] 72 小時內:處理 HPE Juniper Session Smart、Xen Orchestra 及 Danfoss AK-SM 800A 的 KEV 漏洞,依廠商指示緩解並依 BOD 26-04 評估暴露面。",
+      "[P1] 一週內:追蹤 FinCEN 事件後續通告,並建立機密盤點與依影響排序的撤銷流程。"
+    ]
+  }
+}
