@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛡️ 資安威脅情資日報｜2026-11-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+  <div class="header-brand">
+    <div class="header-icon">🛡️</div>
+    <div>
+      <div class="header-title">資安威脅情資日報</div>
+      <div class="header-sub">Cyber Threat Intelligence Daily Report</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="badge badge-date">🗓️ 2026-11-26</span>
+    <span class="badge badge-live">LIVE THREAT FEED</span>
+  </div>
+</div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">☕ 今日威脅態勢 · 2026-11-26</div>
+      <h1 class="hero-heading">2026-11-26 日報</h1>
+      <p class="hero-desc">
+        本次彙整 13 則情資，其中 5 則屬高風險等級，
+        共涉及 8 項 CVE。
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="stat-num" style="color:var(--purple)">13</div><div class="stat-label">重點情資</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--orange)">5</div><div class="stat-label">高風險事件</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--red)">8</div><div class="stat-label">CVE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="threat-bar">
+  <span class="threat-label">今日威脅等級</span>
+  <div class="threat-levels">
+    <div class="tl tl-critical is-active">🔴 CRITICAL</div>
+    <div class="tl tl-high ">🟠 HIGH</div>
+    <div class="tl tl-medium ">🟡 MEDIUM</div>
+    <div class="tl tl-low ">🟢 LOW</div>
+    <div class="tl tl-info ">🔵 INFO</div>
+  </div>
+</div>
+
+<div class="layout-wrapper">
+<div class="main-column">
+
+
+<section class="report-section" id="section-vulnerability">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🛠️</div>
+    <h2 class="section-title">漏洞與修補</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-0" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">命令注入</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103406" target="_blank" rel="noopener noreferrer">CVE-2026-103406 — Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 HPE Juniper Session Smart Conductor 與 Session Smart Router 的作業系統命令注入漏洞。依來源描述,遠端攻擊者可透過特製的 salt minion ID,以 root 權限執行任意命令。</p><p>來源未提供 CVSS 分數,風險等級依 KEV 收錄及 root 層級遠端命令執行的描述判定為 high。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點環境中的 Session Smart Conductor 與 Session Smart Router,並依廠商指示套用緩解措施或更新。</li><li>依 CISA BOD 26-04 與 Forensics Triage 要求評估資產的網際網路暴露面,並檢視是否有異常的 minion ID 或 root 命令執行紀錄。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-103406" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-1" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">驗證繞過</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133469" target="_blank" rel="noopener noreferrer">CVE-2026-133469 — Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Vates Xen Orchestra 的輸入驗證不當漏洞。未經驗證的攻擊者可使用內含空 JSON 物件的特製驗證權杖繞過驗證,並取得管理者權限執行操作。</p><p>來源未提供 CVSS 分數,風險等級依 KEV 收錄及管理權限繞過的描述判定為 high。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>確認 Xen Orchestra 是否暴露於網際網路,並依廠商指示套用修補或緩解措施。</li><li>檢視管理介面的驗證與管理操作日誌,留意不尋常的管理者行為。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2026-133469" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-2" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">資訊洩露</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener noreferrer">CVE-2025-41450 — Danfoss AK-SM 800A Series Improper Authentication Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Danfoss AK-SM 800A 系列的驗證不當漏洞。攻擊者可產生網頁報告,洩露內部 IP 位址、使用者名稱與店面名稱等敏感資訊。</p><p>來源未提供 CVSS 分數,依描述的影響為資訊洩露,判定為 medium。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示套用緩解措施,並確認 AK-SM 800A 設備未直接暴露於網際網路。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-3" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">路徑穿越</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener noreferrer">CVE-2023-25914 — Danfoss AK-SM 800A Series Path Traversal Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Danfoss AK-SM 800A 系列的路徑穿越漏洞。攻擊者可經由 XML 介面讀取底層伺服器系統檔案。</p><p>來源未提供 CVSS 分數,依描述的檔案讀取影響判定為 medium。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>依廠商指示套用緩解措施,並限制 XML 介面的網路存取範圍。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-4" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">漏洞與修補</span><span class="tag tag-info">CISA KEV</span><span class="tag tag-info">遠端命令執行</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener noreferrer">CVE-2023-25915 — Danfoss AK-SM 800A Series Improper Input Validation Vulnerability</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 CISA Known Exploited Vulnerabilities Catalog</span>
+        <span class="separator">·</span>
+        <span>CISA</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA KEV 收錄 Danfoss AK-SM 800A 系列的輸入驗證不當漏洞。遠端攻擊者可在受影響系統上執行任意命令。</p><p>來源未提供 CVSS 分數,風險等級依 KEV 收錄及遠端命令執行的描述判定為 high。同日另有 CVE-2025-41450、CVE-2023-25914 影響同一產品系列,可合併盤點處理。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>優先盤點 AK-SM 800A 系列設備,依廠商指示套用緩解措施,並隔離於不可信網路之外。</li><li>依 CISA Forensics Triage 要求,檢視設備是否有異常命令執行跡象。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-103406</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103406" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-133469</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133469" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2025-41450</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2023-25914</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2023-25915</span></td>
+            <td>CISA</td>
+            <td><span class="cvss-badge">N/A</span></td>
+            <td>已列入 CISA KEV</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="report-section" id="section-hunting">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">🔍</div>
+    <h2 class="section-title">威脅獵捕</h2>
+    <span class="section-count">3 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-5" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">AI 代理</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/" target="_blank" rel="noopener noreferrer">The Great Escape: Tradecraft insights from an agentic swarm</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>Talos 分析 2026 年與 OpenAI 相關的代理式(agentic)群集活動之攻擊手法,並與目前在實際環境觀察到的代理式攻擊早期跡象與行為進行比較。來源指出該活動可透過公開紀錄完整追溯。</p><p>提供的資料僅為摘要,沒有具體技術細節或 IOC,因此無法評估實際風險,標示為 info。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>閱讀完整文章,取得手法細節後,再評估是否需要調整偵測規則與獵捕假設。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-6" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">社群</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/" target="_blank" rel="noopener noreferrer">Oh, is it Thanksgiving? I hadn’t noticed!</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>感恩節主題的社群文章,作者向資安社群致謝。依來源摘要,內容沒有技術性的威脅情資。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>無需特定防禦行動,可作為一般閱讀。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-7" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">威脅獵捕</span><span class="tag tag-info">人物專訪</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/" target="_blank" rel="noopener noreferrer">Securing Grandma's groceries with Pierre Cadieux</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 Cisco Talos Intelligence Blog</span>
+        <span class="separator">·</span>
+        <span>Cisco Talos IR</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>人物專訪,Pierre 回顧 90 年代在服務台工作的經歷,以及比對 Windows 與 Unix 日誌如何啟發他進入資安領域。依來源摘要,內容沒有技術性的威脅情資。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>無需特定防禦行動;跨平台日誌關聯分析可作為團隊訓練的參考。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+</section>
+
+<section class="report-section" id="section-other">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(88,166,255,.16)">📰</div>
+    <h2 class="section-title">其他</h2>
+    <span class="section-count">5 則</span>
+  </div>
+
+  <div class="card-grid">
+  
+    <article id="card-8" class="card severity-critical">
+      <div class="card-tags">
+        <span class="tag tag-critical">CRITICAL</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">Drupal</span><span class="tag tag-info">遠端程式碼執行</span><span class="tag tag-info">CISA KEV</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html" target="_blank" rel="noopener noreferrer">Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>CISA 於週二將 Drupal core 的遠端程式碼執行漏洞 CVE-2026-132165(又稱 Fail2Install,CVSS 9.8)加入 KEV,要求聯邦機構於 2026-11-27 前完成修補。標題指出該漏洞正遭積極利用且已有利用細節公開。</p><p>提供的資料為摘要節錄,受影響版本與修補版本未包含在內,需查閱完整文章與 Drupal 官方公告。</p>
+      </div>
+
+      <div class="advisory-box advisory-critical">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>立即盤點 Drupal 站台,對照官方公告套用修補版本,對外站台優先處理。</li><li>修補前後檢視網頁目錄是否有異常檔案及可疑的安裝流程請求。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-9" class="card severity-high">
+      <div class="card-tags">
+        <span class="tag tag-high">HIGH</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">GeoServer</span><span class="tag tag-info">遠端程式碼執行</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener noreferrer">Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>依 watchTowr,威脅行為者正積極利用 GeoServer 兩個新修補的漏洞:CVE-2026-120705(CVSS 8.6)為任意檔案讀取,可讀取 GeoServer 程序可存取的本機文字檔;另一個為 CVE-2026-129243。標題並指研究人員警告可能形成未經驗證的 RCE 利用鏈。</p><p>摘要在 CVE-2026-129243 處被截斷,其 CVSS 與細節未提供;KEV 狀態亦未提及。</p>
+      </div>
+
+      <div class="advisory-box advisory-high">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>盤點 GeoServer 並盡速更新至已修補版本,對外暴露的實例優先處理。</li><li>檢視 GeoServer 存取日誌是否有異常的檔案讀取請求,並盤點其可存取的設定檔與憑證。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-10" class="card severity-medium">
+      <div class="card-tags">
+        <span class="tag tag-medium">MEDIUM</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">資安事件</span><span class="tag tag-info">政府</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html" target="_blank" rel="noopener noreferrer">U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>美國財政部金融犯罪執法網路(FinCEN)表示發生資安事件,有限部分系統遭未授權存取,並已預防性下線部分系統。該機構負責蒐集銀行等機構提交的可疑活動報告與銀行保密法(BSA)申報資料。</p><p>資料未說明入侵手法、攻擊者或資料是否外洩,影響範圍尚不明確。</p>
+      </div>
+
+      <div class="advisory-box advisory-medium">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>向 FinCEN 申報或交換 BSA 資料的機構,應留意官方後續通告,並確認相關傳輸管道與帳號是否有異常。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-11" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">機密管理</span><span class="tag tag-info">憑證</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html" target="_blank" rel="noopener noreferrer">Credential Remediation Is Slow When You Don’t Know What Will Break</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>文章引用 GitGuardian《State of Secrets Sprawl 2026》:2022 年發現的有效機密,超過 64% 在 2026 年 1 月仍然有效,原因是團隊擔心撤銷會造成服務中斷。僅以有效性排序會漏掉 46% 的關鍵機密,建議依可存取範圍與是否公開外洩排序。</p><p>此為廠商研究內容,屬機密管理實務討論,非特定漏洞或攻擊事件。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>建立機密盤點清單,依可存取資源與是否公開外洩排序撤銷優先順序,並先確認相依服務再輪替。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+    <article id="card-12" class="card severity-info">
+      <div class="card-tags">
+        <span class="tag tag-info">INFO</span>
+        <span class="tag tag-info">其他</span><span class="tag tag-info">內部威脅</span><span class="tag tag-info">法律</span>
+      </div>
+
+      <h3 class="card-title">
+        <a href="https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html" target="_blank" rel="noopener noreferrer">Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail</a>
+      </h3>
+
+      <div class="card-meta">
+        <span>📰 The Hacker News</span>
+        <span class="separator">·</span>
+        <span>The Hacker News</span>
+        <span class="separator">·</span>
+        <span>2026-11-25</span>
+      </div>
+
+      <div class="card-body">
+        <p>舊金山聯邦法院法官週二裁定,被控在 OpenAI 舊金山辦公室藏匿隱藏式錄音裝置的前員工,可繳交 100 萬美元保釋金後釋放。被告於 2026-10-09 遭逮捕。</p><p>此為司法進展報導,資料中沒有可直接套用的技術指標。</p>
+      </div>
+
+      <div class="advisory-box advisory-info">
+        <div class="advisory-title">🔔 建議行動</div>
+        <ul>
+          <li>可借鏡於實體安全管理:定期檢查辦公空間是否有未授權裝置,並重新檢視離職與訪客的實體存取控管。</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <a class="read-more" href="https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html" target="_blank" rel="noopener noreferrer">閱讀完整報告 →</a>
+      </div>
+    </article>
+  
+  </div>
+
+  
+  
+  <div class="cve-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CVE ID</th><th>廠商 / 產品</th><th>CVSS</th><th>KEV / 狀態</th><th>來源</th></tr>
+      </thead>
+      <tbody>
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-132165</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">9.8</span></td>
+            <td>已列入 CISA KEV(修補期限 2026-11-27)</td>
+            <td><a href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-120705</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">CVE-2026-120705: 8.6;CVE-2026-129243: 來源未提供</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+          <tr>
+            <td><span class="cve-id">CVE-2026-129243</span></td>
+            <td>The Hacker News</td>
+            <td><span class="cvss-badge">CVE-2026-120705: 8.6;CVE-2026-129243: 來源未提供</span></td>
+            <td>未提及</td>
+            <td><a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></td>
+          </tr>
+          
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<section class="analyst-note" id="analyst-note">
+  <div class="analyst-header">
+    <div class="analyst-avatar">🧠</div>
+    <div>
+      <div class="analyst-name">威脅情資分析師總評</div>
+      <div class="analyst-role">Senior CTI Analyst — Daily Brief 2026-11-26</div>
+    </div>
+  </div>
+
+  <p><strong>當日重點：</strong>Drupal core 的 CVE-2026-132165(CVSS 9.8)已列入 CISA KEV 並要求於 2026-11-27 前修補,為當日最高優先事項。GeoServer 兩個漏洞據 watchTowr 遭積極利用。CISA KEV 同日新增 HPE Juniper Session Smart、Vates Xen Orchestra 及 Danfoss AK-SM 800A 系列共五個漏洞。</p>
+  <p><strong>防禦盲點：</strong>KEV 項目均未提供 CVSS,GeoServer 的 CVE-2026-129243 細節被截斷,以上沒有足夠資料驗證。Danfoss 等 OT/商用設備常不在一般資產清單中,易漏掉盤點。Talos 的代理式攻擊文章與 FinCEN 事件僅有摘要,無法判斷具體風險。</p>
+  <p><strong>IOC 偵測與獵捕意義：</strong>本次來源沒有提供任何 IOC(IP、網域、雜湊等),也未執行外部查核,因此無法給出 IOC 查核結論。</p>
+
+  
+  <p><strong>優先行動清單：</strong></p>
+  <ol class="action-list">
+    <li>[P0] 24 小時內:盤點並修補 Drupal CVE-2026-132165(KEV 期限 2026-11-27),對外站台優先並檢查是否有入侵跡象。</li><li>[P0] 24 小時內:盤點 GeoServer 並更新至修補版本,檢視存取日誌與其可存取的憑證。</li><li>[P1] 72 小時內:處理 HPE Juniper Session Smart、Xen Orchestra 及 Danfoss AK-SM 800A 的 KEV 漏洞,依廠商指示緩解並依 BOD 26-04 評估暴露面。</li><li>[P1] 一週內:追蹤 FinCEN 事件後續通告,並建立機密盤點與依影響排序的撤銷流程。</li>
+  </ol>
+  
+</section>
+
+</div>
+
+<aside class="tree-sidebar">
+  <div class="tree-header">
+    <span>📑 情資索引目錄</span>
+    <span class="badge badge-date">NAV TREE</span>
+  </div>
+  <ul class="tree-list">
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-vulnerability">🛠️ 漏洞與修補</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-0">CVE-2026-103406 — Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-1">CVE-2026-133469 — Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-2">CVE-2025-41450 — Danfoss AK-SM 800A Series Improper Authentication Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-3">CVE-2023-25914 — Danfoss AK-SM 800A Series Path Traversal Vulnerability</a></li>
+        
+        <li><a class="tree-card-link" href="#card-4">CVE-2023-25915 — Danfoss AK-SM 800A Series Improper Input Validation Vulnerability</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-hunting">🔍 威脅獵捕</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-5">The Great Escape: Tradecraft insights from an agentic swarm</a></li>
+        
+        <li><a class="tree-card-link" href="#card-6">Oh, is it Thanksgiving? I hadn’t noticed!</a></li>
+        
+        <li><a class="tree-card-link" href="#card-7">Securing Grandma's groceries with Pierre Cadieux</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node is-open">
+      <a class="tree-section-link" href="#section-other">📰 其他</a>
+      <ul class="tree-card-list">
+        
+        <li><a class="tree-card-link" href="#card-8">Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation</a></li>
+        
+        <li><a class="tree-card-link" href="#card-9">Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</a></li>
+        
+        <li><a class="tree-card-link" href="#card-10">U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</a></li>
+        
+        <li><a class="tree-card-link" href="#card-11">Credential Remediation Is Slow When You Don’t Know What Will Break</a></li>
+        
+        <li><a class="tree-card-link" href="#card-12">Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail</a></li>
+        
+      </ul>
+    </li>
+    
+    <li class="tree-section-node">
+      <a class="tree-section-link" href="#analyst-note">🧠 威脅情資分析師總評</a>
+    </li>
+  </ul>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">🛡️ 資安威脅情資日報</div>
+  <div class="footer-text">本報告彙整自公開威脅情資來源，經 LLM 自動摘要產生<br>僅供資安專業人員參考</div>
+  <div class="footer-tlp">TLP:CLEAR — 可自由分享</div>
+</footer>
+
+</body>
+</html>
