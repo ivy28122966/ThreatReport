@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-27",
+  "stats": {
+    "total": 5,
+    "high_risk": 3,
+    "cve_count": 1
+  },
+  "threat_level": "critical",
+  "sections": [
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "週報彙整",
+            "瀏覽器擴充套件",
+            "NGINX"
+          ],
+          "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+          "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-26",
+          "paragraphs": [
+            "這是 The Hacker News 的 ThreatsDay 彙整文章，標題提到 1,000 萬個 NGINX 服務有風險、250 多個惡意擴充套件、AI 伺服器遭劫持等多則消息。",
+            "提供的來源內容僅有開頭片段，內容談到瀏覽器擴充套件的行為可能因安裝或取得方式而改變，以及遭竊登入資訊的問題。其餘細節、受影響版本與技術資料均未提供，無法進一步判斷風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀原文完整內容，確認 NGINX 與瀏覽器擴充套件相關項目是否影響貴組織環境。",
+            "盤點組織內已安裝的瀏覽器擴充套件，移除不必要或來源不明者。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-1",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "供應鏈",
+            "GitHub",
+            "北韓關聯"
+          ],
+          "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+          "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-26",
+          "paragraphs": [
+            "報導指出，PolinRider 攻擊行動被觀察到在 GitHub 儲存庫中植入 Python 載入器，有跡象顯示該活動最早可能始於 2025 年 2 月。標題稱受影響儲存庫超過 7,600 個，並與北韓有關聯。",
+            "依 SafeDep 報告，載入器藏在小型 utils 套件或 conftest.py 中，當 Python 匯入該檔案時會讀取最新的交易資料（來源片段在此處截斷）。完整感染鏈與 IOC 未於提供內容中列出。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢查程式庫與依賴中的 conftest.py 及小型 utils 套件，留意異常的網路請求或編碼載入程式碼。",
+            "查閱 SafeDep 原始報告取得 IOC，並與內部儲存庫、CI 紀錄比對。",
+            "在採用外部儲存庫程式碼前進行審查，並於隔離環境執行測試。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "釣魚",
+            "身分安全"
+          ],
+          "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+          "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-26",
+          "paragraphs": [
+            "Push Security 以「突破率」衡量釣魚工具組：即攻擊繞過電子郵件安全、網頁閘道與安全瀏覽後觸及使用者的比例，並指出部分工具組的突破率明顯較高。",
+            "提供內容僅為開頭片段，未包含具體的釣魚工具組名稱、數據或技術細節，無法評估個別風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "閱讀原文取得工具組名稱與技術細節，再評估現有郵件與網頁過濾的偵測覆蓋。",
+            "加強使用者對釣魚的通報機制與演練，不僅依賴單一防護層。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "high",
+          "severity_label": "HIGH",
+          "tags": [
+            "資料外洩",
+            "GitHub",
+            "密碼管理"
+          ],
+          "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+          "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-26",
+          "paragraphs": [
+            "1Password 於週三揭露一起涉及後端系統的資安事件，導致部分客戶資訊遭未授權存取。該公司強調客戶密碼保險庫及其他機密未被存取。",
+            "標題指出客戶資料與原始碼遭竊，並與 GitHub 帳號遭入侵有關。提供的片段未說明被竊資料的確切範圍、受影響客戶數量或攻擊手法。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "關注 1Password 官方公告，確認貴組織是否在受影響客戶範圍內。",
+            "檢視 1Password 帳戶的存取紀錄與管理員設定，並確認已啟用多因素驗證。",
+            "依官方指引決定是否輪替相關憑證，勿自行假設保險庫已受影響。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "critical",
+          "severity_label": "CRITICAL",
+          "tags": [
+            "漏洞",
+            "Drupal",
+            "已遭利用"
+          ],
+          "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+          "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-26",
+          "paragraphs": [
+            "Drupal 警告 Drupal core 存在新的「highly critical」漏洞，並表示已有在野利用。該漏洞編號為 CVE-2026-136716，屬於對異常或例外條件檢查不當的類型，來源未提供 CVSS 分數（N/A）。",
+            "該漏洞與 CVE-2026-132165（又稱 Fail2Install）相關，用於處理其餘仍具弱點的安裝狀態。受影響版本與修補版本未在提供內容中列出。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 Drupal 官方公告，確認受影響版本並盡速套用修補。",
+            "檢查 Drupal 站台是否有異常的安裝狀態、未預期的管理帳號或檔案變更。"
+          ],
+          "cve_ids": [
+            "CVE-2026-136716"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "當日最高風險為 Drupal core 的 CVE-2026-136716，來源稱已遭在野利用；另有 1Password 後端入侵（保險庫據稱未受影響）與 PolinRider 污染 GitHub 儲存庫的供應鏈活動。",
+    "blind_spot": "所有來源僅為摘要片段，缺少受影響版本、攻擊手法與影響範圍；CVSS 與 KEV 狀態未提供，沒有足夠資料驗證。Drupal 與 1Password 之間的關聯也無證據。另 CVE-2026-132165 僅在摘要文字提及，未列入 cve_ids。",
+    "ioc_note": "來源未提供明確 IOC，未執行任何外部查核，不能視為已完成 IOC 比對；PolinRider 的 IOC 需自 SafeDep 原始報告取得。",
+    "actions": [
+      "[P0] 24 小時內：盤點 Drupal 站台，依官方公告確認版本並套用修補，檢查入侵跡象。",
+      "[P1] 72 小時內：確認 1Password 官方通知與受影響範圍，檢視帳戶存取紀錄並確認已啟用 MFA。",
+      "[P1] 72 小時內：掃描內部儲存庫與依賴的 conftest.py 與 utils 套件是否有異常載入程式碼。",
+      "[P2] 一週內：盤點瀏覽器擴充套件並檢討釣魚防護的多層偵測覆蓋。"
+    ]
+  }
+}
