@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-28",
+  "stats": {
+    "total": 6,
+    "high_risk": 0,
+    "cve_count": 1
+  },
+  "threat_level": "info",
+  "sections": [
+    {
+      "id": "section-vulnerability",
+      "title": "漏洞與修補",
+      "icon": "🛡️",
+      "cards": [
+        {
+          "anchor": "card-0",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "漏洞與修補"
+          ],
+          "title": "CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+          "source_name": "Microsoft Security Response Center",
+          "org": "Microsoft",
+          "published": "2026-11-27",
+          "paragraphs": [
+            "Microsoft MSRC 發布 CVE-2026-62840，標題為 Linux Kernel 權限提升漏洞。來源僅提供「Information published.」，未提供 CVSS、受影響版本、利用狀況或修補細節。",
+            "由於資料不足，無法判斷實際風險，故暫列 info；這不代表低風險。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "查閱 MSRC 原始公告，確認受影響的 Linux 核心版本與修補方式。",
+            "盤點內部 Linux 主機與核心版本，待取得修補資訊後排定更新。"
+          ],
+          "cve_ids": [
+            "CVE-2026-62840"
+          ],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "其他",
+      "icon": "📰",
+      "cards": [
+        {
+          "anchor": "card-1",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "帳號安全"
+          ],
+          "title": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+          "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-28",
+          "paragraphs": [
+            "報導指出，pCloud Pass 確認遭受網路攻擊，有使用者回報帳號出現不明裝置連線。pCloud 表示攻擊已被迅速控制，並提到少數使用者的電子郵件地址受影響。",
+            "來源摘要被截斷，影響範圍、攻擊手法與是否有憑證外洩等細節未提供。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "pCloud Pass 使用者檢查帳號已連線裝置，移除不認得的裝置。",
+            "留意官方後續通知，並考慮更新主密碼、啟用多因素驗證。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-2",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "APT",
+            "間諜活動"
+          ],
+          "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+          "url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-27",
+          "paragraphs": [
+            "報導引述 SOCRadar 的研究，指一個被歸因於越南的駭客組織（代號 WeaveLotus）鎖定東南亞軍事、政府與立法機構，目的為蒐集南海防務與軍事協議情報。",
+            "活動被評估包含在泰國等地的五起入侵；來源摘要被截斷，技術細節與 IOC 未提供。歸因屬研究機構評估。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "相關政府或軍事單位取得 SOCRadar 原始報告，比對其中的 IOC 與 TTP。",
+            "對外部郵件與附件強化監控與使用者警覺。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-3",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "惡意程式",
+            "RAT"
+          ],
+          "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+          "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-27",
+          "paragraphs": [
+            "eSentire 揭露一起攻擊：攻擊者利用 Microsoft Store 應用程式散布名為 Vinci RAT 的遠端存取木馬。感染鏈始於導向假冒截圖工具的網站（snipp.codes-team[.]com），並提供名為 Snipping-Tool.exe、由 Microsoft 簽署的安裝程式。",
+            "來源摘要被截斷，後續行為與完整 IOC 未提供。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "封鎖網域 snipp.codes-team[.]com，並搜尋環境中是否有 Snipping-Tool.exe 安裝紀錄。",
+            "要求使用者僅從官方管道取得工具，並檢視終端機上的 Store 應用安裝。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-4",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "資安管理"
+          ],
+          "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+          "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-27",
+          "paragraphs": [
+            "此文為資安指標與態勢掌握的觀點文章，指出許多安全指標是為了展示而非實際使用。摘要未包含具體威脅、漏洞或 IOC。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "檢視現有資安指標是否反映每週實際環境狀態，而非僅供季度報告。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        },
+        {
+          "anchor": "card-5",
+          "severity": "info",
+          "severity_label": "INFO",
+          "tags": [
+            "其他",
+            "供應鏈攻擊",
+            "RAT"
+          ],
+          "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+          "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+          "source_name": "The Hacker News",
+          "org": "The Hacker News",
+          "published": "2026-11-27",
+          "paragraphs": [
+            "研究人員揭露一起軟體供應鏈攻擊：SoftwareOK 官方網站散布的 Q-Dir 與 DesktopOK 安裝檔遭竄改，用以投放遠端存取惡意程式。",
+            "證據顯示，不僅從官方下載頁下載會取得惡意檔案，已安裝程式的更新流程也會取得。來源摘要被截斷，受影響版本與 IOC 未提供。"
+          ],
+          "advisory_title": "🔔 建議行動",
+          "advisory_actions": [
+            "盤點環境中是否安裝 Q-Dir 或 DesktopOK，暫停下載與更新直到取得官方清理聲明。",
+            "對已安裝或近期更新過這些工具的主機進行惡意程式與異常外連排查。"
+          ],
+          "cve_ids": [],
+          "cvss": "N/A",
+          "kev_status": "未提及"
+        }
+      ]
+    }
+  ],
+  "analyst_note": {
+    "highlight": "本日共 6 則情資，其中包含 Q-Dir/DesktopOK 官方下載遭供應鏈竄改，以及 Microsoft Store 應用散布 Vinci RAT；因來源皆未提供 CVSS、KEV 或足夠細節，依規則全部標為 info。",
+    "blind_spot": "來源摘要多被截斷，且 MSRC 條目僅有「Information published.」，沒有足夠資料驗證 CVSS、KEV 狀態與利用情形。info 不代表低風險，供應鏈與 RAT 事件仍應優先人工研判。",
+    "ioc_note": "僅 Vinci RAT 一則提供網域 snipp.codes-team[.]com 與檔名 Snipping-Tool.exe；未進行外部信譽查核，其餘來源未提供可用 IOC。",
+    "actions": [
+      "[P0] 24 小時內：盤點並排查 Q-Dir、DesktopOK 安裝與更新紀錄，暫停相關下載與更新。",
+      "[P0] 24 小時內：封鎖 snipp.codes-team[.]com 並搜尋 Snipping-Tool.exe 的部署。",
+      "[P1] 3 天內：查閱 MSRC CVE-2026-62840 公告，確認 Linux 核心受影響範圍與修補。",
+      "[P1] 3 天內：通知 pCloud Pass 使用者檢查已連線裝置並考慮啟用多因素驗證。"
+    ]
+  }
+}
